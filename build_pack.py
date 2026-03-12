@@ -16,7 +16,6 @@ MOD_LIST = [
     ("create-fabric", "Create Fabric"),
     ("modern-industrialization", "Modern Industrialization"),
     ("ae2", "Applied Energistics 2"),
-    ("techreborn", "Tech Reborn"),
     ("advanced-netherite", "Advanced Netherite"),
     ("mythic-upgrades", "Mythic Upgrades"),
     ("toms-storage", "Tom's Simple Storage"),
@@ -109,9 +108,6 @@ MOD_LIST = [
 
     # ECONOMY & PROGRESSION
     ("numismatics", "Numismatics"),
-    ("origins", "Origins"),
-    ("playerex-directors-cut", "PlayerEx (RPG Leveling)"),
-    ("relicex-directors-cut", "RelicEx (Lootable Relics)"),
 
     # SURVIVAL QOL
     ("universal-graves", "Universal Graves"),
@@ -221,7 +217,6 @@ MOD_LIST = [
     ("cristellib", "Cristel Lib"),
     ("coroutil", "CoroUtil"),
     ("collective", "Collective (Library)"),
-    ("data-attributes-directors-cut", "Data Attributes (Director's Cut)"),
     ("attribute-helpers", "Attribute Helpers"),
     ("spell-engine", "Spell Engine"),
     ("cardinal-components-api", "Cardinal Components API"),
@@ -229,7 +224,8 @@ MOD_LIST = [
     ("spell-power", "Spell Power"),
     ("resourceful-config", "Resourceful Config"),
     ("yacl", "Yet Another Config Lib"),
-
+    ("environmentz", "EnvironmentZ"),
+    ("autotag", "AutoTag"),
 ]
 
 CLIENT_ONLY_MODS = [
@@ -313,22 +309,6 @@ def get_best_version(project_id_or_slug):
             if project_id_or_slug == "numismatics":
                 # 1.0.15 requires Create 6.x. Stay on 1.0.11 for Create 0.5.1 compatibility
                 v_stable = [v for v in versions if "1.0.11" in v["version_number"] and any(l.lower() in ["fabric", "quilt"] for l in v.get("loaders", []))]
-                if v_stable: return v_stable[0]
-
-            if project_id_or_slug == "relicex-directors-cut":
-                # RelicEx 4.0 moved to azurelibarmor which causes NoClassDefFoundError with AzureLib 1.0.33
-                # We need to stay on 3.4.2 which depends on the old AzureLib structure
-                v_stable = [v for v in versions if v["version_number"].startswith("3.4.") and "fabric" in [l.lower() for l in v.get("loaders", [])]]
-                if v_stable: return v_stable[0]
-
-            if project_id_or_slug == "playerex-directors-cut":
-                # Must stay on 3.x to match RelicEx 3.4.2 and avoid new abstractions
-                v_stable = [v for v in versions if v["version_number"].startswith("3.7.") and "fabric" in [l.lower() for l in v.get("loaders", [])]]
-                if v_stable: return v_stable[0]
-
-            if project_id_or_slug == "data-attributes-directors-cut":
-                # Must stay on 1.6.x to match PlayerEx 3.x and RelicEx 3.4.2
-                v_stable = [v for v in versions if v["version_number"].startswith("1.6.") and "fabric" in [l.lower() for l in v.get("loaders", [])]]
                 if v_stable: return v_stable[0]
 
             if project_id_or_slug == "immersive-guns":
