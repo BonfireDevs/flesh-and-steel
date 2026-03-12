@@ -2,12 +2,13 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+.idea
 # Large Build Files (Do NOT upload these)
 server_mods/
 flesh-and-steel-server/
 *.mrpack
 *.zip
+*.jar
 
 # Temporary log files and search results (keeps repo clean)
 *.txt
