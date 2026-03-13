@@ -1,22 +1,22 @@
 #!/usr/bin/env bash
 # ============================================================
-# Flesh & Steel - Fabric Server Installer
-# Minecraft 1.20.1 | Fabric Loader 0.18.4
+# Flesh & Steel - Forge Server Installer
+# Minecraft 1.20.1 | Forge 47.3.0
 # ============================================================
 set -euo pipefail
 
 MINECRAFT_VERSION="1.20.1"
-FABRIC_LOADER_VERSION="0.18.4"
-FABRIC_INSTALLER_VERSION="1.0.1"
-FABRIC_INSTALLER_URL="https://meta.fabricmc.net/v2/versions/loader/${MINECRAFT_VERSION}/${FABRIC_LOADER_VERSION}/${FABRIC_INSTALLER_VERSION}/server/jar"
+FORGE_VERSION="47.3.0"
+FORGE_FULL_VERSION="${MINECRAFT_VERSION}-${FORGE_VERSION}"
+FORGE_INSTALLER_URL="https://maven.minecraftforge.net/net/minecraftforge/forge/${FORGE_FULL_VERSION}/forge-${FORGE_FULL_VERSION}-installer.jar"
 
 SERVER_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SERVER_DIR"
 
 echo "============================================"
-echo " Flesh & Steel — Fabric Server Installer"
+echo " Flesh & Steel — Forge Server Installer"
 echo " Minecraft ${MINECRAFT_VERSION}"
-echo " Fabric Loader ${FABRIC_LOADER_VERSION}"
+echo " Forge ${FORGE_VERSION}"
 echo "============================================"
 echo ""
 
@@ -40,14 +40,22 @@ fi
 echo "✅ Java $JAVA_VER detected"
 
 # ------------------------------------
-# 2. Download Fabric Server Launcher
+# 2. Download and run Forge Installer
 # ------------------------------------
-if [ ! -f "fabric-server-launch.jar" ]; then
-    echo "📥 Downloading Fabric server launcher..."
-    curl -sSL -o fabric-server-launch.jar "$FABRIC_INSTALLER_URL"
-    echo "✅ Fabric server launcher downloaded"
+INSTALLER_JAR="forge-${FORGE_FULL_VERSION}-installer.jar"
+FORGE_SERVER_JAR="forge-${FORGE_FULL_VERSION}-shim.jar"
+
+if [ ! -f "run.sh" ] && [ ! -f "forge-${FORGE_FULL_VERSION}-server.jar" ]; then
+    echo "📥 Downloading Forge installer..."
+    curl -sSL -o "$INSTALLER_JAR" "$FORGE_INSTALLER_URL"
+    echo "✅ Forge installer downloaded"
+
+    echo "🔧 Running Forge installer (server mode)..."
+    java -jar "$INSTALLER_JAR" --installServer
+    rm -f "$INSTALLER_JAR"
+    echo "✅ Forge server installed"
 else
-    echo "✅ Fabric server launcher already exists"
+    echo "✅ Forge server already installed"
 fi
 
 # ------------------------------------
@@ -73,7 +81,7 @@ if [ ! -f "server.properties" ]; then
     echo "📝 Generating server.properties with Flesh & Steel defaults..."
     cat > server.properties << 'PROPS'
 # Flesh & Steel Server Configuration
-# Minecraft 1.20.1 Fabric
+# Minecraft 1.20.1 Forge
 
 # NETWORK
 server-port=25565
@@ -137,7 +145,7 @@ else
 fi
 
 # ------------------------------------
-# 5. Copy mods (symlink or copy from server_mods)
+# 5. Check mods directory
 # ------------------------------------
 echo ""
 echo "📦 Checking mods directory..."
@@ -146,7 +154,7 @@ if [ "$MOD_COUNT" -gt 0 ]; then
     echo "✅ Found $MOD_COUNT mods in mods/"
 else
     echo "⚠️  No mods found in mods/ directory!"
-    echo "   Run the populate_server.py script to copy server-side mods."
+    echo "   Run the build_pack.py script to download server-side mods."
 fi
 
 echo ""

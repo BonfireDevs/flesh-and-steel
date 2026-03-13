@@ -1,6 +1,6 @@
 # Flesh & Steel — Biomechanical Tech Modpack
 
-Minecraft 1.20.1 · Fabric
+Minecraft 1.20.1 · Forge 47.3.0
 
 ## Project Structure
 
@@ -23,7 +23,7 @@ flesh-and-steel/
 ├── resourcepacks/       # Resource packs (if any)
 │
 ├── scripts/             # Server deployment scripts
-│   ├── install.sh       # Fabric server installer
+│   ├── install.sh       # Forge server installer
 │   ├── start.sh         # Server start script (Aikar's flags)
 │   └── README.md        # Server setup notes
 │
@@ -35,7 +35,6 @@ flesh-and-steel/
 │   └── server-pack/     # → ready-to-deploy server directory
 │
 ├── build_pack.py        # Main build script (downloads mods, builds packs)
-├── patch_neepmeat.py    # Patches neepmeat JAR (flywheel mod ID conflict)
 ├── requirements.txt     # Python dependencies
 └── .gitignore
 ```
@@ -47,13 +46,7 @@ flesh-and-steel/
 pip install -r requirements.txt
 ```
 
-### 1. Patch Neepmeat (first time only)
-```bash
-python patch_neepmeat.py
-```
-This downloads and patches the neepmeat mod, saving it to `mods/common/`.
-
-### 2. Build the Modpack
+### 1. Build the Modpack
 ```bash
 python build_pack.py
 ```
@@ -62,10 +55,10 @@ This will:
 - Build `build/client-pack/flesh-and-steel.mrpack` (import in Prism/Modrinth App)
 - Build `build/server-pack/` (complete server directory)
 
-### 3. Deploy the Server
+### 2. Deploy the Server
 ```bash
 cd build/server-pack/
-./install.sh    # Downloads Fabric launcher, accepts EULA
+./install.sh    # Downloads Forge installer, runs it, accepts EULA
 ./start.sh      # Starts the server
 ```
 
@@ -73,9 +66,39 @@ cd build/server-pack/
 
 All mod definitions live in `pack-config/mods.json`:
 
-- **common**: Installed on both client and server (~150 mods)
-- **client**: Client-only mods — rendering, shaders, UI, audio (~22 mods)
+- **common**: Installed on both client and server (~120 mods)
+- **client**: Client-only mods — shaders, UI, audio (~17 mods)
 - **server**: Server-only mods (none currently, but ready for future additions)
 
 Version pins for Create ecosystem compatibility are also defined in `mods.json`.
 
+## Fabric → Forge Migration Notes
+
+Key substitutions made when converting from Fabric:
+
+| Removed (Fabric-only) | Added (Forge equivalent) |
+|---|---|
+| Fabric API | Forge (built-in) |
+| Fabric Language Kotlin | Kotlin for Forge |
+| Trinkets / Accessories | Curios API |
+| Lithium | Embeddium (includes Rubidium/Sodium optimizations) |
+| Sodium (client) | Embeddium (common) |
+| Iris (client) | Oculus (client) |
+| Mod Menu (client) | Catalogue (client) |
+| Dynamic FPS | FPS Reducer |
+| Presence Footsteps | Dynamic Surroundings |
+| Zenith (Apotheosis Fabric) | Apotheosis |
+| Farmer's Delight Refabricated | Farmer's Delight (original) |
+| Universal Graves | Graves |
+| Create Enchantment Industry (legacy slug) | create-enchantment-industry |
+| Repurposed Structures Fabric | repurposed-structures |
+
+Fabric-only mods with no Forge equivalent that were **removed**:
+Modern Industrialization, Chest Cavity, Dungeonz, Integrated Stronghold/API,
+Villagers & Pillages, Custom Villager Trades, Rot N' Putrid, Forsaken Corpses,
+Nature's Spirit, BioButcher's Delight, Dahmer's Delight, Spectrum, Somatogenesis,
+Simple Quests, Amendments, Styled Chat, Krypton, Noisium, C2ME, ServerCore,
+Athena, Cardinal Components API, Porting Lib, FakerLib, Zenith Attributes,
+Accessories (replaced by Curios), owo-lib, Revelationary, Impersonate,
+Attribute Helpers, EnvironmentZ, AutoTag, MidnightLib, Library Ferret, Kambrik,
+Obscure API, Indium.

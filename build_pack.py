@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Flesh & Steel — Modpack Build Script
+Flesh & Steel — Modpack Build Script (Forge)
 
 Reads mod definitions from pack-config/mods.json, downloads them into
 mods/common/, mods/client/, and mods/server/, then assembles:
@@ -29,7 +29,7 @@ def load_config():
 
 
 def get_best_version(slug, mc_version, version_pins):
-    """Resolve the best Modrinth version for a mod slug."""
+    """Resolve the best Modrinth version for a mod slug (Forge loader)."""
     url = f"{MODRINTH_API}/project/{slug}/version"
     params = {"game_versions": json.dumps([mc_version])}
     try:
@@ -40,39 +40,30 @@ def get_best_version(slug, mc_version, version_pins):
         if not versions:
             return None
 
-        # Check for pinned version
+        # Check for pinned version — prefer Forge/NeoForge match first
         pin = version_pins.get(slug)
         if pin:
-            pinned = [
+            pinned_forge = [
                 v for v in versions
                 if pin in v["version_number"].lower()
-                and any(l.lower() in ["fabric", "quilt"] for l in v.get("loaders", []))
+                   and any(l.lower() in ["forge", "neoforge"] for l in v.get("loaders", []))
             ]
-            if pinned:
-                return pinned[0]
-            # Prefix match fallback
+            if pinned_forge:
+                return pinned_forge[0]
+            # Prefix fallback ignoring loader
             pinned = [v for v in versions if v["version_number"].startswith(pin)]
             if pinned:
                 return pinned[0]
 
-        # Special handling for comforts (needs fabric filter)
-        if slug == "comforts":
-            fabric = [
-                v for v in versions
-                if any(l.lower() in ["fabric", "quilt"] for l in v.get("loaders", []))
-            ]
-            if fabric:
-                return fabric[0]
-
-        # Prefer Fabric/Quilt builds
-        fabric = [
+        # Prefer Forge/NeoForge builds
+        forge = [
             v for v in versions
-            if any(l.lower() in ["fabric", "quilt"] for l in v.get("loaders", []))
+            if any(l.lower() in ["forge", "neoforge"] for l in v.get("loaders", []))
         ]
-        if fabric:
-            return fabric[0]
+        if forge:
+            return forge[0]
 
-        # Resource packs use "minecraft" loader
+        # Resource packs / datapacks use "minecraft" loader
         minecraft = [
             v for v in versions
             if "minecraft" in [l.lower() for l in v.get("loaders", [])]
@@ -149,7 +140,7 @@ def build_mrpack(config, mrpack_files, project_root, output_path):
         "files": mrpack_files,
         "dependencies": {
             "minecraft": config["minecraft_version"],
-            "fabric-loader": config["fabric_loader_version"],
+            "forge": config["forge_version"],
         },
     }
 
@@ -171,13 +162,13 @@ def build_mrpack(config, mrpack_files, project_root, output_path):
                     arcname = f"{arc_prefix}/{file_path.relative_to(src_dir)}"
                     zf.write(file_path, arcname=arcname)
 
-        # Include patched mods in overrides/mods/
+        # Include patched mods in overrides/mods/ (search common and client dirs)
         patched_filenames = {p["filename"] for p in config.get("patched_mods", [])}
-        patched_dir = project_root / "mods" / "common"
-        if patched_dir.exists():
-            for jar in patched_dir.glob("*.jar"):
-                if jar.name in patched_filenames:
-                    zf.write(jar, arcname=f"overrides/mods/{jar.name}")
+        for search_dir in [project_root / "mods" / "common", project_root / "mods" / "client"]:
+            if search_dir.exists():
+                for jar in search_dir.glob("*.jar"):
+                    if jar.name in patched_filenames:
+                        zf.write(jar, arcname=f"overrides/mods/{jar.name}")
 
 
 def build_server_pack(config, project_root, output_dir):
@@ -253,7 +244,7 @@ def build_server_pack(config, project_root, output_dir):
 
 
 def main():
-    print("🛠️  Flesh & Steel — Build System")
+    print("🛠️  Flesh & Steel — Build System (Forge)")
     print("=" * 50)
 
     config = load_config()
@@ -276,6 +267,9 @@ def main():
     for side in ["common", "client", "server"]:
         for mod in config["mods"].get(side, []):
             all_mods.append((mod["slug"], mod["name"], side))
+
+    # Patched (CurseForge-only) mods are bundled as overrides — skip Modrinth resolution
+    patched_filenames = {p["filename"] for p in config.get("patched_mods", [])}
 
     # Resolve and download all mods
     mrpack_files = []

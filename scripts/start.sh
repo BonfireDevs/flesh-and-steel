@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # ============================================================
-# Flesh & Steel - Server Start Script
+# Flesh & Steel - Server Start Script (Forge)
 # Adjust -Xmx and -Xms to fit your server's RAM
 # ============================================================
 set -euo pipefail
@@ -41,9 +41,10 @@ JVM_FLAGS=(
 )
 
 # ---- Pre-flight Checks ----
-if [ ! -f "fabric-server-launch.jar" ]; then
-    echo "❌ fabric-server-launch.jar not found!"
-    echo "   Run ./install.sh first."
+# Forge generates a run.sh / run.bat after installation; fall back to the
+# universal server jar if run.sh is not yet present.
+if [ ! -f "run.sh" ] && ! ls forge-*-server.jar &>/dev/null 2>&1; then
+    echo "❌ Forge server not found! Run ./install.sh first."
     exit 1
 fi
 
@@ -53,8 +54,15 @@ if [ ! -f "eula.txt" ] || ! grep -q "eula=true" eula.txt; then
 fi
 
 echo "============================================"
-echo " ⚙ Flesh & Steel — Starting Server"
+echo " ⚙ Flesh & Steel — Starting Forge Server"
 echo "   RAM: ${MIN_RAM} - ${MAX_RAM}"
 echo "============================================"
 
-exec java "${JVM_FLAGS[@]}" -jar fabric-server-launch.jar nogui
+# Forge 1.20.1 installs a run.sh wrapper — use it if present.
+if [ -f "run.sh" ]; then
+    exec bash run.sh "${JVM_FLAGS[@]}"
+else
+    # Fallback: find the server jar directly
+    SERVER_JAR=$(ls forge-*-server.jar 2>/dev/null | head -n1)
+    exec java "${JVM_FLAGS[@]}" -jar "$SERVER_JAR" nogui
+fi
