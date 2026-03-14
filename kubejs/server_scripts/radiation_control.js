@@ -2,44 +2,45 @@
 // Makes radiation biome- and temperature-dependent instead of feeling global.
 
 LevelEvents.tick(event => {
-    // Run only on server
-    if (event.level.isClientSide()) return;
-
-    const isSecond = event.level.time % 20 === 0;
+    // Run only on server logic
+    if (event.isClientSide()) return;
 
     event.level.players.forEach(player => {
         if (!player) return;
 
-        // Sample biome and temperature at player position
-        let { x, y, z } = player;
-        let biome = event.level.getBiome(x, y, z).value();
+        // 1. Safe Effect Lookup: Avoid registry lookup crashes
+        const effectMap = player.activeEffects;
+        let radiationInst = null;
+        effectMap.forEach((instance, effect) => {
+            if (effect.registryName && effect.registryName.toString() === 'radiach:radiation') {
+                radiationInst = instance;
+            }
+        });
+
+        // 2. Temperature Sampling: Most robust way to handle 100+ modded biomes automatically
+        let pos = player.blockPosition();
+        let biome = event.level.getBiome(pos).value();
         let temp = biome.getTemperature();
 
         // DESIGN:
-        // - Safe Zones (temp < 0.85): AGGRESSIVELY clear radiation and associated debuffs.
-        // - Harsh Zones (temp >= 0.85): Allow radiation (Hot biomes like Deserts/Savannas).
+        // - Safe/Normal Zones (temp < 0.85): Aggressively clear radiation.
+        // - Harsh Zones (temp >= 0.85): Allow radiation (Deserts, Savannas, Atomic biomes).
 
-        // Clear radiation in safe/normal zones (Temperate, Cold, Mild)
-        // Running this EVERY tick ensures that even if the mod re-applies it, we kill it immediately.
         if (temp < 0.85) {
+            // Aggressively clear if the mod tries to re-apply it
             player.removePotionEffect('radiach:radiation');
             player.removePotionEffect('minecraft:poison');
             player.removePotionEffect('minecraft:slowness');
             return;
         }
 
-        // Further logic runs only once per second for performance
-        if (!isSecond) return;
+        // 3. Radiation Management in Harsh Zones
+        if (!radiationInst) return;
 
-        // If we are in a harsh zone, check if player has radiation to manage it
-        let radiation = player.getPotionEffect('radiach:radiation');
-        if (!radiation) return;
-
-        // Keep radiation in Hot zones, but clamp it if it's not extreme (0.85 to 1.0)
-        // This prevents immediate death while still giving a sense of danger.
-        if (temp < 1.0 && radiation.amplifier > 0) {
-            player.potionEffects.add('radiach:radiation', radiation.duration, 0, radiation.ambient, radiation.visible);
+        // If in a mild-harsh zone (but not burning 1.0+), clamp radiation to level 1 (amplifier 0)
+        // This gives a warning without killing the player instantly.
+        if (temp < 1.0 && radiationInst.amplifier > 0) {
+            player.potionEffects.add('radiach:radiation', radiationInst.duration, 0, radiationInst.ambient, radiationInst.visible);
         }
     });
 });
-
