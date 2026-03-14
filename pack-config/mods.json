@@ -36,12 +36,12 @@
         "name": "Applied Energistics 2"
       },
       {
-        "slug": "argonauts",
-        "name": "Argonauts"
+        "slug": "open-parties-and-claims",
+        "name": "Open Parties and Claims"
       },
       {
-        "slug": "xaero-argonauts-integration",
-        "name": "Argonauts Xaero Integration"
+        "slug": "otyacraft-engine",
+        "name": "Otyacraft Engine"
       },
       {
         "slug": "aquamirae",
@@ -90,10 +90,6 @@
       {
         "slug": "alexs-caves",
         "name": "Alex's Caves"
-      },
-      {
-        "slug": "audio-player",
-        "name": "Audio Player"
       },
       {
         "slug": "citadel",
@@ -226,6 +222,10 @@
       {
         "slug": "uXXizFIs",
         "name": "Ferrite Core"
+      },
+      {
+        "slug": "forge-config-api-port",
+        "name": "Forge Config API Port"
       },
       {
         "slug": "from-the-fog",

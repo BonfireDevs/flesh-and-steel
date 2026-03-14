@@ -1,7 +1,0 @@
-{
-  "party": {
-    "friendly_fire": false,
-    "max_members": 10,
-    "max_invited": 20
-  }
-}

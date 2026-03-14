@@ -1,0 +1,13 @@
+{
+  "general": {
+    "enableParties": true,
+    "enableClaims": true,
+    "enableGuilds": true
+  },
+  "parties": {
+    "friendlyFire": false
+  },
+  "guilds": {
+    "friendlyFire": false
+  }
+}
