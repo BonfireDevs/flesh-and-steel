@@ -1,0 +1,59 @@
+{
+	version: 13
+	default_reward_team: false
+	default_consume_items: false
+	default_autoclaim_rewards: "disabled"
+	default_quest_shape: "rsquare"
+	default_quest_disable_jei: false
+	drop_loot_crates: false
+	loot_crate_no_drop: {
+		passive: 4000
+		monster: 600
+		boss: 0
+	}
+	disable_gui: false
+	grid_scale: 0.5d
+	pause_game: false
+	lock_message: ""
+	progression_mode: "linear"
+	reward_tables: [
+		{
+			id: "729A3B1C5E7F9D0A"
+			title: "Artifact Choice Reward"
+			loot_size: 1
+			use_title: true
+			rewards: [
+				{ item: "artifacts:lucky_scarf" }
+				{ item: "artifacts:power_glove" }
+				{ item: "artifacts:night_vision_goggles" }
+				{ item: "artifacts:superstitious_hat" }
+				{ item: "artifacts:digging_claws" }
+			]
+		}
+		{
+			id: "B10_STEEL_TECH"
+			title: "Steel Engineer Case"
+			loot_size: 1
+			use_title: true
+			rewards: [
+				{ item: "create:mechanical_press", count: 1 }
+				{ item: "create:mechanical_drill", count: 1 }
+				{ item: "create:belt_connector", count: 8 }
+				{ item: "create:andesite_alloy", count: 16 }
+			]
+		}
+		{
+			id: "B10_FLESH_TECH"
+			title: "Bio-Engineer Case"
+			loot_size: 1
+			use_title: true
+			rewards: [
+				{ item: "biomancy:bio_forge", count: 1 }
+				{ item: "biomancy:digester", count: 1 }
+				{ item: "biomancy:flesh_bits", count: 32 }
+				{ item: "biomancy:bone_fragment", count: 16 }
+			]
+		}
+	]
+	chapters: []
+}

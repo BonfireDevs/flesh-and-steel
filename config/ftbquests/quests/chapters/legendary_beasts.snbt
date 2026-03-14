@@ -1,0 +1,111 @@
+{
+	id: "9999999999999999"
+	title: "Chapter 10: Legendary Beasts"
+	icon: "mutantmonsters:mutant_skeleton_skull"
+	filename: "legendary_beasts"
+	order_index: 11
+	quests: [
+		{
+			title: "The Mutant Problem"
+			icon: "mutantmonsters:mutant_creeper_statue"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			size: 1.5d
+			description: [
+				"{image:flesh_and_steel:textures/banners/biological.png width:200 height:50 align:center}"
+				"Some creatures have evolved too far. The 'Great Merger' created biological outliers that require specialized ballistics to neutralize."
+			]
+			id: "9A1"
+			tasks: [{
+				id: "9B1"
+				type: "checkmark"
+				title: "Hunting Season"
+			}]
+			rewards: [{ id: "R_LB1", type: "item", item: "numismatics:silver_coin", count: 16 }]
+		}
+
+		// --- TIER 1: MUTANT MONSTERS ---
+		{
+			title: "The Mutant Zombie"
+			x: 2.0d
+			y: -1.0d
+			subtitle: "Brute Force"
+			description: ["The tank of the mutant world. High HP, ground-pound attacks. Use a Sniper from a distance."]
+			dependencies: ["9A1"]
+			id: "M_ZOMBIE"
+			tasks: [{ id: "T_MZ", type: "kill", icon: "mutantmonsters:mutant_zombie_spawn_egg", entity: "mutantmonsters:mutant_zombie", value: 1L }]
+			rewards: [{ id: "R_MZ", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+		{
+			title: "The Mutant Creeper"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Biological Bomb"
+			description: ["Spawns creeperlings upon death. Fast and unstable."]
+			dependencies: ["9A1"]
+			id: "M_CREEPER"
+			tasks: [{ id: "T_MC", type: "kill", icon: "mutantmonsters:mutant_creeper_spawn_egg", entity: "mutantmonsters:mutant_creeper", value: 1L }]
+			rewards: [{ id: "R_MC", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+		{
+			title: "The Mutant Skeleton"
+			x: 2.0d
+			y: 1.0d
+			subtitle: "Volley of Ribs"
+			description: ["Shoots bone fragments. High range and accuracy."]
+			dependencies: ["9A1"]
+			id: "M_SKELETON"
+			tasks: [{ id: "T_MS", type: "kill", icon: "mutantmonsters:mutant_skeleton_spawn_egg", entity: "mutantmonsters:mutant_skeleton", value: 1L }]
+			rewards: [{ id: "R_MS", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+
+		// --- TIER 2: SONS OF SINS ---
+		{
+			title: "The Sins of the Factory"
+			icon: "sons_of_sins:flesh_lump"
+			x: 4.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Manifestations of the Iron Lords' guilt. These creatures drop 'Sin Tokens' used for high-tier magic affixes."]
+			dependencies: ["M_CREEPER"]
+			id: "SINS_HUB"
+			tasks: [{ id: "S1", type: "checkmark" }]
+			rewards: [{ id: "RS1", type: "item", item: "numismatics:gold_coin", count: 2 }]
+		}
+		{
+			title: "Hunt: Prowler"
+			x: 5.5d
+			y: -1.0d
+			description: ["Fast, invisible in shadows. Listen for the breathing."]
+			dependencies: ["SINS_HUB"]
+			id: "H_PROWLER"
+			tasks: [{ id: "T_PROW", type: "kill", entity: "sons_of_sins:prowler", value: 1L }]
+			rewards: [{ id: "RS2", type: "item", item: "sons_of_sins:flesh_lump", count: 2 }]
+		}
+		{
+			title: "Hunt: Woe"
+			x: 5.5d
+			y: 1.0d
+			description: ["Drains your energy (SU) just by being nearby."]
+			dependencies: ["SINS_HUB"]
+			id: "H_WOE"
+			tasks: [{ id: "T_WOE", type: "kill", entity: "sons_of_sins:woe", value: 1L }]
+			rewards: [{ id: "RS3", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+
+		// --- TIER 3: LEGENDARY BOSSES ---
+		{
+			title: "Contract: The Iron Bloat"
+			x: 8.0d
+			y: 0.0d
+			shape: "diamond"
+			size: 1.5d
+			description: ["A massive amalgamation of discarded factory parts and ancient flesh."]
+			dependencies: ["H_PROWLER", "H_WOE"]
+			id: "BOSS_BLOAT"
+			tasks: [{ id: "T_BLOAT", type: "checkmark", title: "Locate the Bloat" }]
+			rewards: [{ id: "RS4", type: "item", item: "numismatics:gold_coin", count: 10 }]
+		}
+	]
+}

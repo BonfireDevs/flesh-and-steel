@@ -1,0 +1,131 @@
+{
+	id: "FFFFFFFF0000FFFF"
+	title: "Chapter 17: Ultimate Challenges"
+	icon: "minecraft:wither_skeleton_skull"
+	filename: "challenges"
+	order_index: 17
+	quests: [
+		{
+			title: "The Final Directives"
+			icon: "minecraft:wither_skeleton_skull"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			size: 2.0d
+			description: [
+				"{image:flesh_and_steel:textures/banners/biological.png width:200 height:50 align:center}"
+				"You have mastered Steel and Flesh. Now, prove it. These challenges are for the elite biomechanists only."
+			]
+			id: "CHALLENGE_START"
+			tasks: [{ id: "C1", type: "checkmark", title: "Begin the Trial" }]
+		}
+
+		// --- TIER 1: HUNTING CHALLENGES ---
+		{
+			title: "The Mutant Slayer"
+			x: 2.5d
+			y: -1.5d
+			description: ["Kill 50 Mutants."]
+			dependencies: ["CHALLENGE_START"]
+			id: "MUTANT_HUNT"
+			tasks: [{ id: "T_MHUNT", type: "kill", title: "Mutant Hunt", icon: "mutantmonsters:mutant_zombie_spawn_egg", entity: "mutantmonsters:mutant_zombie", value: 50L }]
+		}
+		{
+			title: "The Void Hunter"
+			x: 2.5d
+			y: 0.0d
+			description: ["Kill the Ender Dragon using only Biomechanical weapons."]
+			dependencies: ["CHALLENGE_START"]
+			id: "DRAGON_HUNT"
+			tasks: [{ id: "T_DHUNT", type: "kill", title: "Dragon Hunt", icon: "minecraft:dragon_head", entity: "minecraft:ender_dragon", value: 1L }]
+		}
+		{
+			title: "The Wither Machine"
+			x: 2.5d
+			y: 1.5d
+			description: ["Kill 10 Withers using a Create-automated cannon."]
+			dependencies: ["CHALLENGE_START"]
+			id: "WITHER_HUNT"
+			tasks: [{ id: "T_WHUNT", type: "kill", title: "Wither Hunt", icon: "minecraft:wither_skeleton_skull", entity: "minecraft:wither", value: 10L }]
+		}
+
+		// --- TIER 2: ENGINEERING CHALLENGES ---
+		{
+			title: "Infinite Rotation"
+			x: 5.0d
+			y: -1.5d
+			description: ["Maintain a Stress Capacity of over 100,000 SU for 24 hours."]
+			dependencies: ["CHALLENGE_START"]
+			id: "SU_CHALLENGE"
+			tasks: [{ id: "T_SUCH", type: "checkmark", title: "High Power Output" }]
+		}
+		{
+			title: "Digital Hoarder"
+			x: 5.0d
+			y: 0.0d
+			description: ["Store 1,000,000 items in your ME Network."]
+			dependencies: ["CHALLENGE_START"]
+			id: "STORAGE_CHALLENGE"
+			tasks: [{ id: "T_STCH", type: "checkmark", title: "One Million Items" }]
+		}
+		{
+			title: "Global Connectivity"
+			x: 5.0d
+			y: 1.5d
+			description: ["Link 5 different dimensions using Quantum Bridges."]
+			dependencies: ["CHALLENGE_START"]
+			id: "QUANTUM_CHALLENGE"
+			tasks: [{ id: "T_QUCH", type: "checkmark", title: "Interdimensional Master" }]
+		}
+
+		// --- TIER 3: SURVIVAL CHALLENGES ---
+		{
+			title: "Frozen Hell"
+			x: 7.5d
+			y: -1.5d
+			description: ["Survive for 100 days in a freezing biome without a permanent hearth."]
+			dependencies: ["CHALLENGE_START"]
+			id: "COLD_CHALLENGE"
+			tasks: [{ id: "T_COLD", type: "checkmark", title: "Cold Blooded" }]
+		}
+		{
+			title: "Nuclear Winter"
+			x: 7.5d
+			y: 0.0d
+			description: ["Live in Level 6 Radiation for 10 days without removing your suit."]
+			dependencies: ["CHALLENGE_START"]
+			id: "RAD_CHALLENGE"
+			tasks: [{ id: "T_RAD", type: "checkmark", title: "Atomic Living" }]
+		}
+		{
+			title: "The Meat Feast"
+			x: 7.5d
+			y: 1.5d
+			description: ["Consume only Nutrient Bars for 30 consecutive days."]
+			dependencies: ["CHALLENGE_START"]
+			id: "BIO_CHALLENGE"
+			tasks: [{ id: "T_BIO", type: "checkmark", title: "Pure Biology" }]
+		}
+
+		// --- THE FINAL QUEST ---
+		{
+			title: "The Biomechanical Singularity"
+			icon: "ae2:singularity"
+			x: 11.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			description: [
+				"You have done it. The Factory is alive. The Steel has grown skin. The Sinew has turned to wire."
+				""
+				"You are the Director. You are the Machine."
+				""
+				"&bFINAL LOG:&r Singularity Achieved. Unit-01 ascending."
+			]
+			dependencies: ["MUTANT_HUNT", "SU_CHALLENGE", "RAD_CHALLENGE"]
+			id: "THE_END"
+			tasks: [{ id: "T_END", type: "checkmark", title: "Achieve the Singularity" }]
+			rewards: [{ id: "CREDITS", type: "checkmark", title: "Credits" }]
+		}
+	]
+}

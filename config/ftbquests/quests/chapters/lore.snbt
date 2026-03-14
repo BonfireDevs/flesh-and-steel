@@ -1,0 +1,135 @@
+{
+	id: "0000000000000000"
+	title: "Chapter 0: The Chronicles of Decay"
+	icon: "minecraft:writable_book"
+	filename: "lore"
+	order_index: 0
+	quests: [
+		{
+			title: "Unit-01: Initialization"
+			icon: "minecraft:clock"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			size: 1.5d
+			description: [
+				"{image:flesh_and_steel:textures/banners/industrial.png width:200 height:50 align:center}"
+				"{image:flesh_and_steel:textures/logo.png width:100 height:100 align:center}"
+				"System booting..."
+				"Memory corrupted..."
+				""
+				"You wake up in a world that smells of cold iron and rotting meat. Your skin feels tight, almost plastic. You aren't entirely human anymore, but you aren't a machine either."
+			]
+			id: "0A1"
+			tasks: [{
+				id: "0A2"
+				type: "checkmark"
+				title: "Wake Up"
+			}]
+			rewards: [{ id: "R_L1", type: "item", item: "numismatics:silver_coin", count: 2 }]
+		}
+
+		// --- ARCHIVE LOGS ---
+		{
+			title: "Archive Log #001: The Merger"
+			x: 1.5d
+			y: 0.0d
+			subtitle: "Restoring Data..."
+			description: [
+				"Fragmented data logs suggests that a century ago, the 'Iron Lords' tried to achieve immortality by merging their consciousness with biological neural networks."
+				""
+				"The 'Flesh' consumed the cities, turning the population into the horrors you see in the fog."
+			]
+			dependencies: ["0A1"]
+			id: "L_LOG_1"
+			tasks: [{ id: "T_L1", type: "checkmark", title: "Read Archive" }]
+			rewards: [{ id: "R_L2", type: "item", item: "numismatics:silver_coin", count: 1 }]
+		}
+		{
+			title: "Archive Log #012: The Fallout"
+			x: 1.5d
+			y: 1.0d
+			subtitle: "Restoring Data..."
+			description: [
+				"When the machines began to bleed, the thermal regulators failed. The world drifted into a permanent state of atmospheric instability."
+				""
+				"Radiation levels spiked as nuclear reactors fused with biological masses."
+			]
+			dependencies: ["L_LOG_1"]
+			id: "L_LOG_2"
+			tasks: [{ id: "T_L2", type: "checkmark", title: "Read Archive" }]
+			rewards: [{ id: "R_L3", type: "item", item: "numismatics:silver_coin", count: 1 }]
+		}
+		{
+			title: "Archive Log #044: The Director"
+			x: 1.5d
+			y: 2.0d
+			subtitle: "Restoring Data..."
+			description: [
+				"There were rumors of a final bastion—a 'Director' who held the keys to the Singularity. Those who searched for him never returned, or returned... different."
+			]
+			dependencies: ["L_LOG_2"]
+			id: "L_LOG_3"
+			tasks: [{ id: "T_L3", type: "checkmark", title: "Read Archive" }]
+			rewards: [{ id: "R_L4", type: "item", item: "numismatics:silver_coin", count: 1 }]
+		}
+
+		// --- THE MISSION ---
+		{
+			title: "The Path of the Biomechanist"
+			icon: "create:wrench"
+			x: 3.5d
+			y: 0.0d
+			shape: "hexagon"
+			size: 1.25d
+			description: [
+				"Your skin is a hull. Your heart is an engine."
+				""
+				"To survive the mutant hordes and the radioactive winds, you must build better than the Iron Lords did. You must master the advanced synergy of life and machine."
+			]
+			dependencies: ["L_LOG_1"]
+			id: "L_PATH"
+			tasks: [{ id: "T_LPATH", type: "checkmark", title: "Accept the Mission" }]
+			rewards: [{ id: "R_L5", type: "item", item: "numismatics:silver_coin", count: 5 }]
+		}
+		{
+			title: "The Singularity Document"
+			x: 5.5d
+			y: 0.0d
+			subtitle: "Endgame Objective"
+			description: [
+				"The final goal is the **Biomechanical Singularity**. A state where your factory and your self are a single, divine entity."
+				""
+				"You will need 256k storage cells, nuclear power, and primordial flesh to even begin the synthesis."
+			]
+			dependencies: ["L_PATH"]
+			id: "L_GOAL"
+			tasks: [{ id: "T_LGOAL", type: "checkmark", title: "Set Objective" }]
+			rewards: [{ id: "R_L6", type: "item", item: "numismatics:silver_coin", count: 10 }]
+		}
+
+		// --- ENEMY INTEL ---
+		{
+			title: "Intel: The Mutant Horde"
+			x: 3.5d
+			y: 2.0d
+			shape: "square"
+			description: ["The mutants are attracted to the hum of machinery. The more SU you consume, the more likely they are to raid your Perimeter."]
+			dependencies: ["L_PATH"]
+			id: "L_INTEL_1"
+			tasks: [{ id: "T_LIN1", type: "checkmark", title: "Understand the Risk" }]
+			rewards: [{ id: "R_L7", type: "item", item: "numismatics:silver_coin", count: 2 }]
+		}
+		{
+			title: "Intel: The Radioactive Haze"
+			x: 5.5d
+			y: 2.0d
+			shape: "square"
+			description: ["Rain in this world is toxic. A Geiger counter clicking is the only music you should trust."]
+			dependencies: ["L_INTEL_1"]
+			id: "L_INTEL_2"
+			tasks: [{ id: "T_LIN2", type: "checkmark", title: "Understand the Toxic Rain" }]
+			rewards: [{ id: "R_L8", type: "item", item: "numismatics:silver_coin", count: 2 }]
+		}
+	]
+}

@@ -1,0 +1,305 @@
+{
+	id: "5B7A1C2D3E4F5G6H"
+	title: "Chapter 1: Survival Protocol"
+	icon: "minecraft:oak_sapling"
+	filename: "the_beginning"
+	order_index: 2
+	quests: [
+		{
+			title: "System Boot"
+			icon: "minecraft:grass_block"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			size: 1.5d
+			description: [
+				"{image:flesh_and_steel:textures/banners/industrial.png width:200 height:50 align:center}"
+				"&b[STORY LOG]: Initialization Complete.&r"
+				"Welcome, Unit-01. You are a biological neural network inside a salvaged armored frame. Your primary directive is to rebuild the factory."
+			]
+			id: "1A"
+			tasks: [{ id: "1B", type: "checkmark", title: "Wake Up" }]
+			rewards: [{ id: "R1", type: "item", item: "numismatics:silver_coin", count: 5 }]
+		}
+		{
+			title: "The Old World: Wood"
+			x: 1.5d
+			y: 0.0d
+			description: ["Harvest timber for your first primitive tools."]
+			dependencies: ["1A"]
+			id: "WOOD"
+			tasks: [{ id: "T_WOOD", type: "item", item: "minecraft:oak_log", count: 16L }]
+			rewards: [{ id: "RW1", type: "item", item: "numismatics:silver_coin", count: 2 }]
+		}
+		{
+			title: "The Old World: Stone"
+			x: 1.5d
+			y: 1.0d
+			description: ["Gather cobble from the ruins."]
+			dependencies: ["WOOD"]
+			id: "STONE"
+			tasks: [{ id: "T_STONE", type: "item", item: "minecraft:cobblestone", count: 16L }]
+			rewards: [{ id: "RS1", type: "item", item: "numismatics:silver_coin", count: 2 }]
+		}
+		{
+			title: "Flint Scraping"
+			x: 1.5d
+			y: 2.0d
+			description: ["Sharp stones for early cutting."]
+			dependencies: ["STONE"]
+			id: "FLINT"
+			tasks: [{ id: "T_FLINT", type: "item", item: "minecraft:flint" }]
+			rewards: [{ id: "RF1", type: "item", item: "numismatics:silver_coin", count: 1 }]
+		}
+		{
+			title: "The Workbench"
+			x: 3.5d
+			y: 0.0d
+			description: ["The first stage of engineering."]
+			dependencies: ["WOOD"]
+			id: "WORKBENCH"
+			tasks: [{ id: "T_WBNCH", type: "item", item: "minecraft:crafting_table" }]
+			rewards: [{ id: "RWB1", type: "item", item: "numismatics:silver_coin", count: 3 }]
+		}
+		{
+			title: "Firelight"
+			x: 3.5d
+			y: 1.0d
+			description: ["Darkness is cold. Torches are your first thermal regulators."]
+			dependencies: ["WORKBENCH"]
+			id: "TORCH"
+			tasks: [{ id: "T_TORCH", type: "item", item: "minecraft:torch", count: 16L }]
+			rewards: [{ id: "RT1", type: "item", item: "numismatics:silver_coin", count: 2 }]
+		}
+		{
+			title: "The Furnace"
+			x: 3.5d
+			y: 2.0d
+			description: ["Smelting the first metal scraps."]
+			dependencies: ["TORCH"]
+			id: "FURNACE"
+			tasks: [{ id: "T_FURN", type: "item", item: "minecraft:furnace" }]
+			rewards: [{ id: "RFU1", type: "item", item: "numismatics:silver_coin", count: 5 }]
+		}
+		{
+			title: "Flesh Maintenance"
+			icon: "biomancy:nutrient_bar"
+			x: 5.5d
+			y: 0.0d
+			shape: "diamond"
+			description: ["Eating to survive."]
+			dependencies: ["WORKBENCH"]
+			id: "FOOD_HUB"
+			tasks: [{ id: "FH1", type: "checkmark" }]
+			rewards: [{ id: "RFH1", type: "item", item: "biomancy:nutrient_bar", count: 2 }]
+		}
+		{
+			title: "Wild Berries"
+			x: 5.0d
+			y: -1.5d
+			description: ["Quick energy, but low calories."]
+			dependencies: ["FOOD_HUB"]
+			id: "BERRIES"
+			tasks: [{ id: "T_BERRY", type: "item", item: "minecraft:sweet_berries", count: 16L }]
+			rewards: [{ id: "RB1", type: "item", item: "numismatics:silver_coin", count: 1 }]
+		}
+		{
+			title: "Nutrient Bars"
+			x: 6.0d
+			y: -1.5d
+			description: ["Compressed biological fuel."]
+			dependencies: ["FOOD_HUB"]
+			id: "NUT_BAR"
+			tasks: [{ id: "T_NBAR", type: "item", item: "biomancy:nutrient_bar" }]
+			rewards: [{ id: "RNB1", type: "item", item: "numismatics:silver_coin", count: 2 }]
+		}
+		{
+			title: "Fresh Water"
+			x: 5.5d
+			y: -2.5d
+			description: ["Use a bottle on a clear stream. Avoid the irradiated puddles."]
+			dependencies: ["FOOD_HUB"]
+			id: "WATER"
+			tasks: [{ id: "T_WATER", type: "item", item: "minecraft:water_bucket" }]
+			rewards: [{ id: "RW2", type: "item", item: "numismatics:silver_coin", count: 3 }]
+		}
+		{
+			title: "Mobile Logistics"
+			icon: "travelersbackpack:standard"
+			x: 5.5d
+			y: 2.0d
+			shape: "hexagon"
+			description: ["Your home on your back."]
+			dependencies: ["FURNACE"]
+			id: "BACKPACK_HUB"
+			tasks: [{ id: "BH1", type: "checkmark" }]
+			rewards: [{ id: "RBH1", type: "item", item: "numismatics:silver_coin", count: 5 }]
+		}
+		{
+			title: "Standard Backpack"
+			x: 4.5d
+			y: 3.5d
+			description: ["Portable storage with a crafting table."]
+			dependencies: ["BACKPACK_HUB"]
+			id: "BACKPACK_STD"
+			tasks: [{ id: "T_BSTD", type: "item", item: "travelersbackpack:standard" }]
+			rewards: [{ id: "RBS1", type: "item", item: "numismatics:silver_coin", count: 10 }]
+		}
+		{
+			title: "Tanks & Hoses"
+			x: 6.5d
+			y: 3.5d
+			description: ["Configuring your backpack for fluid transport."]
+			dependencies: ["BACKPACK_STD"]
+			id: "B_TANKS"
+			tasks: [{ id: "T_BTNK", type: "checkmark", title: "Add Tanks" }]
+			rewards: [{ id: "RBT1", type: "item", item: "numismatics:silver_coin", count: 5 }]
+		}
+		{
+			title: "Backpack Upgrades"
+			x: 5.5d
+			y: 4.5d
+			description: ["Adding slots and tactical features."]
+			dependencies: ["B_TANKS"]
+			id: "B_UPGRADE"
+			tasks: [{ id: "T_BUP", type: "checkmark", title: "Upgrade the Rig" }]
+			rewards: [{ id: "RBU1", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+		{
+			title: "The Sleeping Bag"
+			x: 7.5d
+			y: 0.0d
+			description: ["Skip the night without relocating your base."]
+			dependencies: ["WORKBENCH"]
+			id: "SLEEPING_BAG"
+			tasks: [{ id: "T_SBAG", type: "item", item: "comforts:sleeping_bag_white" }]
+			rewards: [{ id: "RSB1", type: "item", item: "numismatics:silver_coin", count: 5 }]
+		}
+		{
+			title: "The Hammock"
+			x: 7.5d
+			y: 1.0d
+			description: ["For skipping the day when you need to hunt nocturnal bioluminescent creatures."]
+			dependencies: ["SLEEPING_BAG"]
+			id: "HAMMOCK"
+			tasks: [{ id: "T_HAMM", type: "item", item: "comforts:hammock_white" }]
+			rewards: [{ id: "RH2", type: "item", item: "numismatics:silver_coin", count: 5 }]
+		}
+		{
+			title: "The Bounty Board"
+			icon: "bountiful:bountyboard"
+			x: 9.5d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Found in villages. The only honest way to earn Silver Coins."]
+			dependencies: ["WORKBENCH"]
+			id: "BOUNTY_HUB"
+			tasks: [{ id: "TH1", type: "observation", to_observe: "bountiful:bountyboard", timer: 0L }]
+			rewards: [{ id: "RBH2", type: "item", item: "numismatics:silver_coin", count: 5 }]
+		}
+		{
+			title: "Earning Silver"
+			x: 11.0d
+			y: -1.0d
+			description: ["Complete 5 bounties."]
+			dependencies: ["BOUNTY_HUB"]
+			id: "SILVER_QUEST"
+			tasks: [{ id: "T_SILV", type: "checkmark", title: "Mercenary Work" }]
+			rewards: [{ id: "R_SILV", type: "item", item: "numismatics:silver_coin", count: 10 }]
+		}
+		{
+			title: "The Black Market License"
+			x: 11.0d
+			y: 1.0d
+			description: ["Unlocks the Black Market chapter. You must prove you can afford the gear."]
+			dependencies: ["SILVER_QUEST"]
+			id: "MARKET_LICENSE"
+			tasks: [{ id: "T_LIC", type: "item", item: "numismatics:silver_coin", count: 32L, consume_items: false }]
+			rewards: [{ id: "RML1", type: "item", item: "numismatics:gold_coin", count: 2 }]
+		}
+		{
+			title: "The First Sword"
+			x: 13.0d
+			y: 0.0d
+			description: ["Basic protection."]
+			dependencies: ["FURNACE"]
+			id: "SWORD"
+			tasks: [{ id: "T_SWORD", type: "item", item: "minecraft:iron_sword" }]
+			rewards: [{ id: "RSW1", type: "item", item: "numismatics:silver_coin", count: 5 }]
+		}
+		{
+			title: "Bandages"
+			x: 13.0d
+			y: 1.0d
+			description: ["Stops bleeding instantly."]
+			dependencies: ["SWORD"]
+			id: "BANDAGE"
+			tasks: [{ id: "T_BAND", type: "item", item: "biomancy:regeneration_serum" }]
+			rewards: [{ id: "RBA1", type: "item", item: "numismatics:silver_coin", count: 5 }]
+		}
+		{
+			title: "Shielding"
+			x: 13.0d
+			y: 2.0d
+			description: ["Blocks physical attacks."]
+			dependencies: ["BANDAGE"]
+			id: "SHIELD"
+			tasks: [{ id: "T_SHLD", type: "item", item: "minecraft:shield" }]
+			rewards: [{ id: "RSH1", type: "item", item: "numismatics:silver_coin", count: 8 }]
+		}
+		{
+			title: "The Map"
+			x: 15.0d
+			y: 0.0d
+			description: ["Document your surroundings."]
+			dependencies: ["WORKBENCH"]
+			id: "MAP"
+			tasks: [{ id: "T_MAP", type: "item", item: "minecraft:map" }]
+			rewards: [{ id: "RMA1", type: "item", item: "numismatics:silver_coin", count: 5 }]
+		}
+		{
+			title: "Waystones"
+			x: 15.0d
+			y: 1.5d
+			description: ["Ancient beacons that allow instant travel."]
+			dependencies: ["MAP"]
+			id: "WAYSTONE"
+			tasks: [{ id: "T_WAY", type: "item", item: "waystones:waystone" }]
+			rewards: [{ id: "RWY1", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+		{
+			title: "Iron Smelting"
+			x: 17.0d
+			y: 0.0d
+			shape: "square"
+			description: ["The end of the primitive era."]
+			dependencies: ["FURNACE"]
+			id: "IRON_ERA"
+			tasks: [{ id: "T_IRON", type: "item", item: "minecraft:iron_ingot", count: 32L }]
+			rewards: [{ id: "RIE1", type: "item", item: "numismatics:silver_coin", count: 16 }]
+		}
+		{
+			title: "Coal Harvesting"
+			x: 17.0d
+			y: 1.0d
+			description: ["Fuel for your future engines."]
+			dependencies: ["IRON_ERA"]
+			id: "COAL"
+			tasks: [{ id: "T_COAL", type: "item", item: "minecraft:coal", count: 64L }]
+			rewards: [{ id: "RC1", type: "item", item: "numismatics:silver_coin", count: 8 }]
+		}
+		{
+			title: "The Steel Will"
+			x: 19.0d
+			y: 0.5d
+			description: ["You are ready for Chapter 2: Kinetic Engineering."]
+			dependencies: ["IRON_ERA", "COAL"]
+			id: "STEEL_WILL"
+			tasks: [{ id: "T_WILL", type: "checkmark", title: "Move to Chapter 2" }]
+			rewards: [
+				{ id: "RSW2", type: "item", item: "numismatics:gold_coin", count: 2 }
+				{ id: "RSW3", type: "item", item: "numismatics:silver_coin", count: 16 }
+			]
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+	id: "5555555555555555"
+	title: "Chapter 5: Digital Integration"
+	icon: "ae2:certus_quartz_crystal"
+	filename: "digital_horizon"
+	order_index: 6
+	quests: [
+		{
+			title: "The Digital Brain"
+			icon: "ae2:certus_quartz_crystal"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			size: 1.5d
+			description: [
+				"{image:flesh_and_steel:textures/banners/industrial.png width:200 height:50 align:center}"
+				"As your factory grows, manual sorting becomes impossible. AE2 allows you to convert physical matter into digital streams."
+			]
+			id: "5A"
+			tasks: [{ id: "5B", type: "item", item: "ae2:certus_quartz_crystal", count: 16L }]
+			rewards: [{ id: "R5A", type: "item", item: "numismatics:gold_coin", count: 2 }]
+		}
+		{
+			title: "The ME Controller"
+			x: 0.0d
+			y: 8.0d
+			shape: "square"
+			description: ["The CPU of your network. Each side provides 32 channels."]
+			dependencies: ["C_DENSE"]
+			id: "CONTROLLER"
+			tasks: [{ id: "T_CONT", type: "item", item: "ae2:controller" }]
+			rewards: [{ id: "RC1", type: "item", item: "numismatics:gold_coin", count: 10 }]
+		}
+		{
+			title: "The Digital Singularity"
+			icon: "ae2:singularity"
+			x: 14.0d
+			y: 4.0d
+			shape: "square"
+			description: ["Compressing reality."]
+			dependencies: ["QUANTUM", "C_64K"]
+			id: "SINGULARITY"
+			tasks: [{ id: "S1", type: "item", item: "ae2:singularity" }]
+			rewards: [
+				{ id: "RS1", type: "item", item: "numismatics:gold_coin", count: 64 }
+				{ id: "RS2", type: "choice", table_id: "729A3B1C5E7F9D0A" }
+			]
+		}
+	]
+}

@@ -1,0 +1,98 @@
+{
+	id: "EEEE111122223333"
+	title: "The Survivor's Manual"
+	icon: "minecraft:book"
+	filename: "tips_and_tricks"
+	order_index: 1
+	quests: [
+		{
+			title: "The Biomechanist's Creed"
+			icon: "minecraft:writable_book"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			size: 1.5d
+			description: [
+				"{image:flesh_and_steel:textures/banners/industrial.png width:200 height:50 align:center}"
+				"Knowledge is the only thing the mutants can't take from you. Master these protocols to ensure your factory stays online."
+			]
+			id: "T1"
+			tasks: [{ id: "T2", type: "checkmark", title: "Study the Manual" }]
+			rewards: [{ id: "RT1", type: "item", item: "numismatics:silver_coin", count: 4 }]
+		}
+
+		// --- LOGISTICS TIPS ---
+		{
+			title: "Mapping the Perimeter"
+			icon: "xaeroworldmap:map_icon"
+			x: 2.0d
+			y: -1.0d
+			description: [
+				"Press 'M' for the World Map. Set Waypoints with 'B' to mark clean water and ore deposits."
+				"&ePro Tip: Check the 'Topography' mode to find high-altitude islands where radiation is thinner.&r"
+			]
+			dependencies: ["T1"]
+			id: "TIP_MAP"
+			tasks: [{ id: "TM1", type: "checkmark", title: "Acknowledge GPS" }]
+			rewards: [{ id: "RTM1", type: "item", item: "numismatics:silver_coin", count: 2 }]
+		}
+		{
+			title: "Chunk Security"
+			icon: "open-parties-and-claims:claim_tool"
+			x: 2.0d
+			y: 0.0d
+			description: [
+				"Mutant Creepers can bypass standard walls. Use the 'Claims' map (Default: F7 or Map Screen) to claim your Perimeter."
+				"Claiming prevents block destruction and ensures your Bio-Forges aren't raided."
+			]
+			dependencies: ["T1"]
+			id: "TIP_CLAIM"
+			tasks: [{ id: "TC1", type: "checkmark", title: "Secure the Zone" }]
+			rewards: [{ id: "RTC1", type: "item", item: "numismatics:silver_coin", count: 2 }]
+		}
+
+		// --- THERMAL TIPS ---
+		{
+			title: "Thermal Management: Vents"
+			icon: "create:propeller"
+			x: 4.0d
+			y: -1.0d
+			description: [
+				"Machine clusters generate heat. Use Create Fans blowing through iron bars to create 'Air Cooling' zones for your Base."
+				"Without ventilation, a working Nuclear Reactor will cook you inside your own house."
+			]
+			dependencies: ["T1"]
+			id: "TIP_HEAT"
+			tasks: [{ id: "TH1", type: "checkmark", title: "Manage the Temperature" }]
+			rewards: [{ id: "RTH1", type: "item", item: "numismatics:silver_coin", count: 8 }]
+		}
+		{
+			title: "Hydration Ethics"
+			icon: "minecraft:water_bucket"
+			x: 4.0d
+			y: 0.0d
+			description: ["Rain increases your radiation level. Only drink filtered water. Use the Bio-Scanner to detect impurities in local lakes."]
+			dependencies: ["T1"]
+			id: "TIP_WATER"
+			tasks: [{ id: "TW1", type: "checkmark", title: "Sanitize" }]
+			rewards: [{ id: "RTW1", type: "item", item: "numismatics:silver_coin", count: 2 }]
+		}
+
+		// --- COMBAT TIPS ---
+		{
+			title: "The One-Two Punch"
+			icon: "simplyswords:iron_katana"
+			x: 6.0d
+			y: -0.5d
+			shape: "hexagon"
+			description: [
+				"Don't rely solely on guns. Bio-Mutants move fast and often have projectile reflection."
+				"Switching to a Katana for close-quarters critical strikes is often more effective than reloading under pressure."
+			]
+			dependencies: ["TIP_HEAT"]
+			id: "TIP_COMBAT"
+			tasks: [{ id: "TCB1", type: "checkmark", title: "Master the Switch" }]
+			rewards: [{ id: "RTCB1", type: "item", item: "numismatics:silver_coin", count: 16 }]
+		}
+	]
+}

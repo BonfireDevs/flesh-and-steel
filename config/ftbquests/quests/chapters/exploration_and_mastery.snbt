@@ -1,0 +1,124 @@
+{
+	id: "6666666666666666"
+	title: "Chapter 6: Exploration & Mastery"
+	icon: "waystones:waystone"
+	filename: "exploration_and_mastery"
+	order_index: 7
+	quests: [
+		{
+			title: "The Outland Directive"
+			icon: "minecraft:compass"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			size: 1.5d
+			description: [
+				"{image:flesh_and_steel:textures/banners/industrial.png width:200 height:50 align:center}"
+				"The Perimeter is small. The world is vast. To find the rarest biological samples and industrial scraps, you must travel beyond the safe zones."
+			]
+			id: "EXP_START"
+			tasks: [{ id: "E1", type: "checkmark", title: "Map the Outlands" }]
+			rewards: [{ id: "R_EXP1", type: "item", item: "numismatics:silver_coin", count: 8 }]
+		}
+
+		// --- TIER 1: WAYSTONES ---
+		{
+			title: "Connected Infrastructure"
+			x: 1.5d
+			y: 0.0d
+			description: ["Waystones are the only reliable way to move materials between distant factory outposts."]
+			dependencies: ["EXP_START"]
+			id: "WAY_HUB"
+			tasks: [{ id: "T_WAYH", type: "item", item: "waystones:waystone" }]
+			rewards: [{ id: "R_W1", type: "item", item: "numismatics:silver_coin", count: 16 }]
+		}
+		{
+			title: "The Warp Stone"
+			x: 1.5d
+			y: 1.0d
+			description: ["A portable device that links to any waystone. High XP cost, but essential for emergency extraction."]
+			dependencies: ["WAY_HUB"]
+			id: "WARP_STONE"
+			tasks: [{ id: "T_WARPS", type: "item", item: "waystones:warp_stone" }]
+			rewards: [{ id: "R_W2", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+
+		// --- TIER 2: ALEX'S CAVES ---
+		{
+			title: "The Magnetic Caves"
+			x: 3.5d
+			y: -1.0d
+			description: ["Deep underground, iron-rich biomes where metal floats and gravity is a suggestion."]
+			dependencies: ["EXP_START"]
+			id: "MAG_CAVE"
+			tasks: [{ id: "T_MAGC", type: "checkmark", title: "Discover a Magnetic Cave" }]
+			rewards: [{ id: "R_M1", type: "item", item: "numismatics:gold_coin", count: 2 }]
+		}
+		{
+			title: "The Toxic Caves"
+			x: 3.5d
+			y: 0.0d
+			description: ["Radioactive hellscapes. Bring an Anti-Rad suit or you will not survive the first minute."]
+			dependencies: ["EXP_START"]
+			id: "TOX_CAVE"
+			tasks: [{ id: "T_TOXC", type: "checkmark", title: "Discover a Toxic Cave" }]
+			rewards: [{ id: "R_T1", type: "item", item: "numismatics:gold_coin", count: 5 }]
+		}
+		{
+			title: "Cave Tablets"
+			x: 3.5d
+			y: 1.0d
+			description: ["Decipher these to find the locations of the high-tier underground biomes."]
+			dependencies: ["TOX_CAVE"]
+			id: "TABLET"
+			tasks: [{ id: "T_TAB", type: "item", item: "alexscaves:cave_tablet" }]
+			rewards: [{ id: "R_T2", type: "item", item: "numismatics:silver_coin", count: 32 }]
+		}
+
+		// --- TIER 3: DUNGEON MASTER ---
+		{
+			title: "When Dungeons Arise"
+			x: 5.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Massive airships and fortresses dot the sky. They contain the blueprints for the Singularity."]
+			dependencies: ["TABLET"]
+			id: "DUNGEON_HUB"
+			tasks: [{ id: "DH1", type: "checkmark" }]
+			rewards: [{ id: "R_D1", type: "item", item: "numismatics:gold_coin", count: 2 }]
+		}
+		{
+			title: "Heavenly Conqueror"
+			x: 7.0d
+			y: -0.5d
+			description: ["Clear a 'Dungeons Arise' sky structure."]
+			dependencies: ["DUNGEON_HUB"]
+			id: "SKY_DUNGEON"
+			tasks: [{ id: "T_SDUN", type: "checkmark", title: "Clear Sky Palace" }]
+			rewards: [{ id: "R_D2", type: "item", item: "numismatics:gold_coin", count: 10 }]
+		}
+
+		// --- TIER 4: ARTIFACTS ---
+		{
+			title: "The Curio Network"
+			x: 9.0d
+			y: 0.0d
+			shape: "diamond"
+			description: ["Equipping rare artifacts in your neural slots (Key: G)."]
+			dependencies: ["DUNGEON_HUB"]
+			id: "CURIO_HUB"
+			tasks: [{ id: "CH1", type: "checkmark" }]
+			rewards: [{ id: "R_C1", type: "item", item: "numismatics:silver_coin", count: 16 }]
+		}
+		{
+			title: "Legendary Socks"
+			x: 10.5d
+			y: 0.0d
+			description: ["Run faster than a piston. Find them in chests beneath the ruins."]
+			dependencies: ["CURIO_HUB"]
+			id: "SOCKS"
+			tasks: [{ id: "T_SOCK", type: "item", item: "artifacts:super_socks" }]
+			rewards: [{ id: "R_C2", type: "item", item: "numismatics:gold_coin", count: 5 }]
+		}
+	]
+}

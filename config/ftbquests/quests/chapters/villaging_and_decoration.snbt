@@ -1,0 +1,117 @@
+{
+	id: "DDDD111122223333"
+	title: "Chapter 13: Villaging & Decoration"
+	icon: "easy_villagers:trader"
+	filename: "villaging_and_decoration"
+	order_index: 14
+	quests: [
+		{
+			title: "Human Logistics"
+			icon: "easy_villagers:trader"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			size: 1.5d
+			description: [
+				"{image:flesh_and_steel:textures/banners/industrial.png width:200 height:50 align:center}"
+				"Villagers are just another resource in the Perimeter. Easy Villagers allows you to extract them from their primitive villages and place them into industrial modules."
+			]
+			id: "V_START"
+			tasks: [{
+				id: "V_TASK_1"
+				type: "checkmark"
+				title: "Authorize Transfer"
+			}]
+			rewards: [{ id: "R_V1", type: "item", item: "numismatics:silver_coin", count: 8 }]
+		}
+
+		// --- TIER 1: EASY VILLAGERS ---
+		{
+			title: "The Trader Module"
+			x: 2.0d
+			y: -1.0d
+			description: ["A 1x1 block that holds a villager and their job site. No more escapes."]
+			dependencies: ["V_START"]
+			id: "TRADER"
+			tasks: [{ id: "T_TRADER", type: "item", item: "easy_villagers:trader" }]
+			rewards: [{ id: "RV2", type: "item", item: "numismatics:silver_coin", count: 4 }]
+		}
+		{
+			title: "The Iron Farm"
+			x: 2.0d
+			y: 0.0d
+			description: ["Automated iron golem processing in a single block."]
+			dependencies: ["V_START"]
+			id: "IRON_FARM"
+			tasks: [{ id: "T_IFARM", type: "item", item: "easy_villagers:iron_farm" }]
+			rewards: [{ id: "RV3", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+		{
+			title: "The Breeder"
+			x: 2.0d
+			y: 1.0d
+			description: ["Efficient population growth management."]
+			dependencies: ["V_START"]
+			id: "BREEDER"
+			tasks: [{ id: "T_BREED", type: "item", item: "easy_villagers:breeder" }]
+			rewards: [{ id: "RV4", type: "item", item: "numismatics:silver_coin", count: 8 }]
+		}
+
+		// --- TIER 2: ADVANCED VILLAGING ---
+		{
+			title: "The Incubator"
+			x: 4.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Forces baby villagers to grow up instantly using bio-hormones."]
+			dependencies: ["BREEDER"]
+			id: "INCUBATOR"
+			tasks: [{ id: "T_INC", type: "item", item: "easy_villagers:incubator" }]
+			rewards: [{ id: "RV5", type: "item", item: "numismatics:silver_coin", count: 8 }]
+		}
+		{
+			title: "The Auto-Trader"
+			x: 5.5d
+			y: 0.0d
+			description: ["Connect your AE2 or Create logistics to this block to automate trades."]
+			dependencies: ["INCUBATOR"]
+			id: "AUTO_TRADER"
+			tasks: [{ id: "T_ATRAD", type: "item", item: "easy_villagers:auto_trader" }]
+			rewards: [{ id: "RV6", type: "item", item: "numismatics:gold_coin", count: 2 }]
+		}
+
+		// --- TIER 3: INDUSTRIAL DECORATION ---
+		{
+			title: "Architectural Steel"
+			icon: "create:ornate_iron_window"
+			x: 0.0d
+			y: 3.5d
+			shape: "rsquare"
+			description: ["Building a factory that looks like a factory."]
+			dependencies: ["V_START"]
+			id: "DECO_HUB"
+			tasks: [{ id: "DH1", type: "checkmark" }]
+			rewards: [{ id: "RV7", type: "item", item: "numismatics:silver_coin", count: 4 }]
+		}
+		{
+			title: "Framed Glass"
+			x: -1.5d
+			y: 5.0d
+			description: ["High-durability windows for observation decks."]
+			dependencies: ["DECO_HUB"]
+			id: "GLASS"
+			tasks: [{ id: "T_GLASS", type: "item", item: "create:framed_glass" }]
+			rewards: [{ id: "RV8", type: "item", item: "numismatics:silver_coin", count: 2 }]
+		}
+		{
+			title: "Industrial Catwalks"
+			x: 1.5d
+			y: 5.0d
+			description: ["Safety first. Or at least the illusion of it."]
+			dependencies: ["DECO_HUB"]
+			id: "CATWALK"
+			tasks: [{ id: "T_CAT", type: "item", item: "create:metal_girder" }]
+			rewards: [{ id: "RV9", type: "item", item: "numismatics:silver_coin", count: 2 }]
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	id: "729A3B1C5E7F9D0A"
+	title: "Artifact Choice Reward"
+	loot_size: 1
+	use_title: true
+	rewards: [
+		{ item: "artifacts:lucky_scarf" }
+		{ item: "artifacts:power_glove" }
+		{ item: "artifacts:night_vision_goggles" }
+		{ item: "artifacts:superstitious_hat" }
+		{ item: "artifacts:digging_claws" }
+	]
+}

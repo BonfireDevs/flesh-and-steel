@@ -1,0 +1,88 @@
+{
+	id: "CCCC111122223333"
+	title: "Chapter 12: The Living World"
+	icon: "naturalist:animal_guide"
+	filename: "the_living_world"
+	order_index: 13
+	quests: [
+		{
+			title: "Biological Lifeforms"
+			icon: "naturalist:animal_guide"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			size: 1.5d
+			description: [
+				"{image:flesh_and_steel:textures/banners/biological.png width:200 height:50 align:center}"
+				"Not everything is a mechanical nightmare. Some biological lifeforms have survived the fallout by staying far away from the iron cities."
+			]
+			id: "NATURAL_START"
+			tasks: [{
+				id: "NAT_TASK_1"
+				type: "item"
+				item: "naturalist:animal_guide"
+			}]
+			rewards: [{ id: "R_N1", type: "item", item: "numismatics:silver_coin", count: 8 }]
+		}
+
+		// --- TIER 1: FOREST LIFE ---
+		{
+			title: "Forest Dwellers"
+			icon: "minecraft:oak_leaves"
+			x: 2.0d
+			y: -1.0d
+			description: ["Bears, deer, and small mammals. Observe them carefully; they know where the clean water is."]
+			dependencies: ["NATURAL_START"]
+			id: "FOREST_HUB"
+			tasks: [{ id: "D1", type: "checkmark" }]
+			rewards: [{ id: "RN2", type: "item", item: "numismatics:silver_coin", count: 4 }]
+		}
+		{
+			title: "The Grizzly Bear"
+			x: 3.5d
+			y: -1.5d
+			description: ["Territorial and strong. Do not approach without a firearm or high-tier steel armor."]
+			dependencies: ["FOREST_HUB"]
+			id: "BEAR"
+			tasks: [{ id: "T_BEAR", type: "observation", to_observe: "naturalist:bear", timer: 0L }]
+			rewards: [{ id: "RN3", type: "item", item: "numismatics:silver_coin", count: 8 }]
+		}
+
+		// --- TIER 2: AQUATIC LIFE ---
+		{
+			title: "River Guardians"
+			icon: "minecraft:water_bucket"
+			x: 2.0d
+			y: 1.0d
+			description: ["Alligators and catfish. The rivers are more dangerous than the forests."]
+			dependencies: ["NATURAL_START"]
+			id: "AQUA_HUB"
+			tasks: [{ id: "D2", type: "checkmark" }]
+			rewards: [{ id: "RN4", type: "item", item: "numismatics:silver_coin", count: 4 }]
+		}
+		{
+			title: "Alligators"
+			x: 3.5d
+			y: 1.5d
+			description: ["Lurking in the toxic swamps. Their skin is useful for high-pressure biomechanical seals."]
+			dependencies: ["AQUA_HUB"]
+			id: "GATOR"
+			tasks: [{ id: "T_GATOR", type: "kill", entity: "naturalist:alligator", value: 1L }]
+			rewards: [{ id: "RN5", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+
+		// --- TIER 3: DESERT LIFE ---
+		{
+			title: "Arid Survivors"
+			icon: "minecraft:sand"
+			x: 5.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Elephants, rhinos, and lions. These creatures have evolved thick skin to resist the intense radiation of the dunes."]
+			dependencies: ["FOREST_HUB", "AQUA_HUB"]
+			id: "DESERT_HUB"
+			tasks: [{ id: "D3", type: "checkmark" }]
+			rewards: [{ id: "RN6", type: "item", item: "numismatics:gold_coin", count: 2 }]
+		}
+	]
+}

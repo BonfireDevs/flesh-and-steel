@@ -1,0 +1,22 @@
+{
+	index: [
+		"0000000000000000" // Lore (0)
+		"EEEE111122223333" // Tips (1)
+		"5B7A1C2D3E4F5G6H" // Beginning (2)
+		"2222222222222222" // Steel (3)
+		"3333333333333333" // Flesh (4)
+		"B101010101010101" // Biomechanical (5)
+		"5555555555555555" // Digital (6)
+		"6666666666666666" // Exploration (7)
+		"4444444444444444" // Arsenal (8)
+		"7777777777777779" // Skies (9)
+		"8888888888888888" // Dark Arts (10)
+		"9999999999999999" // Beasts (11)
+		"AAAAAAAAAAAAAAAA" // Logistics (12)
+		"CCCC111122223333" // Living (13)
+		"DDDD111122223333" // Villaging (14)
+		"7777777777777777" // Harsh (15)
+		"9A1B2C3D4E5F6G7H" // Market (16)
+		"FFFFFFFF0000FFFF" // Challenges (17)
+	]
+}

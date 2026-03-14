@@ -1,0 +1,297 @@
+{
+	id: "9A1B2C3D4E5F6G7H"
+	title: "The Black Market"
+	icon: "numismatics:gold_coin"
+	filename: "the_black_market"
+	order_index: 16
+	quests: [
+		{
+			title: "=== THE DISPENSARY ==="
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			description: [
+				"{image:flesh_and_steel:textures/banners/industrial.png width:200 height:50 align:center}"
+				"Official supplies for the sanctioned Biomechanist."
+			]
+			id: "HEADER_SUPPLIES"
+			tasks: [{
+				id: "T_HEADER_1"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Anti-Rad Inoculation"
+			icon: "radiach:antirad_pill"
+			x: -1.0d
+			y: 1.5d
+			subtitle: "2x Silver Coins"
+			can_repeat: true
+			id: "BUY_RAD_PILL"
+			tasks: [{
+				id: "T_BUY_1"
+				type: "item"
+				item: "numismatics:silver_coin"
+				count: 2L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "R_BUY_1"
+				type: "item"
+				item: "radiach:antirad_pill"
+			}]
+		}
+		{
+			title: "Emergency Battery"
+			icon: "radiach:redstone_battery"
+			x: 0.0d
+			y: 1.5d
+			subtitle: "5x Silver Coins"
+			can_repeat: true
+			id: "BUY_BATTERY"
+			tasks: [{
+				id: "T_BUY_2"
+				type: "item"
+				item: "numismatics:silver_coin"
+				count: 5L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "R_BUY_2"
+				type: "item"
+				item: "radiach:redstone_battery"
+			}]
+		}
+		{
+			title: "Concentrated Nutrients"
+			icon: "biomancy:nutrient_bar"
+			x: 1.0d
+			y: 1.5d
+			subtitle: "1x Silver Coin"
+			can_repeat: true
+			id: "BUY_FOOD"
+			tasks: [{
+				id: "T_BUY_F"
+				type: "item"
+				item: "numismatics:silver_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "R_BUY_F"
+				type: "item"
+				item: "biomancy:nutrient_bar"
+				count: 8
+			}]
+		}
+
+		{
+			title: "=== THE HARD-TO-FIND LOFT ==="
+			x: 4.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Items that simply refuse to generate in the wasteland."]
+			id: "HEADER_HARD"
+			tasks: [{ id: "T_HH1", type: "checkmark" }]
+		}
+		{
+			title: "Calculation Press"
+			icon: "ae2:calculation_processor_press"
+			x: 3.0d
+			y: 1.5d
+			subtitle: "1x Gold Coin"
+			id: "BUY_PRESS_CALC"
+			tasks: [{ id: "T_BPC", type: "item", item: "numismatics:gold_coin", consume_items: true }]
+			rewards: [{ id: "R_BPC", type: "item", item: "ae2:calculation_processor_press" }]
+		}
+		{
+			title: "Logic Press"
+			icon: "ae2:logic_processor_press"
+			x: 4.0d
+			y: 1.5d
+			subtitle: "1x Gold Coin"
+			id: "BUY_PRESS_LOGIC"
+			tasks: [{ id: "T_BPL", type: "item", item: "numismatics:gold_coin", consume_items: true }]
+			rewards: [{ id: "R_BPL", type: "item", item: "ae2:logic_processor_press" }]
+		}
+		{
+			title: "Engineering Press"
+			icon: "ae2:engineering_processor_press"
+			x: 5.0d
+			y: 1.5d
+			subtitle: "1x Gold Coin"
+			id: "BUY_PRESS_ENG"
+			tasks: [{ id: "T_BPE", type: "item", item: "numismatics:gold_coin", consume_items: true }]
+			rewards: [{ id: "R_BPE", type: "item", item: "ae2:engineering_processor_press" }]
+		}
+		{
+			title: "Netherite Scrap Bundle"
+			icon: "minecraft:netherite_scrap"
+			x: 4.0d
+			y: 2.5d
+			subtitle: "2x Gold Coins"
+			id: "BUY_NETHERITE"
+			tasks: [{ id: "T_BN", type: "item", item: "numismatics:gold_coin", count: 2L, consume_items: true }]
+			rewards: [{ id: "R_BN", type: "item", item: "minecraft:netherite_scrap", count: 4 }]
+		}
+
+		{
+			title: "=== BIOMECHANICAL CONTRACTS ==="
+			x: 8.0d
+			y: 0.0d
+			shape: "square"
+			description: [
+				"{image:flesh_and_steel:textures/banners/biological.png width:200 height:50 align:center}"
+				"High-risk assignments. Pay the fee to unlock the bounty."
+			]
+			id: "HEADER_CONTRACTS"
+			tasks: [{
+				id: "T_HEADER_2"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "Slayer's Contract"
+			icon: "mutantmonsters:mutant_creeper_statue"
+			x: 8.0d
+			y: 1.5d
+			subtitle: "1x Gold Coin"
+			description: ["Grants Chemical X to force an evolution on a creature of your choice."]
+			id: "CONTRACT_X"
+			tasks: [{
+				id: "T_CONTRACT_1"
+				type: "item"
+				item: "numismatics:gold_coin"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "R_CONTRACT_1"
+				type: "item"
+				item: "mutantmonsters:chemical_x"
+			}]
+		}
+
+		{
+			title: "=== THE CORE INDUSTRIAL LOFT ==="
+			x: 0.0d
+			y: 3.5d
+			shape: "gear"
+			description: ["Essential components to skip the grind."]
+			id: "HEADER_INDUSTRIAL"
+			tasks: [{ id: "T_HI1", type: "checkmark" }]
+		}
+		{
+			title: "Precision Mechanism"
+			icon: "create:precision_mechanism"
+			x: -1.0d
+			y: 5.0d
+			subtitle: "16x Silver Coins"
+			id: "BUY_PRECISION"
+			tasks: [{ id: "T_BPREC", type: "item", item: "numismatics:silver_coin", count: 16L, consume_items: true }]
+			rewards: [{ id: "R_BPREC", type: "item", item: "create:precision_mechanism" }]
+		}
+		{
+			title: "Blaze Burner (Active)"
+			icon: "create:blaze_burner"
+			x: 1.0d
+			y: 5.0d
+			subtitle: "32x Silver Coins"
+			id: "BUY_BLAZE"
+			tasks: [{ id: "T_BBLAZE", type: "item", item: "numismatics:silver_coin", count: 32L, consume_items: true }]
+			rewards: [{ id: "R_BBLAZE", type: "item", item: "create:empty_blaze_burner" }]
+		}
+
+		{
+			title: "=== THE RELIC TUNNEL ==="
+			x: 4.0d
+			y: 3.5d
+			shape: "heart"
+			description: ["The Director's private collection. Only the wealthiest biomechanists enter here."]
+			id: "HEADER_RELICS"
+			tasks: [{
+				id: "T_HEADER_4"
+				type: "checkmark"
+			}]
+		}
+		{
+			title: "The Director's Choice"
+			icon: "artifacts:superstitious_hat"
+			x: 4.0d
+			y: 5.0d
+			subtitle: "5x Gold Coins"
+			description: ["Choose one legendary artifact from the Old World."]
+			id: "BUY_ARTIFACT"
+			tasks: [{
+				id: "T_BUY_5"
+				type: "item"
+				item: "numismatics:gold_coin"
+				count: 5L
+				consume_items: true
+			}]
+			rewards: [{
+				id: "R_BUY_5"
+				type: "choice"
+				table_id: "729A3B1C5E7F9D0A"
+			}]
+		}
+
+		{
+			title: "=== THE BASIC STALL ==="
+			x: 8.0d
+			y: 3.5d
+			shape: "circle"
+			description: ["Standard supplies for the everyday worker."]
+			id: "HEADER_BASIC"
+			tasks: [{ id: "T_HB1", type: "checkmark" }]
+		}
+		{
+			title: "Iron Scraps"
+			icon: "minecraft:iron_ingot"
+			x: 7.5d
+			y: 5.0d
+			subtitle: "4x Silver Coins"
+			id: "BUY_IRON"
+			tasks: [{ id: "T_BIRON", type: "item", item: "numismatics:silver_coin", count: 4L, consume_items: true }]
+			rewards: [{ id: "R_BIRON", type: "item", item: "minecraft:iron_ingot", count: 4 }]
+		}
+		{
+			title: "Copper Scraps"
+			icon: "minecraft:copper_ingot"
+			x: 8.5d
+			y: 5.0d
+			subtitle: "2x Silver Coins"
+			id: "BUY_COPPER"
+			tasks: [{ id: "T_BCOPP", type: "item", item: "numismatics:silver_coin", count: 2L, consume_items: true }]
+			rewards: [{ id: "R_BCOPP", type: "item", item: "minecraft:copper_ingot", count: 8 }]
+		}
+		{
+			title: "Lumber Shipment"
+			icon: "minecraft:oak_log"
+			x: 7.0d
+			y: 4.0d
+			subtitle: "1x Silver Coin"
+			id: "BUY_WOOD"
+			tasks: [{ id: "T_BWOOD", type: "item", item: "numismatics:silver_coin", consume_items: true }]
+			rewards: [{ id: "R_BWOOD", type: "item", item: "minecraft:oak_log", count: 16 }]
+		}
+		{
+			title: "Coal Sack"
+			icon: "minecraft:coal"
+			x: 9.0d
+			y: 4.0d
+			subtitle: "1x Silver Coin"
+			id: "BUY_COAL"
+			tasks: [{ id: "T_BCOAL", type: "item", item: "numismatics:silver_coin", consume_items: true }]
+			rewards: [{ id: "R_BCOAL", type: "item", item: "minecraft:coal", count: 8 }]
+		}
+		{
+			title: "Torch Bundle"
+			icon: "minecraft:torch"
+			x: 8.0d
+			y: 6.0d
+			subtitle: "1x Silver Coin"
+			id: "BUY_TORCHES"
+			tasks: [{ id: "T_BTORCH", type: "item", item: "numismatics:silver_coin", consume_items: true }]
+			rewards: [{ id: "R_BTORCH", type: "item", item: "minecraft:torch", count: 16 }]
+		}
+	]
+}

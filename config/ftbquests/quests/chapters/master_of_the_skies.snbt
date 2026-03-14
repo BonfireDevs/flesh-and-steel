@@ -1,0 +1,166 @@
+{
+	id: "7777777777777779"
+	title: "Chapter 7: Master of the Skies"
+	icon: "immersive_aircraft:biplane"
+	filename: "master_of_the_skies"
+	order_index: 9
+	quests: [
+		{
+			title: "Above the Fog"
+			icon: "immersive_aircraft:engine"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			size: 1.5d
+			description: [
+				"{image:flesh_and_steel:textures/banners/industrial.png width:200 height:50 align:center}"
+				"The ground is a toxic nightmare. To truly master this world, you must leave the soil behind. But the sky is thin, and the radiation is higher up there."
+			]
+			id: "SKY_1"
+			tasks: [{
+				id: "SKY_2"
+				type: "item"
+				item: "immersive_aircraft:engine"
+			}]
+			rewards: [{ id: "R_SKY1", type: "item", item: "numismatics:silver_coin", count: 16 }]
+		}
+
+		// --- TIER 1: COMPONENTS ---
+		{
+			title: "The Propeller"
+			x: 1.5d
+			y: 0.0d
+			description: ["The physical force that moves the craft."]
+			dependencies: ["SKY_1"]
+			id: "PROP"
+			tasks: [{ id: "T_PROP", type: "item", item: "immersive_aircraft:propeller" }]
+			rewards: [{ id: "RS2", type: "item", item: "numismatics:silver_coin", count: 4 }]
+		}
+		{
+			title: "Hull Sections"
+			x: 1.5d
+			y: 1.0d
+			description: ["Aeronautical frames built to withstand high-altitude pressure."]
+			dependencies: ["PROP"]
+			id: "HULL"
+			tasks: [{ id: "T_HULL", type: "item", item: "immersive_aircraft:hull" }]
+			rewards: [{ id: "RS3", type: "item", item: "numismatics:silver_coin", count: 4 }]
+		}
+		{
+			title: "Boilers"
+			x: 1.5d
+			y: 2.0d
+			description: ["Essential for coal-powered flight."]
+			dependencies: ["HULL"]
+			id: "S_BOILER"
+			tasks: [{ id: "T_SBOIL", type: "item", item: "immersive_aircraft:boiler" }]
+			rewards: [{ id: "RS4", type: "item", item: "numismatics:silver_coin", count: 4 }]
+		}
+
+		// --- TIER 2: CRAFT TYPES ---
+		{
+			title: "The Airship"
+			icon: "immersive_aircraft:airship"
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Floating Fortress"
+			description: [
+				"Slow but steady. The Airship allows for easy transport across mountains and oceans. It has a built-in storage container."
+			]
+			dependencies: ["SKY_1"]
+			id: "SKY_4"
+			tasks: [{
+				id: "SKY_5"
+				type: "item"
+				item: "immersive_aircraft:airship"
+			}]
+			rewards: [{ id: "RS5", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+		{
+			title: "The Biplane"
+			icon: "immersive_aircraft:biplane"
+			x: 4.0d
+			y: 1.0d
+			subtitle: "Speed and Power"
+			description: [
+				"High speed, low storage. Perfect for scouting and engaging flying mutants."
+			]
+			dependencies: ["SKY_1"]
+			id: "BIPLANE"
+			tasks: [{ id: "T_BIP", type: "item", item: "immersive_aircraft:biplane" }]
+			rewards: [{ id: "RS6", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+		{
+			title: "The Gyrodyne"
+			icon: "immersive_aircraft:gyrodyne"
+			x: 4.0d
+			y: 2.0d
+			subtitle: "Vertical Lift"
+			description: ["Allows for precise vertical landing in tight factory zones."]
+			dependencies: ["SKY_1"]
+			id: "GYRO"
+			tasks: [{ id: "T_GYRO", type: "item", item: "immersive_aircraft:gyrodyne" }]
+			rewards: [{ id: "RS7", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+		{
+			title: "The Quadrocopter"
+			icon: "immersive_aircraft:quadrocopter"
+			x: 5.5d
+			y: 1.0d
+			subtitle: "Advanced Tech"
+			description: ["The most stable flight platform available. Requires high-tier components."]
+			dependencies: ["BIPLANE", "GYRO"]
+			id: "QUAD"
+			tasks: [{ id: "T_QUAD", type: "item", item: "immersive_aircraft:quadrocopter" }]
+			rewards: [{ id: "RS8", type: "item", item: "numismatics:gold_coin", count: 2 }]
+		}
+
+		// --- TIER 3: ATTACHMENTS ---
+		{
+			title: "Airplane Workshop"
+			x: 7.5d
+			y: 0.5d
+			shape: "hexagon"
+			description: ["Modify your craft with upgrades."]
+			dependencies: ["QUAD", "SKY_4"]
+			id: "SKY_WORKSHOP"
+			tasks: [{ id: "T_SWRK", type: "item", item: "immersive_aircraft:sturdy_pipes" }]
+			rewards: [{ id: "RS9", type: "item", item: "numismatics:silver_coin", count: 32 }]
+		}
+		{
+			title: "Boosters"
+			x: 9.0d
+			y: 0.0d
+			description: ["Short-term speed increase for escaping flying horrors."]
+			dependencies: ["SKY_WORKSHOP"]
+			id: "BOOSTER"
+			tasks: [{ id: "T_BOOST", type: "checkmark", title: "Ignite Boosters" }]
+			rewards: [{ id: "RS10", type: "item", item: "numismatics:silver_coin", count: 8 }]
+		}
+		{
+			title: "Armor Plates"
+			x: 9.0d
+			y: 1.0d
+			description: ["Reinforce your hull against acid spit."]
+			dependencies: ["SKY_WORKSHOP"]
+			id: "SKY_ARMOR"
+			tasks: [{ id: "T_SARM", type: "checkmark", title: "Plate the Hull" }]
+			rewards: [{ id: "RS11", type: "item", item: "numismatics:silver_coin", count: 8 }]
+		}
+
+		// --- TIER 4: LOGISTICS ---
+		{
+			title: "Air Freight"
+			icon: "minecraft:chest"
+			x: 11.0d
+			y: 0.5d
+			shape: "square"
+			description: ["Transporting resources through the clouds."]
+			dependencies: ["SKY_WORKSHOP"]
+			id: "SKY_CARGO"
+			tasks: [{ id: "T_CARGO", type: "checkmark", title: "Establish Air Routes" }]
+			rewards: [{ id: "RS12", type: "item", item: "numismatics:gold_coin", count: 5 }]
+		}
+	]
+}

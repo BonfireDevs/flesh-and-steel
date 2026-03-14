@@ -136,6 +136,14 @@
         "name": "CoroUtil"
       },
       {
+        "slug": "cold-sweat",
+        "name": "Cold Sweat"
+      },
+      {
+        "slug": "radiach",
+        "name": "Radiach"
+      },
+      {
         "slug": "create",
         "name": "Create"
       },

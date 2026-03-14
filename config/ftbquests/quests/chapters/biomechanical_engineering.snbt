@@ -1,0 +1,127 @@
+{
+	id: "B101010101010101"
+	title: "Chapter 13: Biomechanical Engineering"
+	icon: "biomancy:flesh_block"
+	filename: "biomechanical_engineering"
+	order_index: 5
+	quests: [
+		{
+			title: "The Ultimate Fusion"
+			icon: "biomancy:sinew"
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			size: 2.0d
+			description: [
+				"{image:flesh_and_steel:textures/banners/biological.png width:200 height:50 align:center}"
+				"This is the heart of Flesh & Steel. Here, we marry the cold logic of the machine with the warm adaptability of life."
+			]
+			id: "SYNERGY_START"
+			tasks: [{ id: "S1", type: "checkmark", title: "Accept the Merger" }]
+		}
+
+		// --- TIER 1: HYBRID RECIPES ---
+		{
+			title: "Girders of Bone"
+			x: 2.0d
+			y: 0.0d
+			description: ["Create Girders now require Bone Fragments to handle internal stressors."]
+			dependencies: ["SYNERGY_START"]
+			id: "BONE_GIRDER"
+			tasks: [{ id: "T_BGIRDER", type: "checkmark", title: "Reinforce the Steel" }]
+		}
+		{
+			title: "Sinew-Bound Belts"
+			x: 2.0d
+			y: 1.0d
+			description: ["Mechanical belts are now crafted with Sinew, making them immune to heat wear."]
+			dependencies: ["BONE_GIRDER"]
+			id: "SINEW_BELT"
+			tasks: [{ id: "T_SBELT", type: "checkmark", title: "Elasticize the Factory" }]
+		}
+
+		// --- TIER 2: ADVANCED AUTOMATION ---
+		{
+			title: "The Meat Factory: Input"
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			description: ["Using Create Saws to process Biomancy flesh blocks."]
+			dependencies: ["BONE_GIRDER"]
+			id: "MEAT_FACTORY_IN"
+			tasks: [{ id: "T_MFIN", type: "checkmark", title: "Grind the Tissue" }]
+		}
+		{
+			title: "The Meat Factory: Output"
+			x: 4.0d
+			y: 1.5d
+			description: ["Feeding the processed bits into Bio-Forges via Mechanical Arms."]
+			dependencies: ["MEAT_FACTORY_IN"]
+			id: "MEAT_FACTORY_OUT"
+			tasks: [{ id: "T_MFOUT", type: "checkmark", title: "Feed the Forge" }]
+		}
+
+		// --- TIER 3: POWERING THE FLESH ---
+		{
+			title: "Nuclear Biology"
+			x: 6.0d
+			y: 0.0d
+			shape: "diamond"
+			description: ["Bio-machines require immense energy. The Nuclear Reactor is mandatory for the 'Endless Flesh' protocol."]
+			dependencies: ["MEAT_FACTORY_IN"]
+			id: "NUKE_BIO"
+			tasks: [{ id: "T_NBIO", type: "item", item: "createnuclear:reactor_casing" }]
+		}
+		{
+			title: "Reactor Cooling: Bile"
+			x: 7.5d
+			y: -1.0d
+			description: ["Use Biomancy Bile as a high-performance coolant for the reactor core."]
+			dependencies: ["NUKE_BIO"]
+			id: "BILE_COOL"
+			tasks: [{ id: "T_BCOOL", type: "checkmark", title: "Inject the Bile" }]
+		}
+		{
+			title: "Reactor Shielding: Lead-Skin"
+			x: 7.5d
+			y: 1.0d
+			description: ["Shield the reactor area using Flesh Blocks reinforced with Lead Plates."]
+			dependencies: ["NUKE_BIO"]
+			id: "LEAD_SKIN"
+			tasks: [{ id: "T_LSKIN", type: "checkmark", title: "Graft the Shield" }]
+		}
+
+		// --- TIER 4: BIOMECHANICAL COMPONENTS ---
+		{
+			title: "Living Gearboxes"
+			x: 9.5d
+			y: 0.0d
+			description: ["Quiet, high-torque gearboxes with self-repairing internal teeth."]
+			dependencies: ["NUKE_BIO"]
+			id: "L_GEARBOX"
+			tasks: [{ id: "T_LGB", type: "checkmark", title: "Engineer Life" }]
+		}
+		{
+			title: "Organic Pumps"
+			x: 9.5d
+			y: 1.0d
+			description: ["Pumps that use actual heart-muscles to drive fluids."]
+			dependencies: ["L_GEARBOX"]
+			id: "O_PUMP"
+			tasks: [{ id: "T_OPUMP", type: "checkmark", title: "Beat the Pulse" }]
+		}
+
+		// --- TIER 5: THE SINGULARITY CORE ---
+		{
+			title: "The Biomechanical Singularity"
+			x: 12.0d
+			y: 0.0d
+			shape: "square"
+			size: 1.5d
+			description: ["The final goal. A block of infinite possibilities where data, matter, and life become one."]
+			dependencies: ["L_GEARBOX", "LEAD_SKIN"]
+			id: "SINGULARITY_CORE"
+			tasks: [{ id: "T_CORE", type: "checkmark", title: "Create the Singularity" }]
+		}
+	]
+}

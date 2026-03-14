@@ -1,0 +1,131 @@
+{
+	id: "8888888888888888"
+	title: "Chapter 8: The Dark Arts"
+	icon: "minecraft:enchanted_book"
+	filename: "the_dark_arts"
+	order_index: 10
+	quests: [
+		{
+			title: "Bio-Electric Infusion"
+			icon: "minecraft:enchanting_table"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			size: 1.5d
+			description: [
+				"{image:flesh_and_steel:textures/banners/industrial.png width:200 height:50 align:center}"
+				"Magic in this world is just another form of high-tier bio-electric energy. By resonating certain crystals, we can bypass the limits of standard engineering."
+			]
+			id: "8A1"
+			tasks: [{
+				id: "8B1"
+				type: "item"
+				item: "minecraft:enchanting_table"
+			}]
+			rewards: [{ id: "R_DA1", type: "item", item: "numismatics:silver_coin", count: 16 }]
+		}
+
+		// --- TIER 1: APOTHEOSIS BASICS ---
+		{
+			title: "The Salvaging Table"
+			x: 1.5d
+			y: 0.0d
+			description: ["Break down rarity-high gear into Essence. Never throw away an artifact."]
+			dependencies: ["8A1"]
+			id: "SALVAGE"
+			tasks: [{ id: "T_SALV", type: "item", item: "apotheosis:salvaging_table" }]
+			rewards: [{ id: "RD2", type: "item", item: "numismatics:silver_coin", count: 4 }]
+		}
+		{
+			title: "The Reforging Table"
+			x: 1.5d
+			y: 1.0d
+			description: ["The smithy of the elite. Reroll the affixes on your biomechanical armor."]
+			dependencies: ["SALVAGE"]
+			id: "REFORGE"
+			tasks: [{ id: "T_REF", type: "item", item: "apotheosis:reforging_table" }]
+			rewards: [{ id: "RD3", type: "item", item: "numismatics:silver_coin", count: 4 }]
+		}
+
+		// --- TIER 2: GEMOLOGY ---
+		{
+			title: "Crystalline Resonance"
+			icon: "apotheosis:gem"
+			x: 3.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Gems provide flat stat bonuses. Sockets are the key to true power."]
+			dependencies: ["SALVAGE"]
+			id: "GEM_HUB"
+			tasks: [{ id: "GH1", type: "checkmark" }]
+			rewards: [{ id: "RD4", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+		{
+			title: "Gem Cutting"
+			x: 5.0d
+			y: -1.0d
+			description: ["Combine 3 gems of the same tier to create a higher quality one."]
+			dependencies: ["GEM_HUB"]
+			id: "GEM_CUT"
+			tasks: [{ id: "T_GCUT", type: "checkmark", title: "Master the Facets" }]
+			rewards: [{ id: "RD5", type: "item", item: "numismatics:silver_coin", count: 8 }]
+		}
+		{
+			title: "Sigil of Socketing"
+			x: 5.0d
+			y: 1.0d
+			description: ["Adds a socket to an item. Required for the legendary gear."]
+			dependencies: ["GEM_HUB"]
+			id: "SOCKET_SIGIL"
+			tasks: [{ id: "T_SSIG", type: "item", item: "apotheosis:sigil_of_socketing" }]
+			rewards: [{ id: "RD6", type: "item", item: "numismatics:gold_coin", count: 2 }]
+		}
+
+		// --- TIER 3: ADVANCED ENCHANTING ---
+		{
+			title: "The Library of Steel"
+			icon: "minecraft:bookshelf"
+			x: 7.0d
+			y: 0.0d
+			shape: "rsquare"
+			description: ["Pushing enchantments past Level 30. You need Eterna, Quanta, and Arcana."]
+			dependencies: ["REFORGE"]
+			id: "LIB_HUB"
+			tasks: [{ id: "LH1", type: "checkmark" }]
+			rewards: [{ id: "RD7", type: "item", item: "numismatics:gold_coin", count: 2 }]
+		}
+		{
+			title: "Hellshelf"
+			x: 8.5d
+			y: -1.0d
+			description: ["Provides massive Eterna. Use it for Tier 3 enchantments."]
+			dependencies: ["LIB_HUB"]
+			id: "HELLSHELF"
+			tasks: [{ id: "T_HSH", type: "item", item: "apotheosis:hellshelf" }]
+			rewards: [{ id: "RD8", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+		{
+			title: "Seashelf"
+			x: 8.5d
+			y: 1.0d
+			description: ["Provides Quanta. Useful for chaotic enchantment results."]
+			dependencies: ["LIB_HUB"]
+			id: "SEASHELF"
+			tasks: [{ id: "T_SSH", type: "item", item: "apotheosis:seashelf" }]
+			rewards: [{ id: "RD9", type: "item", item: "numismatics:gold_coin", count: 1 }]
+		}
+
+		// --- TIER 4: GODLIKE GEAR ---
+		{
+			title: "The Apotheosis"
+			x: 10.5d
+			y: 0.0d
+			shape: "diamond"
+			description: ["Equip a full set of 'Mythic' (Purple) armor with max level enchants and gems."]
+			dependencies: ["LIB_HUB", "SOCKET_SIGIL"]
+			id: "GODMIND"
+			tasks: [{ id: "T_GOD", type: "checkmark", title: "Ascend the Flesh" }]
+			rewards: [{ id: "RD10", type: "item", item: "numismatics:gold_coin", count: 20 }]
+		}
+	]
+}

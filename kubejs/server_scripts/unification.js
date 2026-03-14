@@ -1,13 +1,17 @@
-// Unify ores, ingots, nuggets, and dusts to Modern Industrialization (or Create)
+// Basic Unification for Flesh & Steel
+// Focuses on ensuring Create and Minecraft materials are prioritized.
+
 ServerEvents.recipes(event => {
-    const materials = ['iron', 'gold', 'copper', 'zinc', 'tin', 'lead', 'silver', 'nickel', 'tungsten', 'uranium', 'antimony', 'bauxite', 'iridium'];
-    const types = ['ingot', 'nugget', 'dust', 'raw', 'raw_materials'];
+    // Unify all Zinc and Copper to Create/Minecraft versions
+    // This prevents "dirty" ore processing from giving diverse ingots.
+    
+    event.replaceOutput({}, '#forge:ingots/copper', 'minecraft:copper_ingot')
+    event.replaceOutput({}, '#forge:ingots/zinc', 'create:zinc_ingot')
+    event.replaceOutput({}, '#forge:nuggets/iron', 'create:iron_nugget')
+    event.replaceOutput({}, '#forge:nuggets/copper', 'create:copper_nugget')
+    event.replaceOutput({}, '#forge:plates/iron', 'create:iron_sheet')
+    event.replaceOutput({}, '#forge:plates/copper', 'create:copper_sheet')
+})
 
-    // Unify recipe outputs (Simplistic approach to replace outputs with our preferred mod's outputs)
-    // For a complex modpack, AlmostUnified mod is better, but this handles basic conversions.
-});
-
-// Convert items on pickup
-PlayerEvents.inventoryChanged(event => {
-    // A more advanced unification script would go here if needed
-});
+// Hide duplicate ores from JEI if needed
+// ClientEvents.reiHide() or JEIEvents.hideItems() would go in client_scripts
