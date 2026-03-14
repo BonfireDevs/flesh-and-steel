@@ -28,6 +28,10 @@
         "name": "Advanced Netherite"
       },
       {
+        "slug": "azurelib",
+        "name": "AzureLib"
+      },
+      {
         "slug": "uwCpk80h",
         "name": "Apotheosis Ascended"
       },
@@ -222,10 +226,6 @@
       {
         "slug": "uXXizFIs",
         "name": "Ferrite Core"
-      },
-      {
-        "slug": "forge-config-api-port",
-        "name": "Forge Config API Port"
       },
       {
         "slug": "from-the-fog",
@@ -546,11 +546,6 @@
         "name": "Xaero's World Map"
       }
     ],
-    "server": [
-      {
-        "slug": "azurelib",
-        "name": "AzureLib"
-      }
-    ]
+    "server": []
   }
 }
