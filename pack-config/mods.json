@@ -516,6 +516,14 @@
         "name": "Oh The Biomes We've Gone"
       },
       {
+        "slug": "corgilib",
+        "name": "CorgiLib"
+      },
+      {
+        "slug": "ohthetreesyoullgrow",
+        "name": "Oh The Trees You'll Grow"
+      },
+      {
         "slug": "macaws-bridges",
         "name": "Macaw's Bridges"
       },
@@ -532,12 +540,8 @@
         "name": "Blueprint"
       },
       {
-        "slug": "wwoo",
-        "name": "William Wythers' Overhauled Overworld"
-      },
-      {
-        "slug": "expanded-ecosphere",
-        "name": "William Wythers' Expanded Ecosphere"
+        "slug": "weather-storms-tornadoes",
+        "name": "Weather, Storms, & Tornadoes"
       },
       {
         "slug": "weather-storms-tornadoes",

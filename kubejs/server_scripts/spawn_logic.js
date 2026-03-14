@@ -12,23 +12,12 @@ EntityEvents.spawned('minecraft:zombie', event => {
     }
 
     // Temperature check: Cold-Dwelling mutants only spawn in cold/mild biomes.
-    // Direct Biome temperature methods are not accessible in KJS 1.20.1 Forge,
-    // so we use a blocklist of warm/hot biome IDs instead.
-    const HOT_BIOMES = [
-        'minecraft:desert',
-        'minecraft:badlands',
-        'minecraft:eroded_badlands',
-        'minecraft:wooded_badlands',
-        'minecraft:savanna',
-        'minecraft:savanna_plateau',
-        'minecraft:windswept_savanna',
-        'minecraft:warm_ocean',
-        'minecraft:jungle',
-        'minecraft:sparse_jungle',
-        'minecraft:bamboo_jungle',
-    ]
-    let biomeId = level.getBiome(pos).key().location().toString()
-    if (HOT_BIOMES.includes(biomeId)) {
+    // We use dynamic temperature to support 100+ modded biomes from BOP/BYG automatically.
+    let biome = level.getBiome(pos).value();
+    let temp = biome.getTemperature();
+    
+    // If it's too warm (> 0.4 represents mild/hot climates), cancel the spawn.
+    if (temp > 0.4) {
         event.cancel()
     }
 })
