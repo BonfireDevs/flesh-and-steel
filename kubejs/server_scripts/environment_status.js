@@ -2,7 +2,7 @@
 // Updated for Radioactive mod compatibility
 
 LevelEvents.tick(event => {
-    if (event.level.time % 20 != 0) return;
+    if (event.level.clientSide || event.level.time % 20 != 0) return;
 
     event.level.players.forEach(player => {
         if (!player) return;

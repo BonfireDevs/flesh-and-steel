@@ -42,15 +42,20 @@ ClientEvents.tick(event => {
 });
 
 ClientEvents.paintScreen(event => {
-    const width = event.graphics.guiScaledWidth;
-    const height = event.graphics.guiScaledHeight;
-    const textWidth = font.width(fs_env_status.text);
+    const g = event.graphics;
+    const width = g.guiScaledWidth;
+    const height = g.guiScaledHeight;
+    
+    // Ensure we don't draw if text is empty
+    if (!fs_env_status.text) return;
+    
+    const textWidth = g.font.width(fs_env_status.text);
 
-    // Position at top center
+    // Position at top center, slightly lower to avoid overlaps
     const x = (width - textWidth) / 2;
-    const y = 10; 
+    const y = 20; 
     
     // Background shadow for readability
-    gui.fill(x - 4, y - 4, x + textWidth + 4, y + 10, 0xCC111111);
-    gui.drawString(font, fs_env_status.text, x, y, 0xFFFFFF, false);
+    g.fill(x - 4, y - 4, x + textWidth + 4, y + 10, 0xCC111111);
+    g.drawString(fs_env_status.text, x, y, 0xFFFFFF, false);
 });

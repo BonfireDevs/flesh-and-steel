@@ -9,11 +9,12 @@ LevelEvents.tick(event => {
         if (!player) return;
 
         let pos = player.blockPosition();
-        let biome = event.level.getBiome(pos);
-        let biomeId = biome.id.toString();
+        let block = player.block;
+        if (!block || !block.biome) return;
         
-        // Temperature Lookup (Cold Sweat / Vanilla)
-        let temp = biome.value().getTemperature(pos);
+        let biome = block.biome;
+        let biomeId = biome.id.toString();
+        let temp = biome.getTemperature(pos);
 
         // --- RADIATION SCALING (0-10) ---
         let naturalRadScale = 0;

@@ -564,12 +564,58 @@
         "name": "Sophisticated Storage"
       },
       {
-        "slug": "immediatelyfast",
-        "name": "ImmediatelyFast"
-      },
-      {
         "slug": "canary",
         "name": "Canary"
+      },
+      {
+        "slug": "mekanism",
+        "name": "Mekanism"
+      },
+      {
+        "slug": "mekanism-generators",
+        "name": "Mekanism Generators"
+      },
+      {
+        "slug": "mekanism-tools",
+        "name": "Mekanism Tools"
+      },
+      {
+        "slug": "mekanism-additions",
+        "name": "Mekanism Additions"
+      },
+      {
+        "slug": "hbm-nuclear-tech-modernized",
+        "name": "HBM Nuclear Tech Modernized"
+      },
+      {
+        "slug": "extreme-reactors",
+        "name": "Extreme Reactors"
+      },
+      {
+        "slug": "zerocore",
+        "name": "ZeroCore"
+      },
+      {
+        "slug": "nuclear-science",
+        "name": "Nuclear Science"
+      },
+      {
+        "slug": "semi-realistic-nuclear-reactors",
+        "name": "Semi-Realistic Nuclear Reactors"
+      },
+      {
+        "slug": "electrodynamics",
+        "name": "Electrodynamics"
+      },
+      {
+        "slug": "voltaic-api",
+        "name": "Voltaic API"
+      }
+    ],
+    "client": [
+      {
+        "slug": "immediatelyfast",
+        "name": "ImmediatelyFast"
       },
       {
         "slug": "presence-footsteps-forge",
@@ -586,9 +632,7 @@
       {
         "slug": "ambient-environment",
         "name": "Ambient Environment"
-      }
-    ],
-    "client": [
+      },
       {
         "slug": "betterthirdperson",
         "name": "Better Third Person"
