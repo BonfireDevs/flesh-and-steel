@@ -202,12 +202,19 @@ def build_mrpack(config, mrpack_files, project_root, output_path):
 
     with zipfile.ZipFile(output_path, "w", zipfile.ZIP_DEFLATED) as zf:
         zf.writestr("modrinth.index.json", json.dumps(index, indent=2))
+        
+        # Include pack icon if it exists
+        icon_path = project_root / "icon.png"
+        if icon_path.exists():
+            zf.write(icon_path, arcname="icon.png")
 
         # Include overrides: config, kubejs, global_data_packs, patched mods
         overrides_map = {
             project_root / "config": "overrides/config",
             project_root / "kubejs": "overrides/kubejs",
             project_root / "global_data_packs": "overrides/global_data_packs",
+            project_root / "tacz": "overrides/tacz",
+            project_root / "shaderpacks": "overrides/shaderpacks",
         }
         for src_dir, arc_prefix in overrides_map.items():
             if not src_dir.exists():
@@ -256,6 +263,8 @@ def build_server_pack(config, project_root, output_dir):
         project_root / "config": output_dir / "config",
         project_root / "global_data_packs": output_dir / "global_data_packs",
         project_root / "audio_player": output_dir / "audio_player",
+        project_root / "tacz": output_dir / "tacz",
+        project_root / "shaderpacks": output_dir / "shaderpacks",
     }
     for src, dest in copy_map.items():
         if dest.exists():

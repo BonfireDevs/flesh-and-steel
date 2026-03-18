@@ -1,0 +1,128 @@
+{
+  "music_disc.b4soul_sandwich": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_sandwich",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_blues": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_blues",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_pumpkin": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_pumpkin",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_colonnade": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_colonnade",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_cornett": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_cornett",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_tungled": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_tungled",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_candle": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_candle",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_chocolate": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_chocolate",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_clean": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_clean",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_caramel": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_caramel",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_lantern": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_lantern",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_shop": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_shop",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_hut": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_hut",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "music_disc.b4soul_battle": {
+    "sounds": [
+      {
+        "name": "b4soul:cd_battle",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  }
+}

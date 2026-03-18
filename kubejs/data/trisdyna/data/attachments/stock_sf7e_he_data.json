@@ -1,0 +1,51 @@
+{
+
+  "weight": 1.12,
+
+  // "ads_addend": 0.05,
+
+  // "inaccuracy_addend": 0.07,
+
+  "ads": {
+
+    "addend": 0.1
+
+    // "percent": 0.2,
+
+    // "multiplier": 1.2,
+
+    // "function": "if (x > 20) then y = r + 5 else y = x * 3 end"
+  },
+   "damage": {
+   "addend": 15
+   },
+   "explosion": {
+
+   "explode": true,
+   "radius": {
+
+		"addend": 0.5
+   },
+   "damage": {
+
+		"addend": 48.0
+   },
+
+  // "knockback": false,
+
+  // "destroy_block": false,
+   "delay": {
+
+	"addend": 1.0
+	}
+   },
+
+  // "inaccuracy": {
+
+    // "addend": -0.5
+  // },
+
+   "aim_inaccuracy": {
+     "addend": -0.05
+   }
+}

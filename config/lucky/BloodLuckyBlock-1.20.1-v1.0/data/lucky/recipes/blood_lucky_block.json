@@ -1,0 +1,22 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "D": {
+            "item": "shadowlands:demonic_stone"
+        },
+		"H": {
+            "item": "shadowlands:hellish_log"
+        },
+        "L": {
+            "item": "lucky:lucky_block"
+        }
+    },
+    "pattern": [
+        "DDD",
+        "HLH",
+        "DDD"
+    ],
+    "result": {
+        "item": "lucky:blood_lucky_block"
+    }
+}

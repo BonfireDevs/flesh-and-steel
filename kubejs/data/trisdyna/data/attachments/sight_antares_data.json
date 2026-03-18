@@ -1,0 +1,15 @@
+{
+
+  "weight": 0.37,
+
+  "ads_addend": -0.04,
+
+   "aim_inaccuracy": {
+     "addend": -0.25
+   },
+
+   "head_shot":{
+   "addend": 0.02
+  // "multiplier": 1.5
+   }
+}

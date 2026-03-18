@@ -1,0 +1,19 @@
+/Drops for "Soul Module - Piglin" only
+ID=enchanted_book,NBTTag=(StoredEnchantments=[(id=soul_speed,lvl=#rand(1,3))])@chance=5
+ID=iron_boots,NBTTag=(display=(Name=#jsonStr(text="$bSoul Speed Iron Boots")),Enchantments=[(id=soul_speed,lvl=#rand(1,3))])@chance=8
+ID=splash_potion,NBTTag=(Potion="minecraft:fire_resistance")@chance=8
+ID=potion,NBTTag=(Potion="minecraft:fire_resistance")@chance=8
+ID=water_bottle@chance=10
+ID=iron_nugget,amount=#rand(10,36)@chance=10
+ID=ender_pearl,amount=#rand(2,4)@chance=10
+ID=string,amount=#rand(3,9)@chance=20
+ID=quartz,amount=#rand(5,12)@chance=20
+ID=obsidian@chance=40
+ID=crying_obsidian,amount=#rand(1,3)@chance=40
+ID=fire_charge@chance=40
+ID=leather,amount=#rand(2,4)@chance=40
+ID=soul_sand,amount=#rand(2,8)@chance=40
+ID=nether_brick,amount=#rand(2,8)@chance=40
+ID=spectral_arrow,amount=#rand(6,12)@chance=40
+ID=gravel,amount=#rand(8,16)@chance=40
+ID=blackstone,amount=#rand(8,16)@chance=40

@@ -1,0 +1,41 @@
+{
+  "weight": 0.36,
+  "ads_addend": 0.05,
+
+  "melee": {
+
+
+    "range": [6, 1, 2],
+
+    "damage": 44,
+
+    "knockback": 0.0,
+	"cooldown": -0.2,
+
+    "delay_damage_time": 0.2,
+
+    "effects": [
+
+      {
+
+        "id": "minecraft:glowing",
+
+        "time": 20,
+
+        "amplifier": 1,
+
+        "hide_particles": false
+      },
+      {
+
+        "id": "minecraft:wither",
+
+        "time": 10,
+
+        "amplifier": 6,
+
+        "hide_particles": false
+      }
+    ]
+  }
+}

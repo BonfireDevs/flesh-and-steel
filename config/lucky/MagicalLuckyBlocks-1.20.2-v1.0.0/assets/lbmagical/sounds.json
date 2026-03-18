@@ -1,0 +1,47 @@
+{
+  "fx_badchord": {
+    "sounds": [
+      {
+        "name": "lbmagical:lbmagical_fx_badchord",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "fx_beathit": {
+    "sounds": [
+      {
+        "name": "lbmagical:lbmagical_fx_beathit",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "fx_beatload": {
+    "sounds": [
+      {
+        "name": "lbmagical:lbmagical_fx_beatload",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "fx_perfect": {
+    "sounds": [
+      {
+        "name": "lbmagical:lbmagical_fx_perfect",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  },
+  "fx_professional": {
+    "sounds": [
+      {
+        "name": "lbmagical:lbmagical_fx_professional",
+        "stream": true,
+		"attenuation_distance": 4
+      }
+    ]
+  }
+}

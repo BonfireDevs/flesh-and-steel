@@ -1,0 +1,31 @@
+{
+
+  "weight": 0.28,
+
+  "ads_addend": -0.15,
+
+   "head_shot":{
+   "addend": 0.02
+  // "multiplier": 1.5
+   },
+   "damage": {
+
+
+    //"addend": 0.03
+
+     "percent": 0.02
+
+    // "multiplier": 1.3
+
+    // "function": "if (x > 20) then y = r + 5 else y = x * 3 end"
+   },
+
+  "inaccuracy_addend": -0.08,
+
+  "recoil_modifier": {
+
+    "pitch": -0.1,
+
+      "yaw": -0.1
+  }
+}

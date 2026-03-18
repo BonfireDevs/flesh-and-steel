@@ -1,0 +1,7 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "b4soul:item/soul_zombie_sword"
+   }
+
+}

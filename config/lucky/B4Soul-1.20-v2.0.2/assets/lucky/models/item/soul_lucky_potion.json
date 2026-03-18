@@ -1,0 +1,128 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "lucky:item/soul_lucky_potion"
+	},
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1803301
+      },
+      "model": "b4soul:item/soul_waterball"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803302
+      },
+      "model": "b4soul:item/soul_scythe"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803303
+      },
+      "model": "b4soul:item/soul_spawn_any"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803304
+      },
+      "model": "b4soul:item/soul_loot_world"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803305
+      },
+      "model": "b4soul:item/soul_loot_nether"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803306
+      },
+      "model": "b4soul:item/soul_loot_end"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804001
+      },
+      "model": "b4soul:item/soul_cd_sandwich"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804002
+      },
+      "model": "b4soul:item/soul_cd_blues"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804003
+      },
+      "model": "b4soul:item/soul_cd_pumpkin"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804004
+      },
+      "model": "b4soul:item/soul_cd_colonnade"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804005
+      },
+      "model": "b4soul:item/soul_cd_cornett"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804006
+      },
+      "model": "b4soul:item/soul_cd_tungled"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804007
+      },
+      "model": "b4soul:item/soul_cd_candle"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804008
+      },
+      "model": "b4soul:item/soul_cd_chocolate"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804009
+      },
+      "model": "b4soul:item/soul_cd_clean"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804010
+      },
+      "model": "b4soul:item/soul_cd_caramel"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804011
+      },
+      "model": "b4soul:item/soul_cd_lantern"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804012
+      },
+      "model": "b4soul:item/soul_cd_shop"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804013
+      },
+      "model": "b4soul:item/soul_cd_hut"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1804014
+      },
+      "model": "b4soul:item/soul_cd_battle"
+    }
+  ]
+}

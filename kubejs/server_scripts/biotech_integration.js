@@ -32,8 +32,8 @@ ServerEvents.recipes(event => {
         heatRequirement: 'heated'
     }).id('flesh_and_steel:mix_nutrient_fluid')
 
-    // 4. Point Blank Gun Crafting Integration
-    // Make Gunmetal craftable via Create Mixing (Alloy)
+    // 4. Mekanism Steel Crafting Integration
+    // Make Steel craftable via Create Mixing (Alloy)
     event.custom({
         type: 'create:mixing',
         ingredients: [
@@ -42,8 +42,8 @@ ServerEvents.recipes(event => {
             { item: 'biomancy:bone_fragments' } // Biological hardening
         ],
         results: [
-            { item: 'pointblank:gunmetal_ingot', count: 2 }
+            { item: 'mekanism:ingot_steel', count: 2 }
         ],
         heatRequirement: 'heated'
-    }).id('flesh_and_steel:mix_gunmetal')
+    }).id('flesh_and_steel:mix_steel')
 })

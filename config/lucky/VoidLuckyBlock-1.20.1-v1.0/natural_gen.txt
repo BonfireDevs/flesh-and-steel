@@ -1,0 +1,3 @@
+>voidscape:void
+/ single block
+type=block,ID=lucky:void_lucky_block@chance=85

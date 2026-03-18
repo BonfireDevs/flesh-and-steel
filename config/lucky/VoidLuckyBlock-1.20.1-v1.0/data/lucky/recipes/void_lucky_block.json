@@ -1,0 +1,22 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "B": {
+            "item": "minecraft:bedrock"
+        },
+		"V": {
+            "item": "voidscape:voidic_crystal"
+        },
+        "L": {
+            "item": "lucky:lucky_block"
+        }
+    },
+    "pattern": [
+        "BVB",
+        "BLB",
+        "BVB"
+    ],
+    "result": {
+        "item": "lucky:void_lucky_block"
+    }
+}

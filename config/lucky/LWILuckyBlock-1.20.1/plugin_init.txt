@@ -1,0 +1,2 @@
+block_id=flesh_and_steel_lucky_block
+sword_id=flesh_and_steel_lucky_sword

@@ -1,0 +1,32 @@
+{
+	id: "42C65902B221750E"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{
+			command: "/improvedmobs difficulty player @p set 250"
+			icon: "kubejs:bad_apple"
+			title: "{ftbquests.loot_table_4811631120005297422.rewards.0.title}"
+			type: "command"
+		}
+		{
+			command: "/time add 100d"
+			icon: { Count: 100, id: "minecraft:clock" }
+			title: "{ftbquests.loot_table_4811631120005297422.rewards.1.title}"
+			type: "command"
+		}
+		{
+			command: "/improvedmobs difficulty player @p set 1000"
+			icon: { Count: 2, id: "kubejs:bad_apple" }
+			title: "{ftbquests.loot_table_4811631120005297422.rewards.2.title}"
+			type: "command"
+		}
+		{
+			command: "/improvedmobs difficulty player @p set 9999"
+			icon: { Count: 3, id: "kubejs:bad_apple" }
+			title: "{ftbquests.loot_table_4811631120005297422.rewards.3.title}"
+			type: "command"
+		}
+	]
+	title: "{ftbquests.loot_table_4811631120005297422.title}"
+}

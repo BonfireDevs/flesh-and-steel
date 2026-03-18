@@ -1,0 +1,33 @@
+StartupEvents.modifyCreativeTab('kubejs:tab', (event) => {
+  event.setIcon('lucky:flesh_and_steel_lucky_block')
+  event.setDisplayName(Text.translate('kubejs.title'))
+
+  event.add([
+    'lucky:flesh_and_steel_lucky_sword',
+    'lucky:lucky_block',
+    'lucky:elewind_lucky_block',
+    'lucky:elergy_lucky_block',
+    'lucky:eleice_lucky_block',
+    'lucky:elefire_lucky_block',
+    'lucky:elemental_lucky_block',
+    'lucky:desert_lucky_block',
+    'lucky:amongus_lucky_block',
+    'lucky:summer_lucky_block',
+    'lucky:fire_lucky_block',
+    'lucky:water_lucky_block',
+    'lucky:morbius_lucky_block',
+    'lucky:pink_lucky_block',
+    'lucky:flesh_and_steel_lucky_block',
+    'lucky:tacz_lucky_block',
+    'lucky:soul_lucky_block',
+    'lucky:magical_lucky_block',
+    'lucky:shadow_lucky_block',
+    'lucky:blood_lucky_block',
+    'lucky:cloud_lucky_block',
+    'lucky:glow_lucky_block',
+    'lucky:twilight_lucky_block',
+    'lucky:cheese_lucky_block',
+    'lucky:void_lucky_block',
+    'lucky:strange_lucky_block',
+  ])
+})

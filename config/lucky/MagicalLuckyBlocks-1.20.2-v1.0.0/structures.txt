@@ -1,0 +1,4 @@
+/ 003013: Structures
+ID=lbmagical_igloobase,file=lbmagical_igloobase.nbt,centerY=5
+ID=lbmagical_library,file=lbmagical_library.nbt,centerY=1
+ID=lbmagical_swamphut,file=lbmagical_swamphut.nbt,centerY=1

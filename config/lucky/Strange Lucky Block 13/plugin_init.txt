@@ -1,0 +1,4 @@
+block_id=strange_lucky_block
+sword_id=strange_carrot_sword
+bow_id=strange_bow
+potion_id=strange_electric_bomb

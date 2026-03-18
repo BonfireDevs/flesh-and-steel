@@ -1,0 +1,14 @@
+{
+
+  "weight": 0.48,
+
+  "head_shot":{
+
+  "addend": 0.05
+
+  //"multiplier": 1.5
+  },
+
+  "ads_addend": -0.08,
+  "inaccuracy_addend": -0.24
+}

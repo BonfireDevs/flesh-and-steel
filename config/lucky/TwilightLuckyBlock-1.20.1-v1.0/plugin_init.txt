@@ -1,0 +1,1 @@
+block_id=twilight_lucky_block

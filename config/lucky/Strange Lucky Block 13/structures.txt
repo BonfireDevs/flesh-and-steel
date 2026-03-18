@@ -1,0 +1,8 @@
+ID=strange_well,file=strange_well.nbt,centerY=2
+ID=strange_tower,file=strange_tower.luckystruct,centerY=0,centerX=0,centerZ=0
+ID=strange_temple,file=strange_temple.nbt,centerY=1,centerX=3,centerZ=3
+ID=strange_temple_blocks,file=strange_temple_blocks.luckystruct,centerY=0,centerX=2,centerZ=2
+ID=strange_barrel,file=strange_barrel.nbt,centerY=1,centerX=2,centerZ=2
+ID=strange_remnant,file=strange_remnant.nbt,centerY=1,centerX=3,centerZ=3
+ID=strange_structure,file=strange_structure.luckystruct,centerY=0,centerX=2,centerZ=2
+ID=strange_spiral,file=strange_spiral.nbt,centerY=0,centerX=2,centerZ=2

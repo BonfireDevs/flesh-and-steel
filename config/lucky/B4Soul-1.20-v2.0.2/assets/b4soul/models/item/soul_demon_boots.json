@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "b4soul:item/soul_demon_boots"
+    }
+}

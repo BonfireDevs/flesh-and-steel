@@ -1,0 +1,36 @@
+{
+  "type": "crafting_shaped",
+  "key": {
+    "A": {
+      "item": "lucky:soul_lucky_block"
+    },
+    "B": {
+      "item": "lucky:cloud_lucky_block"
+    },
+    "C": {
+      "item": "lucky:glow_lucky_block"
+    },
+    "D": {
+      "item": "lucky:magical_lucky_block"
+    },
+    "E": {
+      "item": "lucky:blood_lucky_block"
+    },
+    "F": {
+      "item": "lucky:void_lucky_block"
+    },
+    "G": {
+      "item": "lucky:shadow_lucky_block"
+    },
+    "H": {
+      "item": "lucky:twilight_lucky_block"
+    },
+    "L": {
+      "item": "lucky:cheese_lucky_block"
+    }
+  },
+  "pattern": ["ABC", "DLE", "FGH"],
+  "result": {
+    "item": "lucky:strange_lucky_block"
+  }
+}

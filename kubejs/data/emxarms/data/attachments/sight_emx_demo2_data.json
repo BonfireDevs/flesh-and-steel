@@ -1,0 +1,9 @@
+{
+
+  "weight": 0.14,
+
+  "ads_addend": -0.08,
+  "aim_inaccuracy": {
+     "addend": -0.04
+   }
+}

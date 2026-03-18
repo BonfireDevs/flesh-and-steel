@@ -1,0 +1,34 @@
+{
+  "weight": 0.15,
+  //"ads_addend": -0.025,
+  "inaccuracy_addend": -0.6,
+  "ads": {
+
+    //"addend": 0.08
+
+     "addend": -0.035
+
+    // "multiplier": 1.2,
+
+    // "function": "if (x > 20) then y = r + 5 else y = x * 3 end"
+  },
+
+   "inaccuracy": {
+
+     "addend": -0.15
+   },
+
+   "aim_inaccuracy": {
+     "addend": -0.1
+   },
+
+   "head_shot":{
+   "addend": 0.02
+  // "multiplier": 1.5
+   }
+
+  // "armor_ignore":{
+  // "addend": 0.0
+  // "multiplier": 1.5
+  // },
+}

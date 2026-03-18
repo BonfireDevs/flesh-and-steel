@@ -1,0 +1,24 @@
+{
+  "minecraft": {
+    "custom_model_data": 399,
+    "custom_model_data": 400,
+    "custom_model_data": 401,
+    "custom_model_data": 402,
+    "custom_model_data": 403,
+    "custom_model_data": 404,
+    "custom_model_data": 405,
+    "custom_model_data": 406,
+    "lucky:strange": {
+      "custom_model_data": 1,
+      "custom_model_data": 2,
+      "custom_model_data": 3,
+      "custom_model_data": 4,
+      "custom_model_data": 5,
+      "custom_model_data": 6,
+      "custom_model_data": 7,
+      "custom_model_data": 8,
+      "custom_model_data": 9
+    },
+    "version": 2
+  }
+}

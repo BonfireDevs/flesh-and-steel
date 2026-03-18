@@ -1,0 +1,20 @@
+{
+  "weight": 0.3,
+  "ads": {
+
+    "addend": 0.04
+  },
+   "damage": {
+
+
+    //"addend": 0.03
+
+    // "percent": 0.2,
+
+     "multiplier": 1.03
+
+    // "function": "if (x > 20) then y = r + 5 else y = x * 3 end"
+   },
+
+  "extended_mag_level": 2
+}

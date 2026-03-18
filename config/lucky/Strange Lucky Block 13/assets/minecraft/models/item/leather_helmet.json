@@ -1,0 +1,33 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "minecraft:item/leather_helmet",
+    "layer1": "minecraft:item/leather_helmet_overlay"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 399
+      },
+      "model": "strange:item/strange_bedrock_helmet"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 400
+      },
+      "model": "strange:item/very_strange_helmet"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 401
+      },
+      "model": "strange:item/strange_comfy_helmet"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 402
+      },
+      "model": "strange:item/strange_helmet"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+
+  "weight": 0.05,
+
+  // "ads_addend": 0.05,
+
+  // "inaccuracy_addend": 0.07,
+
+  "ads": {
+
+    "addend": -0.1
+
+    // "percent": 0.2,
+
+    // "multiplier": 1.2,
+
+    // "function": "if (x > 20) then y = r + 5 else y = x * 3 end"
+  },
+
+  // "inaccuracy": {
+
+    // "addend": -0.5
+  // },
+
+   "aim_inaccuracy": {
+     "addend": -0.16
+   }
+}

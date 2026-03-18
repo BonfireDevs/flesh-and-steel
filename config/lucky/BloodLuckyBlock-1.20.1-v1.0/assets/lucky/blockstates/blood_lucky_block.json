@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "lucky:block/blood_lucky_block" }
+    }
+}

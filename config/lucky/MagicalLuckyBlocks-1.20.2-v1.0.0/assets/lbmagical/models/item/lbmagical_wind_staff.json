@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "lbmagical:item/lbmagical_wind_staff"
+   }
+}

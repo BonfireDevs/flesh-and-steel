@@ -1,0 +1,168 @@
+{
+  "ammo": "trisdyna:emx_b2",
+  "rpm": 60,
+  "bullet": {
+    "life": 0.65,
+    "bullet_amount": 8,
+    "damage": 26.5,
+    "tracer_count_interval": 0,
+    "extra_damage": {
+      "armor_ignore": 0.15,
+      "head_shot_multiplier": 1.25,
+      "damage_adjust": [
+        {"distance": 20, "damage": 26.5},
+        {"distance": 40, "damage": 22.5},
+        {"distance": "infinite", "damage": 18}
+      ]
+    },
+    "speed": 1000,
+    "gravity": 0.0,
+    "knockback": 0,
+    "friction": 0.025,
+    "ignite": false,
+    "ignite": {
+
+      "entity": false,
+
+      "block": false
+    },
+
+    "ignite_entity_time": 6,
+    "pierce": 1
+  },
+  "ammo_amount": 40,
+  "extended_mag_ammo_amount": [
+    20,
+    60,
+    80
+  ],
+  "bolt": "open_bolt",
+  "reload": {
+    "type": "fuel",
+    "feed": {
+      "empty": 1.97,
+      "tactical": 1.17
+    },
+    "cooldown": {
+      "empty": 2.45,
+      "tactical": 2.45
+    }
+  },
+  "heat":  {
+
+    "max": 101,
+
+    "per_shot": 99,
+
+
+    "cooling_multiplier": 95,
+
+    "cooling_delay": 100,
+
+    "over_heat_time": 500,
+
+
+    "min_inaccuracy": 1,
+
+    "max_inaccuracy": 1.0,
+
+    "min_rpm_mod": 1,
+
+    "max_rpm_mod": 0.8
+  },
+  "draw_time": 0.32,
+  "put_away_time": 0.43,
+  "aim_time": 0.12,
+  "sprint_time": 0.15,
+  "weight": 4,
+  "movement_speed": {
+    "base": 0.0,
+    "aim": -0.15,
+    "reload": 0
+  },
+  "crawl_recoil_multiplier": 0.75,
+  "fire_mode": [
+    "semi",
+	"auto"
+  ],
+
+  "fire_mode_adjust": {
+
+    "auto": {
+
+      "damage": 15,
+      "rpm": 0,
+      "speed": 0,
+      "knockback": 0,
+      "armor_ignore": 0.26,
+      "head_shot_multiplier": 0.0,
+      "aim_inaccuracy": 1.5,
+      "other_inaccuracy": 1.5
+    },
+
+    "semi": {
+
+      "damage": 0,
+      "rpm": 0,
+      "speed": 0,
+      "knockback": 0,
+      "armor_ignore": 0.0,
+      "head_shot_multiplier": 0.85,
+      "aim_inaccuracy": 0,
+      "other_inaccuracy": 0
+    }
+  },
+  "allow_attachment_types": [
+    "muzzle",
+    "extended_mag"
+  ],
+  "recoil": {
+    "pitch": [
+      {"time": 0, "value": [0.19, 0.19]},
+      {"time": 0.3, "value": [0.19, 0.19]},
+      {"time": 0.55, "value": [-0.15, -0.15]},
+      {"time": 0.7, "value": [0, 0]}
+    ],
+    "yaw": [
+      {"time": 0, "value": [-0.1, 0.1]},
+      {"time": 0.3, "value": [-0.15, 0.15]},
+      {"time": 0.55, "value": [0, 0]}
+    ]
+  },
+  "inaccuracy": {
+    "stand": 0.0,
+    "move": 0.0,
+    "sneak": 0.0,
+    "lie": 0.0,
+    "aim": 0.0
+  },
+  "builtin_attachments": {
+    "scope": "trisdyna:sight_neutron"
+  },
+
+  "melee": {
+
+
+    "distance": 1,
+
+
+    "cooldown": 0.6,
+
+    "default": {
+
+      "animation_type": "melee_push",
+
+      "distance": 1,
+
+      "range_angle": 40,
+
+      "cooldown": 0.2,
+
+      "damage": 1,
+
+      "knockback": 0.4,
+
+      "prep": 0.1
+    }
+  }
+}

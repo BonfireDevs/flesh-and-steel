@@ -1,0 +1,1 @@
+group(type=effect,ID=special_fire,target=hitEntity,duration=16;type=effect,ID=unluck,target=hitEntity,duration=16)

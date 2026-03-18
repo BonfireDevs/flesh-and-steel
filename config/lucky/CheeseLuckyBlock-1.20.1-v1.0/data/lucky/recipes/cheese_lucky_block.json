@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "C": {
+            "item": "rats:cheese"
+        },
+        "L": {
+            "item": "lucky:lucky_block"
+        }
+    },
+    "pattern": [
+        "CCC",
+        "CLC",
+        "CCC"
+    ],
+    "result": {
+        "item": "lucky:cheese_lucky_block"
+    }
+}

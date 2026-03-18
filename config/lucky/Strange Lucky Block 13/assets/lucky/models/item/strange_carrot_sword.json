@@ -1,0 +1,80 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "lucky:items/strange_carrot_sword"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "strange:item/strange_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 2
+      },
+      "model": "strange:item/very_strange_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 3
+      },
+      "model": "strange:item/strange_infernal_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 4
+      },
+      "model": "strange:item/strange_scythe"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 5
+      },
+      "model": "strange:item/very_strange_scythe"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 6
+      },
+      "model": "strange:item/strange_chocolate_scythe"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 7
+      },
+      "model": "strange:item/strange_cheese_scythe"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 8
+      },
+      "model": "strange:item/strange_ancient_scythe"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 9
+      },
+      "model": "strange:item/strange_prismatic_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 10
+      },
+      "model": "strange:item/strange_ancient_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 11
+      },
+      "model": "strange:item/strange_sculk_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 12
+      },
+      "model": "lucky:item/strange_carrot_sword"
+    }
+  ]
+}

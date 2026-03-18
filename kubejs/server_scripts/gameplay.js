@@ -58,30 +58,34 @@ PlayerEvents.loggedIn(event => {
     if (!player.persistentData.contains('flesh_steel_starter_given')) {
         player.persistentData.putBoolean('flesh_steel_starter_given', true);
 
+        // Essentials
         giveSafe(player, 'minecraft:cooked_beef', 16);
         giveSafe(player, 'minecraft:torch', 32);
         giveSafe(player, 'minecraft:iron_sword', 1);
         
-        // Potion handling (KJS 6 preferred object NBT)
+        // Potions
         try {
             player.give(Item.of('minecraft:potion', {Potion: "minecraft:water"}).withCount(12));
         } catch (e) {
             console.log("Failed to give water potions: " + e);
         }
 
+        // Backpack
         giveSafe(player, 'sophisticatedbackpacks:backpack', 1);
         
-        // Basic firearm (Start with a handgun for that AAA feel)
+        // TACZ Starting Rifle (replaces Point Blank - TACZ is the v4 weapon system)
         try {
-            player.give('pointblank:m1911a1');
-            // Trying multiple likely IDs since the exact one is hard to find without JEI
-            player.give(Item.of('pointblank:bullet_45acp', 32));
-            player.give(Item.of('pointblank:ammo_45acp', 32));
-            player.give(Item.of('pointblank:gunmetal_ingot', 4)); // In case ammo IDs fail, they can craft some
+            player.give(Item.of('tacz:m16a4'));
+            player.give(Item.of('tacz:5_56x45mm_mag', 4));
         } catch (e) {
-            console.log("Failed to give starting weapon: " + e);
+            // TACZ might identify guns differently, fall back gracefully
+            console.log("Failed to give TACZ starting weapon: " + e);
         }
-        player.tell('§aWelcome to Flesh & Steel! Your starter kit has been provided.');
+
+        // Welcome message - combined pack greeting
+        player.tell('§6§l⚙ Flesh & Steel §8v4 §6§l⚙');
+        player.tell('§7Biomechanical meets Flesh & Steel. Good luck, soldier.');
+        player.tell('§aYour starter kit has been provided.');
     }
 });
 

@@ -1,0 +1,3 @@
+>shadowlands:blood_forest
+/ single block
+type=block,ID=lucky:blood_lucky_block@chance=120

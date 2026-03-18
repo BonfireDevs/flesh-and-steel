@@ -1,0 +1,46 @@
+{
+  "pools": [
+    {
+      "name": "b4soul:cd_clean",
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "lucky:soul_lucky_potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+			},
+			{
+              "function": "minecraft:set_name",
+              "name": "§bMusic Disc"
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			  {
+				  "text": "Argonfunk - Clean and Cut",
+				  "color": "gray",
+				  "italic": false
+			  }
+			  ]
+			},
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{CustomModelData:1804009,Drops:[\"group(type=command,ID=/stopsound @a record b4soul:music_disc.b4soul_clean;type=command,ID=/playsound b4soul:music_disc.b4soul_clean record @a ~ ~ ~ 16 1 0.4;type=command,ID=/loot spawn ~ ~ ~ loot lucky:chests/cd_clean)\"]}"
+			}
+			],
+          "weight": 1
+        }
+          ],
+          "weight": 1
+        }
+      ]
+    }

@@ -1,0 +1,2 @@
+>rats:ratlantis
+type=block,ID=lucky:soul_lucky_block@chance=60

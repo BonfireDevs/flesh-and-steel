@@ -1,0 +1,1 @@
+block_id=void_lucky_block

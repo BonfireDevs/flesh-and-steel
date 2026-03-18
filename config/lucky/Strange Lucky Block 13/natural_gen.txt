@@ -1,0 +1,6 @@
+/ >voidscape:void
+/ type=structure,ID=strange_barrel@chance=100
+/ >minecraft:the_nether
+/ type=structure,ID=strange_barrel@chance=50
+/ >minecraft:the_end
+/ type=structure,ID=strange_barrel@chance=500

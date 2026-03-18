@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "G": {
+            "item": "minecraft:gold_ingot"
+        },
+        "E": {
+            "item": "minecraft:emerald"
+        },
+        "Y": {
+            "item": "minecraft:ender_eye"
+        }
+    },
+    "pattern": [
+        "GEG",
+        "EYE",
+        "GEG"
+    ],
+    "result": {
+		"count": 2,
+        "item": "lucky:soul_lucky_block"
+    }
+}

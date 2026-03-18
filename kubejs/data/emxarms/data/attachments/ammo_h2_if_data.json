@@ -1,0 +1,144 @@
+{
+
+  "weight": 1.0,
+
+  // "ads_addend": 0.05,
+
+  // "inaccuracy_addend": 0.07,
+
+  "ads": {
+
+    //"addend": 0.08
+
+     "percent": -0.08
+
+    // "multiplier": 1.2,
+
+    // "function": "if (x > 20) then y = r + 5 else y = x * 3 end"
+  },
+
+   "inaccuracy": {
+
+     "addend": 0.25
+   },
+
+   "aim_inaccuracy": {
+     "addend": 0.12
+   },
+  // "effective_range": {
+    // "addend": 10
+  // },
+
+   "ammo_speed": {
+	   "percent": -0.2
+  // ...
+   },
+
+   //"pierce": {
+	//   "addend": 0.2
+  // ...
+  // },
+
+   "rpm": {
+  // ...
+  "multiplier": 0.95
+   },
+  // "silence": {
+
+  // "distance_addend": -10,
+
+  // "use_silence_sound": true
+  // },
+
+   "extended_mag_level": 2,
+
+   "ignite": {
+     "entity": true
+  //   "block": true
+   },
+  // "explode": {
+
+  // "explode": true,
+  // "radius": {
+
+	//	"addend": 3.5
+  // },
+   //"damage": {
+
+	//	"addend": 20.0
+  // },
+
+  // "knockback": false,
+
+  // "destroy_block": false,
+  // "delay": {
+
+	//"addend": 3.0
+	//}
+   //},
+
+  // "recoil_modifier": {
+
+  // "pitch": -0.1,
+
+  // "yaw": -0.35
+  // },
+
+  // "recoil": {
+
+  // "yaw": {
+
+  // },
+
+  // "pitch": {
+  // ...
+  // }
+  // },
+   "damage": {
+  "multiplier": 1.3
+   },
+
+  // "armor_ignore":{
+  // "addend": 0.0
+  // "multiplier": 1.5
+  // },
+
+   "head_shot":{
+   "addend": 0.04
+  // "multiplier": 1.5
+   }
+
+  // "knockback": {
+  // "addend": 0.5
+  // "multiplier": 1.5
+  // }
+
+  //"melee": {
+
+    //"distance": 2,
+
+    //"range_angle": 45,
+
+    //"cooldown": 0,
+
+    //"damage": 6,
+
+    //"knockback": 0.4,
+
+    //"prep": 0.1
+
+    // "effects": [
+
+    // {
+
+    // "id": "minecraft:poison",
+
+    // "time": 5,
+
+    // "amplifier": 1,
+
+    // "hide_particles": true
+    // }
+    // ]
+  //}
+}

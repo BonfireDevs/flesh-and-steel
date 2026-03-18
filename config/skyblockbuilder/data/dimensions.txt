@@ -1,0 +1,8 @@
+minecraft:overworld
+shadowlands:vellium
+minecraft:the_nether
+shadowlands:shadow_forest
+shadowlands:glowshroom_forest
+shadowlands:blood_forest
+minecraft:the_end
+super_block_world:mushroom_kingdom

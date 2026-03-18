@@ -1,0 +1,8 @@
+>minecraft:overworld
+type=block,ID=lucky:morbius_lucky_block@chance=200
+
+>minecraft:the_nether
+type=block,ID=lucky:morbius_lucky_block@chance=150
+
+>minecraft:the_end
+type=block,ID=lucky:morbius_lucky_block@chance=100

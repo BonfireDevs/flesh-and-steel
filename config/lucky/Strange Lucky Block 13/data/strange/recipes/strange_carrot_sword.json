@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "#": {
+            "item": "minecraft:stick"
+        },
+        "C": {
+            "item": "minecraft:carrot"
+        }
+    },
+    "pattern": [
+        "C",
+        "C",
+        "#"
+    ],
+    "result": {
+        "item": "lucky:strange_carrot_sword"
+    }
+}

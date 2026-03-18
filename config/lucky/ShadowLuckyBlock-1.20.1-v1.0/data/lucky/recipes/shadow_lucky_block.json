@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "S": {
+            "item": "shadowlands:shadowmetalingot"
+        },
+        "L": {
+            "item": "lucky:lucky_block"
+        }
+    },
+    "pattern": [
+        "SSS",
+        "SLS",
+        "SSS"
+    ],
+    "result": {
+        "item": "lucky:shadow_lucky_block"
+    }
+}

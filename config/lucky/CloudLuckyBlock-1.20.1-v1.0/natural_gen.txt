@@ -1,0 +1,3 @@
+>shadowlands:vellium
+/ single block
+type=block,ID=lucky:cloud_lucky_block@chance=70

@@ -1,0 +1,16 @@
+{
+
+  "weight": 0.2,
+
+  "ads_addend": 0.08,
+  "inaccuracy_addend": -0.1,
+
+   "head_shot":{
+   "addend": 0.02
+  // "multiplier": 1.5
+   },
+  "recoil_modifier": {
+
+    "pitch": -0.05
+  }
+}

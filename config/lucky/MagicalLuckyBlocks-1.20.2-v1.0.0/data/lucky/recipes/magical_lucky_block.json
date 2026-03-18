@@ -1,0 +1,20 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "E": {
+            "item": "minecraft:experience_bottle"
+        },
+        "D": {
+            "item": "minecraft:dropper"
+        }
+    },
+    "pattern": [
+        "EEE",
+        "EDE",
+        "EEE"
+    ],
+    "result": {
+		"count": 1,
+        "item": "lucky:magical_lucky_block"
+    }
+}

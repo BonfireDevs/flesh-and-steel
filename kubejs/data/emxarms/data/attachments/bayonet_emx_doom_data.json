@@ -1,0 +1,36 @@
+{
+  "weight": 1.0,
+
+  "recoil_modifier": {
+
+    "pitch": -0.36,
+
+      "yaw": -0.14
+  },
+  "melee": {
+
+
+    "range": [6, 1, 2],
+
+    "damage": 45,
+
+    "knockback": 3.0,
+
+    "delay_damage_time": 0.2,
+
+    "effects": [
+      {
+        "id": "minecraft:slowness",
+        "time": 10,
+        "amplifier": 2,
+        "hide_particles": true
+      },
+      {
+        "id": "minecraft:weakness",
+        "time": 10,
+        "amplifier": 2,
+        "hide_particles": true
+      }
+    ]
+  }
+}

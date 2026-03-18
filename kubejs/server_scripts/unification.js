@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
     // Unified metals
     event.replaceOutput({}, '#forge:ingots/copper', 'minecraft:copper_ingot')
     event.replaceOutput({}, '#forge:ingots/zinc', 'create:zinc_ingot')
-    event.replaceOutput({}, '#forge:ingots/steel', 'pointblank:gunmetal_ingot') // Using gunmetal as high-grade steel
+    event.replaceOutput({}, '#forge:ingots/steel', 'mekanism:ingot_steel') // Using Mekanism steel as high-grade steel
     
     // Nuggets
     event.replaceOutput({}, '#forge:nuggets/iron', 'create:iron_nugget')

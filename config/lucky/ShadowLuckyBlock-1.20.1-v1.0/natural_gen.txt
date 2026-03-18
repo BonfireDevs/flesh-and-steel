@@ -1,0 +1,3 @@
+>shadowlands:shadow_forest
+/ single block
+type=block,ID=lucky:shadow_lucky_block@chance=70

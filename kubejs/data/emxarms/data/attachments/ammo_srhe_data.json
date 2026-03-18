@@ -1,0 +1,68 @@
+{
+
+  "weight": 1.25,
+  "ads": {
+
+    //"addend": 0.08
+
+     "percent": 0.2
+  },
+
+   "inaccuracy": {
+
+     "addend": 0.15
+   },
+
+   "aim_inaccuracy": {
+     "addend": 0.12
+   },
+
+   "ammo_speed": {
+	   "percent": -0.08
+   },
+
+   "pierce": {
+	   "addend": -0.1
+   },
+
+   "rpm": {
+	"multiplier": 0.9
+   },
+
+   "extended_mag_level": 2,
+   "explosion": {
+
+	"explode": true,
+   "radius": {
+
+		"addend": 1.5
+   },
+   "damage": {
+
+		"addend": 15.0
+   },
+
+   "knockback": false,
+
+   "destroy_block": false,
+   "delay": {
+		"addend": 3.0
+	}
+   },
+   "damage": {
+  "multiplier": 0.9
+   },
+
+  // "armor_ignore":{
+  // "addend": 0.0
+  // "multiplier": 1.5
+  // },
+
+   "head_shot":{
+		"addend": 0.17
+   },
+
+   "knockback": {
+   "addend": 0.5
+   }
+}

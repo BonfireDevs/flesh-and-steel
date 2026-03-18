@@ -1,0 +1,27 @@
+
+["Melee Setting"]
+
+	MeleeWeaponList = ["applied_armorer:special_melee_task_manager"]
+
+["Camera Setting"]
+
+	enableBetterAimCamera = false
+
+["GunSmithTable Setting"]
+
+	enableRecipeFilter = true
+
+	enableCraftToast = true
+
+	enableMemory = true
+
+	enableContainerReader = true
+
+	enableMassCraftTime = 4
+
+["Attachment Setting"]
+
+	enableLessAllowGun = 16
+
+	enableAttachmentDetail = true
+

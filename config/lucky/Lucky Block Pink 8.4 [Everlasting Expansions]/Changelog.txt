@@ -1,0 +1,211 @@
+WARNING: Uses Lucky Block for Minecraft 1.20.2
+WARNING: Translations may not be 100% accurate, please let me know in the discord if a translation is wrong!
+
+Dictionary:
+Drop Type = Counts for final drop total, is randomly selected when a lucky block is broken.
+Possibility = Possible outcome(s) for a drop type.
+Variant = Randomly selected outcome for a possibility which usually all are similarish to each other. (Possibility for a Possibility.)
+
+Additions:
++11 Drop Types
++64 Possibilities
++>204 Variants
++4 New Naturally Generating Structures
++14 Structures
+
+File Additions:
+N/A
+
+File Changes:
+*Reorganized the structures file.
+*Renamed mini_end to lbp_mini_end.
+*Reorganized the natural_gen file.
+*Reorganized the luck_crafting file.
+*Renamed Change Log to Changelog (again.)
+*Replaced the unused lbp_unfinished_portal file.
+*Reorganized the drops file for the millionth time.
+*Renamed deepslate_dungeon to lbp_deepslate_dungeon.
+*Updated lbp_big_dripleaf_parkour to have better loot.
+*Updated the name of mini_mangrove to lbp_mini_mangrove.
+*Updated the name of lbp_pink_dungeon to lbp_heart_dungeon.
+*Changed how far away the gamers structure spawns, -9 -> -3.
+*Updated lbp_mini_end to have air instead of structure void.
+*Updated lbp_mini_mangrove to have air instead of structure void.
+*Updated lbp_temple to have a 157 chance to spawn instead of 555.
+*Updated the contents of lbp_grabbit to generally be a lot better.
+*lbp_deepslate_dungeon now has a diamond block rather than a diamond.
+*Updated lbp_construction_site to have air instead of structure void.
+*Updated the contents of lbp_blackstone_dungeon to include more loot.
+*changed how far away the lbp_haunted_house structure spawns -5 -> -2.
+*Changed how far away the lbp_maine_tribute structure spawns -7 -> -3.
+*Updated the spawn positions of lbp_mega_dungeon and lbp_double_dungeon.
+*Updated lbp_arena_water to have prismarine stairs instead of warped stairs.
+*Updated en_us lang file to include a translation for level 100 enchantments.
+*Updated lbp_maine_tribute to be a block deeper and include cod, salmon, and squids.
+*New Natural Structures have been introduced to replace the old default lucky block ones.
+*Updated lbp_big_dripleaf_parkour to spawn in front of the player rather than the player spawning in it.
+*Updated the donkey kong structures to spawn in front of the player rather than the player spawning in it.
+*Updated the spawning position of lbp_heart_dungeon and changed the door from a crimson door to a cherry door.
+*lbp_boss_arena_nether now has more netherrack, as well as having some netherrack replaced with nether gold ore and nether quartz ore.
+*Sponges can now be added to lucky block pink for +30 luck, beacons can now be added to lucky block pink for +100 luck, and dragon eggs can added to lucky block pink for +100 luck. 
+
+File Removals:
+N/A
+
+Drop Changes:
+*Ore Wish now drops 64-128 Ores instead of 64 Ores.
+*End Rods now drop 16 End Rods instead of 8 End Rods.
+*Final Wish now spawns 100-250 TNT instead of 100 TNT.
+*Ender Chest now drops 2 Ender Chests instead of 1 Ender Chest.
+*Shop Keeper Seller now sells 4 obsidian at a time instead of 2.
+*Shop Keeper Buyer now buys 12 obsidian instead of 12-16 Obsidian.
+*Pufferfish Wish now spawns 20 Pufferfishes instead of 40 Pufferfishes.
+*Shulker Shell now drops 1-2 Shulker Shells instead of 1 Shulker Shell.
+*Custom Potions now drops 1-3 Custom Potions instead of 1 Custom Potion.
+*Shulker Box + Shulkers now spawns 4-6 Shulkers instead of 2-6 Shulkers.
+*Chorus Flower + 16-32 End Stone now drops 32 End Stone instead of 16-32.
+*Tinted Glass now drops 32-64 Tinted Glass instead of 16-64 Tinted Glass.
+*Purpur Blocks now drop 32-64 Purpur Blocks instead of 16-64 Purpur Blocks.
+*Lush Caves Blocks will now pick between 1-3 Lush Caves Blocks instead of 1.
+*Pink Dye Wish now drops between 100-500 Pink Dye instead of 33-455 Pink Dye.
+*Shop Keeper Seller's Obsidian now costs 6-10 Gold Ingots of 12-16 Gold Ingots.
+*Phantom + Shulker Mob Mixtures now spawns 4-8 Shulkers instead of 2-8 Shulkers.
+*Tinted Glass now drops either 32 of 64 Tinted Glass instead of 16-64 Tinted Glass.
+*Shop Keeper Seller's Obsidian now cost 6-10 gold ingots instead of 3-7 gold ingots.
+*Shop Keeper Seller now sells Lucky Potion for 4 ingots gold instead of 8 gold ingots.
+*Lush Caves Blocks' Big Dripleaves now drop 16 Big Dripleaves instead of 8 Big Dripleaves.
+*Enchantment Table + 4-16 Bookshelves now drop 6-16 Bookshelves instead of 4-16 Bookshelves.
+*Brown/Red Mushrooms now drop 12-36 Brown/Red Mushrooms instead of 12-24 Brown/Red Mushrooms.
+*Randomly Enchanted Books now drop 1-3 Randomly Enchanted Books instead of 1 Randomly Enchanted Book.
+*1-3 32 Random Coloured Blocks can now drop 32 or 64 Random Coloured Blocks instead of 32 Random Coloured Blocks.
+*Steak and Cooked Porkchops now drop 8-16 of Steak or Cooked Porkchops instead of 5-16 Steak or Cooked Porkchops.
+*Ice, Packed Ice, and Blue Ice now drop 32-64 of their respective blocks rather than 16-64 of their respective blocks.
+*Pufferfish, Guardian, and Elder Guardian Wishes now spawn 10 falling water blocks in addition to their respective drops.
+
+Luck Value Changes:
+*Changed the luck value of lbp_mini_end (0 -> -1).
+*Changed the luck value of Shulker Shell (0 -> 1).
+*Changed the luck value of lbp_mega_dungeon (0 -> -1).
+*Changed the luck value of lbp_heart_dungeon (0 -> -1).
+*Changed the luck value of lbp_double_dungeon (0 -> -1).
+*Changed the luck value of Jukebox + 1-3 Music Discs (0 -> 1).
+
+Misc Updates:
+*Cloud2 now has another variant.
+*lbp_cloud1 now has two variants.
+*One Chance has a new possibility.
+*Falling Furnance now has variants.
+*Mob Spawners now has a 0.5 chance.
+*Evil Potion now has 2 more variants.
+*32 Block Deep Hole now has a variant.
+*Falling Sponge Pole now has a variant.
+*Hero's Potion now has 2 more variants.
+*Misc Banners now has a new possibility.
+*Clone Commands now have a chance of 0.6.
+*Custom Potions now has a posOffset of 1.
+*lbp_mini_jungle now has another variant.
+*Updated all cases of destroy to replace.
+*1 Luck Messages now has a new possibility.
+*lbp_big_dripleaf_parkour now has variants.
+*Custom Potions now has 2 new possibilities.
+*0 Luck Misc Items now has a new possibility.
+*2 Luck Structures now has a new possibility.
+*Misc -1 Luck Wells now has a new possibility.
+*Pink Candle Cake Block now has possibilities.
+*0.5 Chance Ore Block Pole now has 0.75 chance.
+*Most Dual Mobs now has a position offset of 4.
+*-1 Luck Named Blocks now has a new possibility.
+*0 Luck mini structures now has a possibilities.
+*2 Luck Falling Blocks now has a new possibility.
+*Misc -1 Luck Structures now has a possibilities.
+*2 Luck Misc Named Items now has a new possibility.
+*Potion Effect Mobs now has a position offset of 4.
+*Thor's Hammer now has Fire Aspect 10 instead of 5.
+*1 Luck Bats now has a new possibility and variants.
+*Partial Geared Mobs now has a position offset of 4.
+*Randomly Enchanted Books now have a posOffset of 1.
+*Beastslayer/Thor's Hammer now has a new possibility.
+*-2 Non-Mini Luck Structures now has a new possibility.
+*Zombie Virus' Zombies now have a position offset of 4.
+*-1 Luck Plants now has a new possibility with variants.
+*Shulker Shell is now a possibility of 1 luck ore items.
+*0 Luck Non-Lucky Eggs + Items now has a new possibility.
+*1 Luck Non-Parkour Structures now has a new possibility.
+*Bob's Mom now has a chance value of 0.25 rather than 0.3.
+*Renamed Messenger's Axe and Sword to Winged Axe and Sword.
+*-2 Luck Bat Dual Mobs now has new possibilities and variants.
+*Herobrine's Tools now have Sharpness 10 instead of Sharpness 5.
+*Removed the 1.25 Chance Value on Lucky Items or Pink Lucky Items.
+*Updated lbp_grabbit to no longer require tping the player around.
+*1 Luck Falling Poles now has a new possibility which has variants.
+*Diamond Ores and Ancient Debris is now more common from the Ore Wish.
+*Random Diamond or Netherite Gear no longer has a chance value of 0.75.
+*0.75 chance 2 luck Ore Block Pole now has new possibilities and variants.
+*Made Hero and Evil Potions its own drop rather than apart of Hero's Gear.
+*Beastslayer now has Smite 10 and Bane of Arthopods 10 instead of 5 for each.
+*Updated Your Date Wish Is Phantom to now read Your Date Wish Is A Bit Spooky.
+*Renamed the fake enchantment on the Winged Weapons to be Soar instead of Hermes.
+*Named llamas now a possibility/variants of named animals rather than its own drop.
+*lbp_grabbit has been changed so you get 10 seconds instead of 5 seconds to grab what you want.
+*0 Luck Ore Blocks and 0 Luck Ores are now possibilities of each other rather than their own drops.
+*Updated Chicken Wish to say "Your Date Wish Was Chicken" instead of "Your Date Wish Was A Chicken".
+*lbp_heart_dungeon is now a variant of lbp_blackstone_dungeon as well as there being another variant.
+*Pillager Wish now reads "Your Date Wish Went Pillaging!?" instead of "Your Date Wish Went Horribly!?"
+*lbp_mini_end, lbp_mega_dungeon, and lbp_double_dungeon are now apart of -1 luck mini structures as a possibility.
+*Jukebox + 1-3 Music Discs is now a possibility of the 1 luck lots of item group drop and now spawns note particles.
+*Falling Nether Wart Blocks and Warped Wart Blocks are now variants of each other rather than individual possibilities.
+*If Your Pink or Regular Lucky Block Wishes are now a possibility of Gold, Iron, and Lapis wishes rather than its own drop.
+*Updated all fill commands to a new format, so they might be slightly different than before especially in terms of spawn position.
+*Combined the tall fill block command and the misc fill block commands to be possibilities of each other rather than individual drops.
+*Iron Pickaxe, Torches, Cooked Porkchops, and Golden Apples is now a possibility of Random Furnace + Coal or Charcoal instead of its own drop.
+*Changed Stolen Fish Message to read "TAKE MY FISH AND RUN!!!" instead of "THIS FISH IS NOW YOURS, I'M ABOVE THE LAW!!!!! WAH HAH YOU CAN'T CATCH ME COPPERS!!!!!"
+*Potion Effects are now on the spawned on the floor and not automatically given to the player and have an effect cloud, same is true for pink love potion versions.
+*Changed Reboot Message to read "Sheesh, they'll seriously reboot anything now-a-days! They rebooted Grass Blocks! What's next lucky blocks?-WAIT THIS A REB-!!!" instead of "Sheesh, they'll seriously reboot anything now-a-days! They fricking rebooted Grass Blocks! What's next lucky blocks? Ahahaha-WAIT THIS A-!!!"
+
+Bug Fixes:
+*FIXED Coral Blocks not always working.
+*FIXED Eggs + Lapis' Eggs not showing up.
+*FIXED Dead Coral Blocks not always working.
+*FIXED Custom Potions' effects not showing up.
+*FIXED Potion Effects mobs potion effects not working.
+*FIXED Flying Super Geared Mobs' bats not being invisible.
+*FIXED Lucky Items Shopkeeper Seller's lucky sword not working.
+*FIXED Spider Dual Mobs' drop being written out slightly wrong.
+*FIXED Eggs + Copper, Amethyst, or Crying Obsidian not working as intended.
+*FIXED Hero's Potions and Evil Potion not properly working including the Hero Wandering Trader.
+
+Removed:
+-Jukebox.
+-Block of Beans.
+-2 Luck Egg Drop.
+-Boots of Sneaking.
+-Angry Chef Message.
+-Falling Anvil Block.
+-TNT Minecart Variant.
+-Falling Bee Nest + Bee.
+-Anvil Only Falling Pole.
+-Duplicate Ice Possibility.
+-0 Luck Fill Block Commands.
+-1 Luck Fill Block Commands.
+-2 Luck Fill Block Commands.
+-Setblock ~ ~7 ~ lava command.
+-0 luck misc dungeon drop type.
+-Falling Obsidian + End Crystal.
+-Duplicate Lucky Item Shopkeeper.
+-Duplicate Aquatic Stuff Shopkeepers.
+-Lucky Block? and Pink Lucky Block? drop.
+-Separate Jukebox + 1-3 Music Discs drop.
+-The Other Duplicate Lucky Item Shopkeeper.
+-TP to Nether/Overworld possibility/variant.
+-Accidental Duplicate Bee Nest Falling Block.
+-Zombie, Husk, Drowned End Crystal Possibility/Variants.
+-Amethyst Block, Nether Gold Ore, Quartz Block, and Gilded Blackstone Falling Colourful Pole Possibilities.
+
+Notes:
+As of this update Lucky Block Pink has 100+ structures!
+This is the last update for the year unless an emergency mini fix update needs to happen!
+This is the penultimate update for the 8.0 series, with 8.5 being the last in the 8.0 series.
+The next update, Lucky Block Pink 8.5 will be focusing on QoL additions/changes and be a smaller update.
+The Main Goal of this update was to replace the default natural structures and to have more drops/drop variety.
+This is the first update released in December since Lucky Block Pink 6.7 [The Item Update] which released December 16th, 2020.
+This update has the second biggest changelog, beating the previous second place record by Lucky Block Pink 8.2 [The Classic Update] which released October 7th, 2023 and had 209 lines in its changelog. It is only beaten by Lucky Block Pink 8.0 [Re:Start].

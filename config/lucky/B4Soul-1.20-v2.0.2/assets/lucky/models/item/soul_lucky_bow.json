@@ -1,0 +1,230 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "lucky:item/soul_lucky_bow"
+    },
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ -80, 260, -40 ],
+            "translation": [ -1, -2, 2.5 ],
+            "scale": [ 0.9, 0.9, 0.9 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ -80, -280, 40 ],
+            "translation": [ -1, -2, 2.5 ],
+            "scale": [ 0.9, 0.9, 0.9 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, -90, 25 ],
+            "translation": [ 1.13, 3.2, 1.13],
+            "scale": [ 0.68, 0.68, 0.68 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 90, -25 ],
+            "translation": [ 1.13, 3.2, 1.13],
+            "scale": [ 0.68, 0.68, 0.68 ]
+        }
+    },
+  "overrides": [
+          {
+            "predicate": {
+                "pulling": 1
+            },
+            "model": "lucky:item/soul_lucky_bow_pulling_0"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.65
+            },
+            "model": "lucky:item/soul_lucky_bow_pulling_1"
+        },
+        {
+            "predicate": {
+                "pulling": 1,
+                "pull": 0.9
+            },
+            "model": "lucky:item/soul_lucky_bow_pulling_2"
+        },
+    {
+      "predicate": {
+        "custom_model_data": 1803901
+      },
+      "model": "b4soul:item/soul_module_iceologer"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803902
+      },
+      "model": "b4soul:item/soul_module_blaze"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803903
+      },
+      "model": "b4soul:item/soul_module_witch"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803904
+      },
+      "model": "b4soul:item/soul_module_bloom"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803905
+      },
+      "model": "b4soul:item/soul_module_bat"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803906
+      },
+      "model": "b4soul:item/soul_module_chicken"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803907
+      },
+      "model": "b4soul:item/soul_module_creeper"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803908
+      },
+      "model": "b4soul:item/soul_module_cavespider"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803909
+      },
+      "model": "b4soul:item/soul_module_magmacube"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803910
+      },
+      "model": "b4soul:item/soul_module_enderdragon"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803911
+      },
+      "model": "b4soul:item/soul_module_enderman"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803912
+      },
+      "model": "b4soul:item/soul_module_ghast"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803913
+      },
+      "model": "b4soul:item/soul_module_glowsquid"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803914
+      },
+      "model": "b4soul:item/soul_module_guardian"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803915
+      },
+      "model": "b4soul:item/soul_module_irongolem"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803916
+      },
+      "model": "b4soul:item/soul_module_piglin"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803917
+      },
+      "model": "b4soul:item/soul_module_rabbit"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803918
+      },
+      "model": "b4soul:item/soul_module_shulker"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803919
+      },
+      "model": "b4soul:item/soul_module_skeleton"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803920
+      },
+      "model": "b4soul:item/soul_module_slime"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803921
+      },
+      "model": "b4soul:item/soul_module_spider"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803922
+      },
+      "model": "b4soul:item/soul_module_snowman"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803923
+      },
+      "model": "b4soul:item/soul_module_stray"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803924
+      },
+      "model": "b4soul:item/soul_module_turtle"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803925
+      },
+      "model": "b4soul:item/soul_module_village"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803926
+      },
+      "model": "b4soul:item/soul_module_warden"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803927
+      },
+      "model": "b4soul:item/soul_module_wither"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803928
+      },
+      "model": "b4soul:item/soul_module_witherskeleton"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803929
+      },
+      "model": "b4soul:item/soul_module_goat"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803930
+      },
+      "model": "b4soul:item/soul_module_wander"
+    }
+  ]
+}

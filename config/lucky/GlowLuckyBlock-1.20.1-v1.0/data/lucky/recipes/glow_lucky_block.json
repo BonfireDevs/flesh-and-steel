@@ -1,0 +1,22 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "B": {
+            "item": "shadowlands:blue_glowing_leaves"
+        },
+		"G": {
+            "item": "shadowlands:glowing_leaves"
+        },
+        "L": {
+            "item": "lucky:lucky_block"
+        }
+    },
+    "pattern": [
+        "BGB",
+        "GLG",
+        "BGB"
+    ],
+    "result": {
+        "item": "lucky:glow_lucky_block"
+    }
+}

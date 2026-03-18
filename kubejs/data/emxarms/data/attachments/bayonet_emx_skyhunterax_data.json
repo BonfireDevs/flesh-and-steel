@@ -1,0 +1,37 @@
+{
+  "weight": 0.4,
+  "ads_addend": 0.05,
+
+  "recoil_modifier": {
+
+    "pitch": -0.15,
+
+    "yaw": -0.03
+  },
+  "melee": {
+
+
+    "range": [5, 1, 2],
+
+    "damage": 15,
+
+    "knockback": 0.0,
+	"cooldown": -0.2,
+
+    "delay_damage_time": 0.2
+
+//    "effects": [
+
+//      {
+
+//        "id": "minecraft:poison",
+
+//        "time": 5,
+
+//        "amplifier": 1,
+
+//        "hide_particles": true
+//      }
+//    ]
+  }
+}

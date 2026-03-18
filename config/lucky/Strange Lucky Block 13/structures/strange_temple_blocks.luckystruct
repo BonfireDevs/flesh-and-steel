@@ -1,0 +1,14 @@
+>properties
+length=5
+height=1
+width=5
+
+>blocks
+4,0,4,lucky:strange_lucky_block,0,(Luck=100)
+0,0,0,lucky:strange_lucky_block,0,(Luck=100)
+4,0,0,lucky:strange_lucky_block,0,(Luck=100)
+0,0,4,lucky:strange_lucky_block,0,(Luck=100)
+4,0,2,lucky:strange_lucky_block,0,(Luck=100)
+0,0,2,lucky:strange_lucky_block,0,(Luck=100)
+2,0,0,lucky:strange_lucky_block,0,(Luck=100)
+2,0,4,lucky:strange_lucky_block,0,(Luck=100)

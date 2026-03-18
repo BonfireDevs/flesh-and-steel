@@ -1,0 +1,80 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "lucky:item/soul_lucky_sword"
+   },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1803201
+      },
+      "model": "b4soul:item/soul_zombie_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803202
+      },
+      "model": "b4soul:item/soul_cactus_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803203
+      },
+      "model": "b4soul:item/soul_pumpkin_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803204
+      },
+      "model": "b4soul:item/soul_solstice_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803205
+      },
+      "model": "b4soul:item/soul_smoking_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803206
+      },
+      "model": "b4soul:item/soul_cursed_sword_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803207
+      },
+      "model": "b4soul:item/soul_cursed_sword_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803208
+      },
+      "model": "b4soul:item/soul_excalibur"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803209
+      },
+      "model": "b4soul:item/soul_demon_sword"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803210
+      },
+      "model": "b4soul:item/soul_joker_axe"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1803221
+      },
+      "model": "b4soul:item/soul_poison_stick"
+    },
+	{
+      "predicate": {
+        "custom_model_data": 1803929
+      },
+      "model": "b4soul:item/soul_module_goat"
+    }
+  ]
+}

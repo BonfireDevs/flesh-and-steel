@@ -1,0 +1,25 @@
+{
+  "weight": 1.2,
+  "ads_addend": 0.1,
+  "inaccuracy_addend": -0.1,
+   "damage": {
+
+
+    //"addend": 0.03
+
+    // "percent": 0.2,
+
+     "multiplier": 1.08
+
+    // "function": "if (x > 20) then y = r + 5 else y = x * 3 end"
+   },
+
+  "recoil_modifier": {
+
+    "pitch": -0.16,
+
+    "yaw": -0.1
+  },
+
+  "extended_mag_level": 3
+}

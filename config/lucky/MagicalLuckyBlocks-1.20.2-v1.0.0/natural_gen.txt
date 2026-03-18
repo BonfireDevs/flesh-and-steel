@@ -1,0 +1,7 @@
+>twilightforest:twilight_forest
+
+/ single block
+type=block,ID=lucky:magical_lucky_block@chance=160
+
+/ >minecraft:the_end
+/ type=block,ID=lucky:magical_lucky_block@chance=80

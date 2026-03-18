@@ -1,0 +1,3 @@
+>shadowlands:glowshroom_forest
+/ single block
+type=block,ID=lucky:glow_lucky_block@chance=50

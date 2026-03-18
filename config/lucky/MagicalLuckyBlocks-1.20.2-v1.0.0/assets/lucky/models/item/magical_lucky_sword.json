@@ -1,0 +1,56 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "lucky:item/magical_lucky_sword"
+   },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1003001
+      },
+      "model": "lbmagical:item/lbmagical_fire_staff"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003002
+      },
+      "model": "lbmagical:item/lbmagical_ice_staff"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003003
+      },
+      "model": "lbmagical:item/lbmagical_earth_staff"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003004
+      },
+      "model": "lbmagical:item/lbmagical_wind_staff"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003005
+      },
+      "model": "lbmagical:item/lbmagical_shadow_staff"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003006
+      },
+      "model": "lbmagical:item/lbmagical_thunder_staff"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003007
+      },
+      "model": "lbmagical:item/lbmagical_poison_staff"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003008
+      },
+      "model": "lbmagical:item/lbmagical_musical_staff"
+    }
+  ]
+}

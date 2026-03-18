@@ -1,0 +1,4 @@
+block_id=soul_lucky_block
+sword_id=soul_lucky_sword
+bow_id=soul_lucky_bow
+potion_id=soul_lucky_potion

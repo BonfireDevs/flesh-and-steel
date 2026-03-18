@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "C": {
+            "item": "shadowlands:solid_cloud"
+        },
+        "L": {
+            "item": "lucky:lucky_block"
+        }
+    },
+    "pattern": [
+        "CCC",
+        "CLC",
+        "CCC"
+    ],
+    "result": {
+        "item": "lucky:cloud_lucky_block"
+    }
+}

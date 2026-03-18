@@ -1,0 +1,271 @@
+{
+    "Dimensions": [
+        "twilightforest:twilight_forest"
+    ],
+    "InvasionTime": "BOTH",
+    "TimeModifier": "DAY_TO_NIGHT",
+    "Rarity": 20,
+    "SeverityInfo": [
+        {
+            "MobCapPercentage": 0.6,
+            "MobSpawnList": [
+                {
+                    "EntityType": "yakurum:biped_guardian",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:water_shooter",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:water_master",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                }
+            ],
+            "SkyRenderInfo": {
+                "Brightness": 0.25,
+                "FogRenderInfo": {
+                "RGBOffset": [
+                    0,
+                    0.25,
+                    0.25
+                ]
+                },
+                "LightLevel": 0,
+                "RGBOffset": [
+                    0,
+                    -0.75,
+                    -0.75
+                ]
+            },
+            "TickDelay": 60
+        },
+        {
+            "MobCapPercentage": 0.7,
+            "MobSpawnList": [
+                {
+                    "EntityType": "cataclysm:hippocamtus",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:biped_guardian",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:water_shooter",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:water_master",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                }
+            ],
+            "SkyRenderInfo": {
+                "Brightness": 0.2,
+                "FogRenderInfo": {
+                "RGBOffset": [
+                    0,
+                    0.2,
+                    0.2
+                ]
+                },
+                "LightLevel": 0,
+                "RGBOffset": [
+                    0,
+                    -0.8,
+                    -0.8
+                ]
+            },
+            "TickDelay": 48
+        },
+        {
+            "MobCapPercentage": 0.8,
+            "MobSpawnList": [
+                {
+                    "EntityType": "cataclysm:ignited_berserker",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "cataclysm:hippocamtus",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:biped_guardian",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:water_shooter",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:water_master",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                }
+            ],
+            "SkyRenderInfo": {
+                "Brightness": 0.15,
+                "FogRenderInfo": {
+                "RGBOffset": [
+                    0,
+                    0.15,
+                    0.15
+                ]
+                },
+                "LightLevel": 0,
+                "RGBOffset": [
+                    0,
+                    -0.85,
+                    -0.85
+                ]
+            },
+            "TickDelay": 36
+        },
+        {
+            "MobCapPercentage": 0.9,
+            "MobSpawnList": [
+                {
+                    "EntityType": "cataclysm:ignited_revenant",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "cataclysm:ignited_berserker",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "cataclysm:hippocamtus",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:biped_guardian",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:water_shooter",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:water_master",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                }
+            ],
+            "SkyRenderInfo": {
+                "Brightness": 0.1,
+                "FogRenderInfo": {
+                "RGBOffset": [
+                    0,
+                    0.1,
+                    0.1
+                ]
+                },
+                "LightLevel": 0,
+                "RGBOffset": [
+                    0,
+                    -0.9,
+                    -0.9
+                ]
+            },
+            "TickDelay": 24
+        },
+        {
+            "MobCapPercentage": 1.0,
+            "MobSpawnList": [
+                {
+                    "EntityType": "cataclysm:aptrgangr",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "cataclysm:ignited_revenant",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "cataclysm:ignited_berserker",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "cataclysm:hippocamtus",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:biped_guardian",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:water_shooter",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                },
+                {
+                    "EntityType": "yakurum:water_master",
+                    "Weight": 1,
+                    "MinCount": 1,
+                    "MaxCount": 1
+                }
+            ],
+            "SkyRenderInfo": {
+                "Brightness": 0.05,
+                "FogRenderInfo": {
+                "RGBOffset": [
+                    0,
+                    0.05,
+                    0.05
+                ]
+                },
+                "LightLevel": 0,
+                "RGBOffset": [
+                    0,
+                    -0.95,
+                    -0.95
+                ]
+            },
+            "TickDelay": 12
+        }
+    ],
+    "Tier": 8
+}

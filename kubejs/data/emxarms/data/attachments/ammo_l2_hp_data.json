@@ -1,0 +1,60 @@
+{
+
+  "weight": 1.0,
+
+  "ads": {
+     "percent": 0.15
+  },
+
+   "inaccuracy": {
+
+     "addend": 0.25
+   },
+
+   "aim_inaccuracy": {
+     "addend": 0.16
+   },
+
+   "ammo_speed": {
+	   "percent": -0.35
+   },
+
+   "pierce": {
+	   "addend": -0.5
+   },
+
+   "rpm": {
+   "multiplier": 0.9
+   },
+
+   "extended_mag_level": 2,
+
+   "recoil": {
+
+   "yaw": {
+
+    "percent": 0.15
+	},
+
+   "pitch": {
+    "percent": 0.25
+	}
+   },
+   "damage": {
+   "multiplier": 1.75
+   },
+
+   "armor_ignore":{
+   //"addend": 0.35,
+   "multiplier": 0.0
+   },
+
+   "head_shot":{
+   "addend": -0.2
+  // "multiplier": 1.5
+   },
+
+   "knockback": {
+   "addend": -0.04
+   }
+}

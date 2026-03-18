@@ -1,0 +1,128 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "lucky:item/magical_lucky_potion"
+	},
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1003031
+      },
+      "model": "lbmagical:item/lbmagical_card_minus_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003032
+      },
+      "model": "lbmagical:item/lbmagical_card_minus_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003033
+      },
+      "model": "lbmagical:item/lbmagical_card_minus_3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003034
+      },
+      "model": "lbmagical:item/lbmagical_card_minus_4"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003035
+      },
+      "model": "lbmagical:item/lbmagical_card_minus_5"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003036
+      },
+      "model": "lbmagical:item/lbmagical_card_minus_6"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003037
+      },
+      "model": "lbmagical:item/lbmagical_card_minus_7"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003038
+      },
+      "model": "lbmagical:item/lbmagical_card_minus_8"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003039
+      },
+      "model": "lbmagical:item/lbmagical_card_minus_9"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003040
+      },
+      "model": "lbmagical:item/lbmagical_card_minus_10"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003041
+      },
+      "model": "lbmagical:item/lbmagical_card_minus_11"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003042
+      },
+      "model": "lbmagical:item/lbmagical_card_minus_12"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003061
+      },
+      "model": "lbmagical:item/lbmagical_card_plus_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003062
+      },
+      "model": "lbmagical:item/lbmagical_card_plus_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003063
+      },
+      "model": "lbmagical:item/lbmagical_card_plus_3"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003064
+      },
+      "model": "lbmagical:item/lbmagical_card_plus_4"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003065
+      },
+      "model": "lbmagical:item/lbmagical_card_plus_5"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003066
+      },
+      "model": "lbmagical:item/lbmagical_card_plus_6"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003067
+      },
+      "model": "lbmagical:item/lbmagical_card_plus_7"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 1003068
+      },
+      "model": "lbmagical:item/lbmagical_card_plus_8"
+    }
+  ]
+}

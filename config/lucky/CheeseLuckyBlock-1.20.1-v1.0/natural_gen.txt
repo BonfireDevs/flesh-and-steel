@@ -1,0 +1,3 @@
+>rats:ratlantis
+/ single block
+type=block,ID=lucky:cheese_lucky_block@chance=100

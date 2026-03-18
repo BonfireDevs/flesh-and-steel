@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "strange:items/air",
+    "layer1": "strange:items/strange_bedrock_helmet"
+  }
+}

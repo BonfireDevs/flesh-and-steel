@@ -1,0 +1,11 @@
+/ gray dye
+rats:cheese=10
+rats:blue_cheese=15
+rats:nether_cheese=20
+
+/ bad items
+rotten_flesh=-5
+spider_eye=-10
+fermented_spider_eye=-20
+poisonous_potato=-10
+pufferfish=-20

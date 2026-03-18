@@ -1,13 +1,6 @@
 
-# Sophisticated Backpacks Configuration
+#Common Settings
+[common]
+	#Turns on/off loot added to various vanilla chest loot tables
+	chestLootEnabled = false
 
-[backpack]
-	# Starting slots for a basic backpack
-	# 27 is a good balance for early exploration.
-	inventorySlotCount = 27
-	# Number of upgrade slots
-	upgradeSlotCount = 2
-
-[visuals]
-	# Whether to show the backpack on the player's back
-	showBackpackOnBack = true

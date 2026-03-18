@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shaped",
+    "key": {
+        "S": {
+            "item": "twilightforest:steeleaf_ingot"
+        },
+        "L": {
+            "item": "lucky:lucky_block"
+        }
+    },
+    "pattern": [
+        "SSS",
+        "SLS",
+        "SSS"
+    ],
+    "result": {
+        "item": "lucky:twilight_lucky_block"
+    }
+}

@@ -1,9 +1,9 @@
 {
   "minecraft_version": "1.20.1",
   "forge_version": "47.4.10",
-  "pack_version": "1.0.0",
+  "pack_version": "4.0.0",
   "pack_name": "Flesh and Steel",
-  "pack_summary": "Biomechanical Tech Modpack",
+  "pack_summary": "Biomechanical Tech Modpack - v4 Combined Edition",
   "version_pins": {
     "create": "6.0.",
     "createaddition": "1.3.",
@@ -16,16 +16,72 @@
   "mods": {
     "common": [
       {
-        "slug": "jtmvUHXj",
-        "name": "Accessories"
+        "slug": "architectury",
+        "name": "Architectury API"
       },
       {
-        "slug": "z7dzpcw6",
-        "name": "Additional Attributes"
+        "slug": "balm",
+        "name": "Balm"
       },
       {
-        "slug": "tetra",
-        "name": "Tetra"
+        "slug": "bookshelf",
+        "name": "Bookshelf"
+      },
+      {
+        "slug": "cloth-config",
+        "name": "Cloth Config v10 API"
+      },
+      {
+        "slug": "collective",
+        "name": "Collective"
+      },
+      {
+        "slug": "cristellib",
+        "name": "Cristel Lib"
+      },
+      {
+        "slug": "curios-api",
+        "name": "Curios API"
+      },
+      {
+        "slug": "geckolib",
+        "name": "GeckoLib"
+      },
+      {
+        "slug": "kotlin-for-forge",
+        "name": "Kotlin for Forge"
+      },
+      {
+        "slug": "moonlight",
+        "name": "Moonlight Library"
+      },
+      {
+        "slug": "patchouli",
+        "name": "Patchouli"
+      },
+      {
+        "slug": "puzzleslib",
+        "name": "Puzzles Lib"
+      },
+      {
+        "slug": "resourcefullib",
+        "name": "Resourceful Lib"
+      },
+      {
+        "slug": "resourceful-config",
+        "name": "Resourcefulconfig"
+      },
+      {
+        "slug": "searchables",
+        "name": "Searchables"
+      },
+      {
+        "slug": "terrablender",
+        "name": "TerraBlender"
+      },
+      {
+        "slug": "yungsapi",
+        "name": "YUNG's API"
       },
       {
         "slug": "mutil",
@@ -36,44 +92,260 @@
         "name": "AzureLib"
       },
       {
-        "slug": "uwCpk80h",
-        "name": "Apotheosis Ascended"
+        "slug": "b1ZV3DIJ",
+        "name": "Athena"
       },
       {
-        "slug": "ae2",
-        "name": "Applied Energistics 2"
+        "slug": "DOB2l4oJ",
+        "name": "Library ferret"
       },
       {
-        "slug": "open-parties-and-claims",
-        "name": "Open Parties and Claims"
+        "slug": "B3pb093D",
+        "name": "Ritchie's Projectile Library"
+      },
+      {
+        "slug": "fU7jbFHc",
+        "name": "Obscure API"
+      },
+      {
+        "slug": "zfbCkvdZ",
+        "name": "Kambrik"
+      },
+      {
+        "slug": "8nIicBYu",
+        "name": "JRFTL"
+      },
+      {
+        "slug": "mA7yWMPS",
+        "name": "SimpleCoreLib"
+      },
+      {
+        "slug": "insaneau",
+        "name": "InsaneLib"
+      },
+      {
+        "slug": "corgilib",
+        "name": "CorgiLib"
+      },
+      {
+        "slug": "blueprint",
+        "name": "Blueprint"
       },
       {
         "slug": "otyacraft-engine",
         "name": "Otyacraft Engine"
       },
       {
-        "slug": "aquamirae",
-        "name": "Aquamirae"
+        "slug": "glitchcore",
+        "name": "GlitchCore"
       },
       {
-        "slug": "architectury",
-        "name": "Architectury"
+        "slug": "pehkui",
+        "name": "Pehkui"
       },
       {
-        "slug": "artifacts",
-        "name": "Artifacts"
+        "slug": "playeranimator",
+        "name": "Player Animator"
       },
       {
-        "slug": "b1ZV3DIJ",
-        "name": "Athena"
+        "slug": "zeta",
+        "name": "Zeta"
       },
       {
-        "slug": "balm",
-        "name": "Balm"
+        "slug": "iceberg",
+        "name": "Iceberg"
       },
       {
-        "slug": "bettercombat",
-        "name": "Better Combat"
+        "slug": "prism",
+        "name": "Prism"
+      },
+      {
+        "slug": "almanac-lib",
+        "name": "Almanac Lib"
+      },
+      {
+        "slug": "majrusz-library",
+        "name": "Majrusz Library"
+      },
+      {
+        "slug": "lionfish-api",
+        "name": "Lionfish API"
+      },
+      {
+        "slug": "baguettelib",
+        "name": "BaguetteLib"
+      },
+      {
+        "slug": "octo-lib",
+        "name": "OctoLib"
+      },
+      {
+        "slug": "mafglib",
+        "name": "MaFgLib"
+      },
+      {
+        "slug": "deimos-fabric-forge-neoforge",
+        "name": "Deimos Lib"
+      },
+      {
+        "slug": "flerovium",
+        "name": "Flerovium"
+      },
+      {
+        "slug": "l2library",
+        "name": "L2 Library"
+      },
+      {
+        "slug": "tenshilib",
+        "name": "TenshiLib"
+      },
+      {
+        "slug": "supermartijn642s-core-lib",
+        "name": "SuperMartijn642's Core Lib"
+      },
+      {
+        "slug": "supermartijn642s-config-lib",
+        "name": "SuperMartijn642's Config Lib"
+      },
+      {
+        "slug": "placebo",
+        "name": "Placebo"
+      },
+      {
+        "slug": "libipn",
+        "name": "libIPN"
+      },
+      {
+        "slug": "framework",
+        "name": "Framework"
+      },
+      {
+        "slug": "rhino",
+        "name": "Rhino"
+      },
+      {
+        "slug": "lootjs",
+        "name": "LootJS"
+      },
+      {
+        "slug": "morejs",
+        "name": "MoreJS"
+      },
+      {
+        "slug": "ponder",
+        "name": "PonderJS"
+      },
+      {
+        "slug": "kubejs",
+        "name": "KubeJS"
+      },
+      {
+        "slug": "modernfix",
+        "name": "ModernFix"
+      },
+      {
+        "slug": "uXXizFIs",
+        "name": "Ferrite Core"
+      },
+      {
+        "slug": "clumps",
+        "name": "Clumps"
+      },
+      {
+        "slug": "spark",
+        "name": "spark"
+      },
+      {
+        "slug": "canary",
+        "name": "Canary"
+      },
+      {
+        "slug": "chunky",
+        "name": "Chunky"
+      },
+      {
+        "slug": "noisium",
+        "name": "Noisium"
+      },
+      {
+        "slug": "smooth-chunk-save",
+        "name": "Smooth Chunk Save"
+      },
+      {
+        "slug": "smooth-boot-reloaded",
+        "name": "Smooth Boot Reloaded"
+      },
+      {
+        "slug": "connectivity",
+        "name": "Connectivity"
+      },
+      {
+        "slug": "ai-improvements",
+        "name": "AI Improvements"
+      },
+      {
+        "slug": "mobtimizations",
+        "name": "Mobtimizations"
+      },
+      {
+        "slug": "neruina",
+        "name": "Neruina - Ticking Entity Fixer"
+      },
+      {
+        "slug": "packet-fixer",
+        "name": "Packet Fixer"
+      },
+      {
+        "slug": "too-fast",
+        "name": "Too Fast"
+      },
+      {
+        "slug": "crashexploitfixer",
+        "name": "CrashExploitFixer"
+      },
+      {
+        "slug": "long-nbt-killer",
+        "name": "Long NBT Killer"
+      },
+      {
+        "slug": "alltheleaks",
+        "name": "AllTheLeaks - Memory Leak Fix"
+      },
+      {
+        "slug": "let-me-despawn",
+        "name": "Let Me Despawn"
+      },
+      {
+        "slug": "krypton-reforged",
+        "name": "Krypton Reforged"
+      },
+      {
+        "slug": "fastsuite",
+        "name": "FastSuite"
+      },
+      {
+        "slug": "fast-paintings",
+        "name": "Fast Paintings"
+      },
+      {
+        "slug": "radium-reforged",
+        "name": "Radium Reforged"
+      },
+      {
+        "slug": "attributefix",
+        "name": "AttributeFix"
+      },
+      {
+        "slug": "ksyxis",
+        "name": "Ksyxis"
+      },
+      {
+        "slug": "badoptimizations",
+        "name": "BadOptimizations"
+      },
+      {
+        "slug": "asyncparticles",
+        "name": "AsyncParticles"
       },
       {
         "slug": "biomancy",
@@ -86,62 +358,6 @@
       {
         "slug": "biomantic-delight",
         "name": "Biomantic Delight"
-      },
-      {
-        "slug": "alexs-mobs",
-        "name": "Alex's Mobs"
-      },
-      {
-        "slug": "alexs-caves",
-        "name": "Alex's Caves"
-      },
-      {
-        "slug": "citadel",
-        "name": "Citadel"
-      },
-      {
-        "slug": "bookshelf",
-        "name": "Bookshelf"
-      },
-      {
-        "slug": "bountiful",
-        "name": "Bountiful"
-      },
-      {
-        "slug": "carry-on",
-        "name": "Carry On"
-      },
-      {
-        "slug": "chipped",
-        "name": "Chipped"
-      },
-      {
-        "slug": "chunky",
-        "name": "Chunky"
-      },
-      {
-        "slug": "cloth-config",
-        "name": "Cloth Config v10 API"
-      },
-      {
-        "slug": "clumps",
-        "name": "Clumps"
-      },
-      {
-        "slug": "collective",
-        "name": "Collective"
-      },
-      {
-        "slug": "coroutil",
-        "name": "CoroUtil"
-      },
-      {
-        "slug": "cold-sweat",
-        "name": "Cold Sweat"
-      },
-      {
-        "slug": "radioactive",
-        "name": "Radioactive"
       },
       {
         "slug": "create",
@@ -184,136 +400,116 @@
         "name": "Create: Structures"
       },
       {
-        "slug": "creativecore",
-        "name": "CreativeCore"
+        "slug": "create_bio_factory",
+        "name": "Create: Bio-Factory"
       },
       {
-        "slug": "creeper-overhaul",
-        "name": "Creeper Overhaul"
+        "slug": "mekanism",
+        "name": "Mekanism"
       },
       {
-        "slug": "cristellib",
-        "name": "Cristel Lib"
+        "slug": "mekanism-generators",
+        "name": "Mekanism Generators"
       },
       {
-        "slug": "curios-api",
-        "name": "Curios API"
+        "slug": "mekanism-tools",
+        "name": "Mekanism Tools"
       },
       {
-        "slug": "dungeons-and-taverns",
-        "name": "Dungeons and Taverns"
+        "slug": "mekanism-additions",
+        "name": "Mekanism Additions"
       },
       {
-        "slug": "Kaov2qgi",
-        "name": "Easy Villagers"
+        "slug": "extreme-reactors",
+        "name": "Extreme Reactors"
       },
       {
-        "slug": "embeddium",
-        "name": "Embeddium"
+        "slug": "zerocore",
+        "name": "ZeroCore"
       },
       {
-        "slug": "emotecraft",
-        "name": "Emotecraft"
+        "slug": "nuclear-science",
+        "name": "Nuclear Science"
       },
       {
-        "slug": "enchdesc",
-        "name": "EnchantmentDescriptions"
+        "slug": "semi-realistic-nuclear-reactors",
+        "name": "Semi-Realistic Nuclear Reactors"
       },
       {
-        "slug": "explorerscompass",
-        "name": "Explorer's Compass"
+        "slug": "electrodynamics",
+        "name": "Electrodynamics"
       },
       {
-        "slug": "explorify",
-        "name": "Explorify"
+        "slug": "voltaic-api",
+        "name": "Voltaic API"
       },
       {
-        "slug": "farmers-delight",
-        "name": "Farmer's Delight"
+        "slug": "hbm-nuclear-tech-modernized",
+        "name": "HBM Nuclear Tech Modernized"
       },
       {
-        "slug": "uXXizFIs",
-        "name": "Ferrite Core"
+        "slug": "cold-sweat",
+        "name": "Cold Sweat"
       },
       {
-        "slug": "from-the-fog",
-        "name": "From The Fog"
+        "slug": "radioactive",
+        "name": "Radioactive"
       },
       {
-        "slug": "gravestone-mod",
-        "name": "Gravestone Mod"
+        "slug": "iUheEnjm",
+        "name": "Thirst Was Taken"
       },
       {
-        "slug": "globalpacks",
-        "name": "Global Packs"
+        "slug": "serene-seasons",
+        "name": "Serene Seasons"
       },
       {
-        "slug": "Ck4E7v7R",
-        "name": "GuideME"
+        "slug": "betterdays",
+        "name": "Better Days"
       },
       {
-        "slug": "geckolib",
-        "name": "GeckoLib"
+        "slug": "weather-storms-tornadoes",
+        "name": "Weather, Storms, & Tornadoes"
       },
       {
-        "slug": "immersive-armors",
-        "name": "Immersive Armors"
+        "slug": "coroutil",
+        "name": "CoroUtil"
       },
       {
-        "slug": "incendium",
-        "name": "Incendium"
+        "slug": "tetra",
+        "name": "Tetra"
       },
       {
-        "slug": "8nIicBYu",
-        "name": "JRFTL"
+        "slug": "bettercombat",
+        "name": "Better Combat"
       },
       {
-        "slug": "jade",
-        "name": "Jade"
+        "slug": "second-chance-forge",
+        "name": "Second Chance"
       },
       {
-        "slug": "jei",
-        "name": "Just Enough Items"
+        "slug": "comforts",
+        "name": "Comforts"
       },
       {
-        "slug": "zfbCkvdZ",
-        "name": "Kambrik"
+        "slug": "charm-of-undying",
+        "name": "Charm of Undying"
       },
       {
-        "slug": "kotlin-for-forge",
-        "name": "Kotlin for Forge"
+        "slug": "voidtotem",
+        "name": "Void Totem"
       },
       {
-        "slug": "kubejs",
-        "name": "KubeJS"
+        "slug": "alexs-mobs",
+        "name": "Alex's Mobs"
       },
       {
-        "slug": "DOB2l4oJ",
-        "name": "Library ferret"
+        "slug": "alexs-caves",
+        "name": "Alex's Caves"
       },
       {
-        "slug": "lootjs",
-        "name": "LootJS"
-      },
-      {
-        "slug": "lootr",
-        "name": "Lootr"
-      },
-      {
-        "slug": "modernfix",
-        "name": "ModernFix"
-      },
-      {
-        "slug": "modonomicon",
-        "name": "Modonomicon"
-      },
-      {
-        "slug": "moonlight",
-        "name": "Moonlight Library"
-      },
-      {
-        "slug": "morejs",
-        "name": "MoreJS"
+        "slug": "citadel",
+        "name": "Citadel"
       },
       {
         "slug": "mutantmonsters",
@@ -324,132 +520,216 @@
         "name": "Naturalist"
       },
       {
-        "slug": "naturescompass",
-        "name": "Nature's Compass"
-      },
-      {
         "slug": "nyfsspiders",
         "name": "Nyf's Spiders"
       },
       {
-        "slug": "fU7jbFHc",
-        "name": "Obscure API"
-      },
-      {
-        "slug": "patchouli",
-        "name": "Patchouli"
-      },
-      {
-        "slug": "pehkui",
-        "name": "Pehkui"
-      },
-      {
-        "slug": "playeranimator",
-        "name": "Player Animator"
-      },
-      {
-        "slug": "og4KPYmA",
-        "name": "Point Blank"
-      },
-      {
-        "slug": "ponder",
-        "name": "PonderJS"
-      },
-      {
-        "slug": "puzzleslib",
-        "name": "Puzzles Lib"
-      },
-      {
-        "slug": "resourcefullib",
-        "name": "Resourceful Lib"
-      },
-      {
-        "slug": "resourceful-config",
-        "name": "Resourcefulconfig"
-      },
-      {
-        "slug": "rhino",
-        "name": "Rhino"
-      },
-      {
-        "slug": "B3pb093D",
-        "name": "Ritchie's Projectile Library"
-      },
-      {
-        "slug": "searchables",
-        "name": "Searchables"
-      },
-      {
-        "slug": "simple-voice-chat",
-        "name": "Simple Voice Chat"
-      },
-      {
-        "slug": "mA7yWMPS",
-        "name": "SimpleCoreLib"
-      },
-      {
-        "slug": "fusion",
-        "name": "SimpleOres:Fusion"
-      },
-      {
-        "slug": "l7YxzukZ",
-        "name": "Sons of Sins"
-      },
-      {
-        "slug": "sparsestructures",
-        "name": "SparseStructures"
-      },
-      {
-        "slug": "amendments",
-        "name": "Amendments"
-      },
-      {
-        "slug": "supplementaries",
-        "name": "Supplementaries"
-      },
-      {
-        "slug": "terrablender",
-        "name": "TerraBlender"
-      },
-      {
-        "slug": "terralith",
-        "name": "Terralith"
-      },
-      {
-        "slug": "the-man-from-the-fog",
-        "name": "The Man From The Fog"
-      },
-      {
-        "slug": "toms-storage",
-        "name": "Tom's Simple Storage Mod"
-      },
-      {
-        "slug": "towns-and-towers",
-        "name": "Towns and Towers"
-      },
-      {
-        "slug": "sophisticated-backpacks",
-        "name": "Sophisticated Backpacks"
-      },
-      {
-        "slug": "sophisticated-core",
-        "name": "Sophisticated Core"
-      },
-      {
-        "slug": "veinmining",
-        "name": "Vein Mining"
-      },
-      {
-        "slug": "waystones",
-        "name": "Waystones"
+        "slug": "enhancedai",
+        "name": "Enhanced AI"
       },
       {
         "slug": "whisperwoods",
         "name": "Whisperwoods"
       },
       {
-        "slug": "yungsapi",
-        "name": "YUNG's API"
+        "slug": "from-the-fog",
+        "name": "From The Fog"
+      },
+      {
+        "slug": "the-man-from-the-fog",
+        "name": "The Man From The Fog"
+      },
+      {
+        "slug": "aquamirae",
+        "name": "Aquamirae"
+      },
+      {
+        "slug": "born-in-chaos",
+        "name": "Born in Chaos"
+      },
+      {
+        "slug": "majruszs-progressive-difficulty",
+        "name": "Majrusz's Progressive Difficulty"
+      },
+      {
+        "slug": "wonderful-enchantments",
+        "name": "Majrusz's Enchantments"
+      },
+      {
+        "slug": "majruszs-accessories",
+        "name": "Majrusz's Accessories"
+      },
+      {
+        "slug": "improved-mobs",
+        "name": "Improved Mobs"
+      },
+      {
+        "slug": "guard-villagers",
+        "name": "Guard Villagers"
+      },
+      {
+        "slug": "Kaov2qgi",
+        "name": "Easy Villagers"
+      },
+      {
+        "slug": "savage-ender-dragon",
+        "name": "Savage Ender Dragon"
+      },
+      {
+        "slug": "legendary-monsters",
+        "name": "Legendary Monsters"
+      },
+      {
+        "slug": "rats",
+        "name": "Rats"
+      },
+      {
+        "slug": "lendercataclysm",
+        "name": "L_Ender's Cataclysm"
+      },
+      {
+        "slug": "cataclysm-tools",
+        "name": "Cataclysm Tools"
+      },
+      {
+        "slug": "the-pure-suffering-mod",
+        "name": "The Pure Suffering Mod"
+      },
+      {
+        "slug": "yakurum-mod",
+        "name": "Yakurum Mod"
+      },
+      {
+        "slug": "apotheosis",
+        "name": "Apotheosis"
+      },
+      {
+        "slug": "uwCpk80h",
+        "name": "Apotheosis Ascended"
+      },
+      {
+        "slug": "apotheosis-modern-ragnarok",
+        "name": "Apotheosis Modern Ragnarok"
+      },
+      {
+        "slug": "apotheotic-additions",
+        "name": "Apotheotic Additions"
+      },
+      {
+        "slug": "apotheosis-mix",
+        "name": "Apotheosis Mix"
+      },
+      {
+        "slug": "apothic-attributes",
+        "name": "Apothic Attributes"
+      },
+      {
+        "slug": "artifacts",
+        "name": "Artifacts"
+      },
+      {
+        "slug": "relics-mod",
+        "name": "Relics"
+      },
+      {
+        "slug": "rar-compat",
+        "name": "Relics: Artifacts Compat"
+      },
+      {
+        "slug": "fuzes-relics",
+        "name": "Fuze's Relics"
+      },
+      {
+        "slug": "ancient-reforging",
+        "name": "Ancient Reforging"
+      },
+      {
+        "slug": "bountiful",
+        "name": "Bountiful"
+      },
+      {
+        "slug": "lootr",
+        "name": "Lootr"
+      },
+      {
+        "slug": "dungeons-and-taverns",
+        "name": "Dungeons and Taverns"
+      },
+      {
+        "slug": "explorify",
+        "name": "Explorify"
+      },
+      {
+        "slug": "spice-of-life-carrot-edition",
+        "name": "Spice of Life: Carrot Edition"
+      },
+      {
+        "slug": "voidscape",
+        "name": "Voidscape"
+      },
+      {
+        "slug": "shadowlands",
+        "name": "Shadowlands"
+      },
+      {
+        "slug": "the-twilight-forest",
+        "name": "The Twilight Forest"
+      },
+      {
+        "slug": "incendium",
+        "name": "Incendium"
+      },
+      {
+        "slug": "biomes-o-plenty",
+        "name": "Biomes O' Plenty"
+      },
+      {
+        "slug": "oh-the-biomes-weve-gone",
+        "name": "Oh The Biomes We've Gone"
+      },
+      {
+        "slug": "ohthetreesyoullgrow",
+        "name": "Oh The Trees You'll Grow"
+      },
+      {
+        "slug": "terralith",
+        "name": "Terralith"
+      },
+      {
+        "slug": "atmospheric",
+        "name": "Atmospheric"
+      },
+      {
+        "slug": "environmental",
+        "name": "Environmental"
+      },
+      {
+        "slug": "alternative-twilight",
+        "name": "Alternative Twilight"
+      },
+      {
+        "slug": "twilight-treehouses",
+        "name": "Twilight Treehouses"
+      },
+      {
+        "slug": "waystones",
+        "name": "Waystones"
+      },
+      {
+        "slug": "naturescompass",
+        "name": "Nature's Compass"
+      },
+      {
+        "slug": "explorerscompass",
+        "name": "Explorer's Compass"
+      },
+      {
+        "slug": "sparsestructures",
+        "name": "SparseStructures"
+      },
+      {
+        "slug": "towns-and-towers",
+        "name": "Towns and Towers"
       },
       {
         "slug": "betterdeserttemples",
@@ -488,162 +768,254 @@
         "name": "YUNG's Extras"
       },
       {
-        "slug": "yacl",
-        "name": "YetAnotherConfigLib"
+        "slug": "farmers-delight",
+        "name": "Farmer's Delight"
       },
       {
-        "slug": "enhancedai",
-        "name": "Enhanced AI"
+        "slug": "supplementaries",
+        "name": "Supplementaries"
       },
       {
-        "slug": "insaneau",
-        "name": "InsaneLib"
+        "slug": "amendments",
+        "name": "Amendments"
       },
       {
-        "slug": "spark",
-        "name": "spark"
-      },
-      {
-        "slug": "iUheEnjm",
-        "name": "Thirst Was Taken"
-      },
-      {
-        "slug": "serene-seasons",
-        "name": "Serene Seasons"
-      },
-      {
-        "slug": "glitchcore",
-        "name": "GlitchCore"
-      },
-      {
-        "slug": "biomes-o-plenty",
-        "name": "Biomes O' Plenty"
-      },
-      {
-        "slug": "oh-the-biomes-weve-gone",
-        "name": "Oh The Biomes We've Gone"
-      },
-      {
-        "slug": "corgilib",
-        "name": "CorgiLib"
-      },
-      {
-        "slug": "ohthetreesyoullgrow",
-        "name": "Oh The Trees You'll Grow"
+        "slug": "chipped",
+        "name": "Chipped"
       },
       {
         "slug": "macaws-bridges",
         "name": "Macaw's Bridges"
       },
       {
-        "slug": "blueprint",
-        "name": "Blueprint"
+        "slug": "every-compat",
+        "name": "Every Compat (Wood Good)"
       },
       {
-        "slug": "weather-storms-tornadoes",
-        "name": "Weather, Storms, & Tornadoes"
+        "slug": "quark",
+        "name": "Quark"
       },
       {
-        "slug": "coroutil",
-        "name": "CoroUtil"
+        "slug": "construction-wand",
+        "name": "Construction Wand"
       },
       {
-        "slug": "atmospheric",
-        "name": "Atmospheric"
+        "slug": "chunk-loaders",
+        "name": "Chunk Loaders"
       },
       {
-        "slug": "environmental",
-        "name": "Environmental"
+        "slug": "mmmmmmmmmmmm",
+        "name": "Mmmmmmmmmmmm (Target Dummy)"
       },
       {
-        "slug": "create_bio_factory",
-        "name": "Create: Bio-Factory"
+        "slug": "healing-bed",
+        "name": "Healing Bed"
+      },
+      {
+        "slug": "polymorph",
+        "name": "Polymorph"
+      },
+      {
+        "slug": "no-farmland-trample",
+        "name": "No Farmland Trample"
+      },
+      {
+        "slug": "alwayseat",
+        "name": "AlwaysEat"
+      },
+      {
+        "slug": "boat-break-fix",
+        "name": "Boat Break Fix"
+      },
+      {
+        "slug": "netherportalfix",
+        "name": "NetherPortalFix"
+      },
+      {
+        "slug": "ae2",
+        "name": "Applied Energistics 2"
+      },
+      {
+        "slug": "Ck4E7v7R",
+        "name": "GuideME"
+      },
+      {
+        "slug": "toms-storage",
+        "name": "Tom's Simple Storage Mod"
+      },
+      {
+        "slug": "sophisticated-backpacks",
+        "name": "Sophisticated Backpacks"
+      },
+      {
+        "slug": "sophisticated-core",
+        "name": "Sophisticated Core"
       },
       {
         "slug": "sophisticated-storage",
         "name": "Sophisticated Storage"
       },
       {
-        "slug": "canary",
-        "name": "Canary"
+        "slug": "open-parties-and-claims",
+        "name": "Open Parties and Claims"
       },
       {
-        "slug": "mekanism",
-        "name": "Mekanism"
+        "slug": "staaaaaaaaaaaack",
+        "name": "Staaaaaaaaaaaack (Stxck)"
       },
       {
-        "slug": "mekanism-generators",
-        "name": "Mekanism Generators"
+        "slug": "ftb-library-forge",
+        "name": "FTB Library"
       },
       {
-        "slug": "mekanism-tools",
-        "name": "Mekanism Tools"
+        "slug": "ftb-teams-forge",
+        "name": "FTB Teams"
       },
       {
-        "slug": "mekanism-additions",
-        "name": "Mekanism Additions"
+        "slug": "ftb-quests-forge",
+        "name": "FTB Quests (Forge)"
       },
       {
-        "slug": "hbm-nuclear-tech-modernized",
-        "name": "HBM Nuclear Tech Modernized"
+        "slug": "ftb-filter-system",
+        "name": "FTB Filter System"
       },
       {
-        "slug": "extreme-reactors",
-        "name": "Extreme Reactors"
+        "slug": "ftb-xmod-compat",
+        "name": "FTB XMod Compat"
       },
       {
-        "slug": "zerocore",
-        "name": "ZeroCore"
+        "slug": "ftb-essentials",
+        "name": "FTB Essentials"
       },
       {
-        "slug": "nuclear-science",
-        "name": "Nuclear Science"
+        "slug": "modonomicon",
+        "name": "Modonomicon"
       },
       {
-        "slug": "semi-realistic-nuclear-reactors",
-        "name": "Semi-Realistic Nuclear Reactors"
+        "slug": "creeper-overhaul",
+        "name": "Creeper Overhaul"
       },
       {
-        "slug": "electrodynamics",
-        "name": "Electrodynamics"
+        "slug": "immersive-armors",
+        "name": "Immersive Armors"
       },
       {
-        "slug": "voltaic-api",
-        "name": "Voltaic API"
+        "slug": "trade-refresh",
+        "name": "Trade Refresh"
+      },
+      {
+        "slug": "trading-post",
+        "name": "Trading Post"
+      },
+      {
+        "slug": "iron-furnaces",
+        "name": "Iron Furnaces"
+      },
+      {
+        "slug": "carry-on",
+        "name": "Carry On"
+      },
+      {
+        "slug": "veinmining",
+        "name": "Vein Mining"
+      },
+      {
+        "slug": "ftb-ultimine-forge",
+        "name": "FTB Ultimine (Forge)"
+      },
+      {
+        "slug": "corpse",
+        "name": "Corpse"
+      },
+      {
+        "slug": "playerrevive",
+        "name": "Player Revive"
+      },
+      {
+        "slug": "gravestone-mod",
+        "name": "Gravestone Mod"
+      },
+      {
+        "slug": "simple-voice-chat",
+        "name": "Simple Voice Chat"
+      },
+      {
+        "slug": "emotecraft",
+        "name": "Emotecraft"
+      },
+      {
+        "slug": "shoulder-surfing-reloaded",
+        "name": "Shoulder Surfing Reloaded"
+      },
+      {
+        "slug": "third-person-shooting",
+        "name": "Third Person Shooting: Zero"
+      },
+      {
+        "slug": "repurposed_structures",
+        "name": "Repurposed Structures"
+      },
+      {
+        "slug": "l7YxzukZ",
+        "name": "Sons of Sins"
+      },
+      {
+        "slug": "fusion",
+        "name": "SimpleOres:Fusion"
+      },
+      {
+        "slug": "jade",
+        "name": "Jade"
+      },
+      {
+        "slug": "jei",
+        "name": "Just Enough Items"
+      },
+      {
+        "slug": "globalpacks",
+        "name": "Global Packs"
+      },
+      {
+        "slug": "yacl",
+        "name": "YetAnotherConfigLib"
+      },
+      {
+        "slug": "enchdesc",
+        "name": "EnchantmentDescriptions"
+      },
+      {
+        "slug": "max-health-fix",
+        "name": "Max Health Fix"
+      },
+      {
+        "slug": "wither-spawn-fix",
+        "name": "Wither Spawn Fix"
+      },
+      {
+        "slug": "no-chat-reports",
+        "name": "No Chat Reports"
+      },
+      {
+        "slug": "smsn",
+        "name": "Save My Shaky Network"
+      },
+      {
+        "slug": "crash-assistant",
+        "name": "Crash Assistant"
       }
     ],
     "client": [
       {
+        "slug": "embeddium",
+        "name": "Embeddium"
+      },
+      {
+        "slug": "oculus",
+        "name": "Oculus"
+      },
+      {
         "slug": "immediatelyfast",
         "name": "ImmediatelyFast"
-      },
-      {
-        "slug": "presence-footsteps-forge",
-        "name": "Presence Footsteps"
-      },
-      {
-        "slug": "particular-reforged",
-        "name": "Effective"
-      },
-      {
-        "slug": "ambientsounds",
-        "name": "AmbientSounds"
-      },
-      {
-        "slug": "ambient-environment",
-        "name": "Ambient Environment"
-      },
-      {
-        "slug": "betterthirdperson",
-        "name": "Better Third Person"
-      },
-      {
-        "slug": "chat_heads",
-        "name": "Chat Heads"
-      },
-      {
-        "slug": "controlling",
-        "name": "Controlling"
       },
       {
         "slug": "entityculling",
@@ -654,24 +1026,52 @@
         "name": "FPS Reducer"
       },
       {
-        "slug": "inventoryprofilesnext",
-        "name": "Inventory Profiles Next"
+        "slug": "dynamiclights-reforged",
+        "name": "Sodium/Embeddium Dynamic Lights"
       },
       {
-        "slug": "libipn",
-        "name": "libIPN"
+        "slug": "sodium-options-api",
+        "name": "Sodium/Embeddium Options API"
       },
       {
-        "slug": "mousetweaks",
-        "name": "Mouse Tweaks"
+        "slug": "sodium-embeddium-options-mod-compat",
+        "name": "Sodium/Embeddium Options Mod Compat"
       },
       {
-        "slug": "oculus",
-        "name": "Oculus"
+        "slug": "xenon",
+        "name": "Xenon"
+      },
+      {
+        "slug": "presence-footsteps-forge",
+        "name": "Presence Footsteps"
+      },
+      {
+        "slug": "ambientsounds",
+        "name": "AmbientSounds"
+      },
+      {
+        "slug": "ambient-environment",
+        "name": "Ambient Environment"
       },
       {
         "slug": "sound-physics-remastered",
         "name": "Sound Physics Remastered"
+      },
+      {
+        "slug": "particular-reforged",
+        "name": "Effective"
+      },
+      {
+        "slug": "itemphysic-lite",
+        "name": "ItemPhysic Lite"
+      },
+      {
+        "slug": "pretty-rain",
+        "name": "Pretty Rain"
+      },
+      {
+        "slug": "model-gap-fix",
+        "name": "Model Gap Fix"
       },
       {
         "slug": "xaerominimap",
@@ -680,6 +1080,166 @@
       {
         "slug": "xaeroworldmap",
         "name": "Xaero's World Map"
+      },
+      {
+        "slug": "inventoryprofilesnext",
+        "name": "Inventory Profiles Next"
+      },
+      {
+        "slug": "mousetweaks",
+        "name": "Mouse Tweaks"
+      },
+      {
+        "slug": "controlling",
+        "name": "Controlling"
+      },
+      {
+        "slug": "chat_heads",
+        "name": "Chat Heads"
+      },
+      {
+        "slug": "betterthirdperson",
+        "name": "Better Third Person"
+      },
+      {
+        "slug": "inventory-hud-forge",
+        "name": "Inventory HUD+"
+      },
+      {
+        "slug": "appleskin",
+        "name": "AppleSkin"
+      },
+      {
+        "slug": "loot-beams",
+        "name": "Loot Beams: Relooted!"
+      },
+      {
+        "slug": "legendary-tooltips",
+        "name": "Legendary Tooltips"
+      },
+      {
+        "slug": "item-borders",
+        "name": "Item Borders"
+      },
+      {
+        "slug": "item-highlighter",
+        "name": "Item Highlighter"
+      },
+      {
+        "slug": "aggroindicator",
+        "name": "Aggro Indicator"
+      },
+      {
+        "slug": "exp-counter-fabric-forge-neoforge",
+        "name": "EXP Counter"
+      },
+      {
+        "slug": "armorpoints",
+        "name": "Armor Points ++"
+      },
+      {
+        "slug": "tslatentitystatus-tes",
+        "name": "Tslatentitystatus (TES)"
+      },
+      {
+        "slug": "durability-tooltip",
+        "name": "Durability Tooltip"
+      },
+      {
+        "slug": "enchanted-book-redesign",
+        "name": "Enchanted Book Redesign"
+      },
+      {
+        "slug": "great-scrollable-tooltips",
+        "name": "Great Scrollable Tooltips"
+      },
+      {
+        "slug": "pick-up-notifier",
+        "name": "Pick Up Notifier"
+      },
+      {
+        "slug": "passive-searchbar",
+        "name": "Passive SearchBar"
+      },
+      {
+        "slug": "notenoughrecipebook",
+        "name": "Not Enough Recipe Book [NERB]"
+      },
+      {
+        "slug": "just-enough-characters",
+        "name": "Just Enough Characters"
+      },
+      {
+        "slug": "just-enough-effect-descriptions-jeed",
+        "name": "JEED"
+      },
+      {
+        "slug": "just-enough-resources-jer",
+        "name": "JER"
+      },
+      {
+        "slug": "better-advancements",
+        "name": "Better Advancements"
+      },
+      {
+        "slug": "clickable-advancements",
+        "name": "Clickable Advancements"
+      },
+      {
+        "slug": "world-play-time",
+        "name": "World Play Time"
+      },
+      {
+        "slug": "modern-ui",
+        "name": "Modern UI"
+      },
+      {
+        "slug": "nolijium",
+        "name": "Nolijium"
+      },
+      {
+        "slug": "log-begone",
+        "name": "Log Begone"
+      },
+      {
+        "slug": "immersive-ui",
+        "name": "Immersive UI"
+      },
+      {
+        "slug": "bounced",
+        "name": "Bounced!"
+      },
+      {
+        "slug": "default-options",
+        "name": "Default Options"
+      },
+      {
+        "slug": "trashslot",
+        "name": "TrashSlot"
+      },
+      {
+        "slug": "itemlocks",
+        "name": "ItemLocks"
+      },
+      {
+        "slug": "chat-impressive-animation",
+        "name": "Chat Impressive Animation"
+      },
+      {
+        "slug": "more-overlays-updated",
+        "name": "More Overlays Updated"
+      },
+      {
+        "slug": "boat-item-view-forge",
+        "name": "Boat Item View"
+      },
+      {
+        "slug": "rawsvisualkeybinder",
+        "name": "Raw's Visual Keybinder"
+      },
+      {
+        "slug": "nonconflictkeys",
+        "name": "NonConflictKeys"
       }
     ],
     "server": []
